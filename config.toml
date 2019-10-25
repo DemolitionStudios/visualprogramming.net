@@ -77,25 +77,25 @@ home = [ "HTML", "RSS", "JSON"]
 			text = "Open Documentation"
 
       [[params.services.list]]
-			icon = "fa-paper-plane"
+			icon = "fa-comment"
 			title = "Forum"
 			description = "Get answers to your questions or find them in existing discussions in the vvvv Forum."
 			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
 			text = "Open Forum"
 
 			[[params.services.list]]
-      icon = "fas fa-mouse"
+      icon = "fa-eye"
       title = "Tutorials"
-      description = "Get inspired by a range of videos on a variety of topics spanning from basics to more advanced topics."
+      description = "Get inspired by a range of videos on a variety of topics spanning from basics to more advanced."
 			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
 			text = "Open Tutorials"
 
       [[params.services.list]]
       icon = "fa-heart"
       title = "Made with Love"
-      description = "You have to make your websites with love these days!"
-			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
-			text = "Link"
+      description = "We are on our mission since 2000. History is still in the making."
+			link = "https://meso.design/en/articles/the-flow-of-creative-expression-paving-the-way-for-vvvv"
+			text = "Paving the way for vvvv"
 
 
     # Portfolio modals
