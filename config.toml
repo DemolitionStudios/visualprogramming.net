@@ -68,33 +68,32 @@ home = [ "HTML", "RSS", "JSON"]
 
 	# Service section
 	[params.services]
-	[[params.services.list]]
-		headline = "Documentation"
-
-            icon = "fa-book"
-            title = "Documentation"
-            description = "Our templates are updated regularly so they don't break."
+			[[params.services.list]]
+			headline = "Documentation"
+      icon = "fa-book"
+      title = "Documentation"
+      description = "Our templates are updated regularly so they don't break."
 			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
 			text = "Open Documentation"
 
-        [[params.services.list]]
+      [[params.services.list]]
 			icon = "fa-paper-plane"
 			title = "Forum"
 			description = "Get answers to your questions or find them in existing discussions in the vvvv Forum."
 			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
 			text = "Open Forum"
 
-		[[params.services.list]]
-            icon = "fas fa-mouse"
-            title = "Tutorials"
-            description = "Get inspired by a range of videos on a variety of topics spanning from basics to more advanced topics."
+			[[params.services.list]]
+      icon = "fas fa-mouse"
+      title = "Tutorials"
+      description = "Get inspired by a range of videos on a variety of topics spanning from basics to more advanced topics."
 			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
 			text = "Open Tutorials"
 
-        [[params.services.list]]
-            icon = "fa-heart"
-            title = "Made with Love"
-            description = "You have to make your websites with love these days!"
+      [[params.services.list]]
+      icon = "fa-heart"
+      title = "Made with Love"
+      description = "You have to make your websites with love these days!"
 			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
 			text = "Link"
 
@@ -110,5 +109,3 @@ home = [ "HTML", "RSS", "JSON"]
 	[params.contact]
 		headline = "Let's Get In Touch!"
 		description = "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
-		phone = "123-456-6789"
-		email = "feedback@startbootstrap.com"
