@@ -60,6 +60,10 @@ home = [ "HTML", "RSS", "JSON"]
 			text  = "Download"
 			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
 
+# Portfolio section
+		[params.Portfolio]
+		headline    = "Gallery"
+
 	# Service section
 	[params.services]
 			[[params.services.list]]
@@ -95,4 +99,4 @@ home = [ "HTML", "RSS", "JSON"]
 	# Contact section
 	[params.contact]
 		headline = "Let's Get In Touch!"
-		description = "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
+		description = " "

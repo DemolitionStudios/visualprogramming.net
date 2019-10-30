@@ -10,7 +10,7 @@
                 <span class="icon-bar"></span>
             </button>
             {{ with .Site.Params.navigation.brand }}
-                <a class="navbar-brand page-scroll" href="#page-top">{{ . | markdownify }}</a>
+                <a class="navbar-brand page-scroll noUnderline" href="#page-top">{{ . | markdownify }}</a>
             {{ end }}
         </div>
         {{ "<!-- Collect the nav links, forms, and other content for toggling -->" | safeHTML }}
@@ -18,32 +18,32 @@
             <ul class="nav navbar-nav navbar-right">
                 {{ if .Site.Params.navigation.links.about }}
                     <li>
-                        <a class="page-scroll" href="#about">{{ .Site.Params.navigation.links.about }}</a>
+                        <a class="page-scroll noUnderline" href="#about">{{ .Site.Params.navigation.links.about }}</a>
                     </li>
                 {{ end }}
                 {{ if and .Site.Params.services.list .Site.Params.navigation.links.services }}
                     <li>
-                        <a class="page-scroll" href="#services">{{ .Site.Params.navigation.links.services }}</a>
+                        <a class="page-scroll noUnderline" href="#services">{{ .Site.Params.navigation.links.services }}</a>
                     </li>
                 {{ end }}
                 {{ if and .Site.Data.projects .Site.Params.navigation.links.portfolio }}
                     <li>
-                        <a class="page-scroll" href="#portfolio">{{ .Site.Params.navigation.links.portfolio }}</a>
+                        <a class="page-scroll noUnderline" href="#portfolio">{{ .Site.Params.navigation.links.portfolio }}</a>
                     </li>
                 {{ end }}
                 {{ if .Site.Params.navigation.links.licensing }}
                 <li>
-                    <a class="page-scroll" href="#licensing">{{ .Site.Params.navigation.links.licensing }}</a>
+                    <a class="page-scroll noUnderline" href="#licensing">{{ .Site.Params.navigation.links.licensing }}</a>
                 </li>
                 {{ end }}
                 {{ if and .Site.Params.location .Site.Params.navigation.links.location }}
                 <li>
-                    <a class="page-scroll" href="#location">{{ .Site.Params.navigation.links.location }}</a>
+                    <a class="page-scroll noUnderline" href="#location">{{ .Site.Params.navigation.links.location }}</a>
                 </li>
                 {{ end }}
                 {{ if and .Site.Params.contact .Site.Params.navigation.links.contact }}
                     <li>
-                        <a class="page-scroll" href="#contact">{{ .Site.Params.navigation.links.contact }}</a>
+                        <a class="page-scroll noUnderline" href="#contact">{{ .Site.Params.navigation.links.contact }}</a>
                     </li>
                 {{ end }}
             </ul>

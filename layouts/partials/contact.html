@@ -13,67 +13,36 @@
                     <p>{{ . | markdownify }}</p>
                 {{ end }}
             </div>
-            {{ if .Site.Params.contact.phone }}
-                <div class="
-                {{ if .Site.Params.contact.email }}
-                    col-lg-4
-                {{ else }}
-                    col-lg-8
-                {{ end }}
-                col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>{{ .Site.Params.contact.phone }}</p>
-                </div>
-            {{ end }}
-            {{ if .Site.Params.contact.email }}
-                <div class="
-                {{ if .Site.Params.contact.phone }}
-                    col-lg-4
-                {{ else }}
-                    col-lg-8 col-lg-offset-2
-                {{ end }}
-                 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:{{ .Site.Params.contact.email }}">{{ .Site.Params.contact.email }}</a></p>
-                </div>
-            {{ end }}
-            </div>
-            <div class="row">
-            <div class="col-md-2 text-center">
-                <a href="https://riot.im/app/#/room/#vvvv:matrix.org" target="_blank">
-                  <img src="img/icons/riot-32x32.png" alt ="Riot.im">
-                  <br><br>
-                  <p>Visit us on Matrix</p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="col-sm-1 col-sm-offset-1">
+                <a href="https://riot.im/app/#/room/#vvvv:matrix.org" target="_blank" class="noUnderline">
+                  <img src="img/icons/riot-32x32-black.png" alt ="Riot.im">
                 </a>
             </div>
-            <div class="col-md-2 text-center">
-                <a href="https://discourse.vvvv.org/c/vvvv-gamma" target="_blank">
-                  <img src="img/icons/vvvv-32x32.png" alt ="vvvv Forum">
-                  <br><br>
-                  <p>Check our Forum</p>
+            <div class="col-sm-1">
+                <a href="https://vimeo.com/vvvvleaks" target="_blank" class="noUnderline">
+                  <img src="img/icons/vimeo-32x32.png" alt ="Vimeo">
                 </a>
             </div>
-            <div class="col-md-2 text-center">
-              <a href="https://gettogether.community/events/1755/vvvv-berlin-meetup-14/" target="_blank">
+            <div class="col-sm-1">
+                <a href="https://www.youtube.com/channel/UCu-xqv-TLwv6L0An7MJJA5A" target="_blank" class="noUnderline">
+                  <img src="img/icons/youtube-32x32.png" alt ="Youtube">
+                </a>
+            </div>
+            <div class="col-sm-2">
+              <a href="https://gettogether.community/events/1755/vvvv-berlin-meetup-14/" target="_blank" class="noUnderline">
                   <img src="img/icons/gettogether_logo_w_v1.png" alt ="gettogether">
-                  <br><br>
-                  <p>Meet us at meetup</p>
                 </a>
             </div>
-            <div class="col-md-2 text-center">
-              <a href="https://mastodon.xyz/@vvvv" target="_blank">
+            <div class="col-sm-1">
+              <a href="https://mastodon.xyz/@vvvv" target="_blank" class="noUnderline">
                 <img src="img/icons/mastodon32x32.png" alt ="Mastodon.social">
-                <br><br>
-                <p>Get social on Mastodon</p>
               </a>
             </div>
-            <div class="col-md-2 text-center">
-                <a href="https://discourse.vvvv.org/c/vvvv-gamma" target="_blank">
-                  <i class="fa fa-4x fa-envelope"></i>
-                  <br><br>
-                  <p>Sign up for Newsletter</p>
-                </a>
+            <div class="col-sm-4">
+              {{ partial "newsletterForm"}}
             </div>
-        </div>
+          </div>
     </div>
 </section>
