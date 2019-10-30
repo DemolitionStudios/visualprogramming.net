@@ -20,15 +20,11 @@
             {{ partial "services.html" . }}
         {{ end }}
 
-        {{ if .Site.Data.projects }}
+        {{ range where .Site.Pages.ByWeight.Reverse "Section" "blog" }}
             {{ partial "portfolio.html" . }}
         {{ end }}
 
-        {{ if .Site.Params.location }}
-            {{ partial "location.html" . }}
-        {{ end }}
-
-        {{ if .Site.Params.licensing }}
+        {{ if .Site.GetPage "/Licensing.md"}}
             {{ partial "licensing.html" . }}
         {{ end }}
 
@@ -36,7 +32,7 @@
             {{ partial "contact.html" . }}
         {{ end }}
 
-        {{ if .Site.Data.projects }}
+        {{ range where .Site.Pages.ByWeight.Reverse "Section" "blog"}}
             {{ partial "modals.html" . }}
         {{ end }}
 

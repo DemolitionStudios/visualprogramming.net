@@ -25,7 +25,9 @@ hr.light {
 }
 
 a {
-    color: #ffa800;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 3px solid #ffa800;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -33,16 +35,19 @@ a {
 
 a:hover,
 a:focus {
-    color: #eb3812;
+    color: #ffa800;
+    text-decoration: none;
 }
 
 #about a {
-    color: rgba(52, 52, 52, .7);
+  text-decoration: none;
+  border-bottom: 3px solid rgba(52, 52, 52, .7);
+  color: rgba(52, 52, 52, .7);
 }
 
 #about a:hover,
 #about a:focus {
-    color: rgb(52, 52, 52);
+    color: #333333;
 }
 
 h1,
@@ -315,16 +320,6 @@ header .header-content .header-content-inner p {
 
 .portfolio-box:hover .portfolio-box-caption {
     opacity: 1;
-}
-
-@media(min-width:768px) {
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-        font-size: 16px;
-    }
-
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-        font-size: 22px;
-    }
 }
 
 .call-to-action h2 {

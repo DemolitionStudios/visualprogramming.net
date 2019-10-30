@@ -60,12 +60,6 @@ home = [ "HTML", "RSS", "JSON"]
 			text  = "Download"
 			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
 
-
-# Service section
-[params.licensing]
-	headline = "Our Licensing model"
-	description ="vvvv is free for evaluation and non-commercial use.</br>For all commercial applications, you need to buy a license. </br></br>Commercial use means that the work done with vvvv is primarily intended for or directed toward commercial advantage or private monetary compensation.</br></br>We are well aware of the fact that the distinction between commercial and non-commercial has a somehow blurry boundary. We trust the fair judgement of our users."
-
 	# Service section
 	[params.services]
 			[[params.services.list]]
@@ -97,13 +91,6 @@ home = [ "HTML", "RSS", "JSON"]
 			link = "https://meso.design/en/articles/the-flow-of-creative-expression-paving-the-way-for-vvvv"
 			text = "Paving the way for vvvv"
 
-
-    # Portfolio modals
-	[params.portfolio.modal]
-        client = "Client"
-        date = "Date"
-        category = "Category"
-        buttonText = "Close"
 
 	# Contact section
 	[params.contact]

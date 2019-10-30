@@ -1,6 +1,6 @@
 {{ "<!-- Portfolio Modals -->" | safeHTML }}
-{{ range .Site.Data.projects }}
-<div class="portfolio-modal modal fade" id="portfolioModal{{ .modalID }}" tabindex="-1" role="dialog" aria-hidden="true">
+{{ range where .Pages "Section" "blog" }}
+<div class="portfolio-modal modal fade" id="portfolioModal{{ .Params.modalID }}" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -12,20 +12,22 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        {{ with .title }}
+                        {{ with .Params.title }}
                             <h2>{{ . }}</h2>
                         {{ end }}
-                        {{ if and .title .description }}
+                        {{ if and .Params.title .Params.description }}
                             <hr class="star-primary">
                         {{ end }}
-                        {{ if .contentImg }}
-                        <img src="img/portfolio/{{ .contentImg }}" class="img-responsive img-centered" alt="">
+                        {{ if .Params.contentImg }}
+                          <img src="img/portfolio/{{ .Params.contentImg }}" class="img-responsive img-centered" alt="">
                         {{ end }}
-                        {{ with .description }}
-                            <p>{{ . | markdownify }}</p>
-                        {{ end }}
-                        {{ with .vimeo }}
+                        {{ with .Params.vimeo }}
                            {{ partial "vimeo.html" . }}
+                        {{ end }}
+                        {{ with .Content }}
+                            <p>
+                              {{ . | markdownify }}
+                            </p>
                         {{ end }}
                         {{ with $.Site.Params.portfolio.modal.buttonText }}
                         <br>

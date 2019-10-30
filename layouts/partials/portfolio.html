@@ -1,0 +1,29 @@
+<section class="no-padding" id="portfolio">
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            {{ range where .Pages "Section" "blog" }}
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal{{ .Params.modalID }}" class="portfolio-box portfolio-link" data-toggle="modal">
+                        <img src="img/portfolio/{{ .Params.img }}" class="img-responsive" alt="">
+                        {{ if and .Params.category .Params.title }}
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    {{ with .Params.category }}
+                                        <div class="project-category text-faded">
+                                            {{ . }}
+                                        </div>
+                                    {{ end }}
+                                    {{ with .Params.title }}
+                                        <div class="project-name">
+                                            {{ . }}
+                                        </div>
+                                    {{ end }}
+                                </div>
+                            </div>
+                        {{ end }}
+                    </a>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
