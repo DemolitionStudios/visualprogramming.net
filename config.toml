@@ -49,7 +49,7 @@ home = [ "HTML", "RSS", "JSON"]
 		[params.Hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
 		slogan     = "vvvv"
-		subtitle   = "[vvvv gamma](//visualprogramming.net) VL is a new visual programming language supported in vvvv that combines dataflow paradigms with features from object-oriented programming. It builds directly to the .NET Intermediate Language and can also consume .NET libraries."
+		subtitle   = "vvvv is a visual live-programming environment that serves you from rapid prototyping to final production. It combines aspects of dataflow and object oriented programming. It can easily be extended by using any .NET library or writing C# code."
 		buttonText = "Try it out!"
 		buttonLink = "download"
 
@@ -60,7 +60,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.Download.beta]
 		headline    = "vvvv beta"
-		description = "Get your beta. 20 years in development."
+		description = "In development since 2001, vvvv beta has been used by many companies worldwide to create large media environments with physical interfaces, real-time motion graphics, audio and video that can interact with many users simultaneously.<p>We recommend vvvv beta if you need the following:<p><tr><li>3d graphics</li><li>3d physics</li><li>2d physics</li><li>Audio/Video playback</li></tr>"
 
 		[params.Download.beta.button]
 		text  = "Download beta"
@@ -68,7 +68,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.Download.gamma]
 		headline    = "vvvv gamma"
-		description = "Get your [vvvv gamma preview](//vvvv.org/blog/vvvv-gamma-2019.1-preview)"
+		description = "In preview since April 2019, vvvv gamma is the next generation of vvvv. While still missing an essential 3d engine it is already much more versatile than vvvv beta in many other areas.<p>We recommend vvvv gamma if you need the following:<p><tr><li>2d graphics</li><li>Integration of .NET libraries</li><li>Async Execution</li></tr>"
 
 		[params.Download.gamma.button]
 		text  = "Download gamma"
@@ -86,37 +86,37 @@ home = [ "HTML", "RSS", "JSON"]
 			[[params.Learn.list]]
 			icon = "fa-eye"
 			title = "Tutorials"
-			description = "Lorem Ipsum"
-			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
+			description = "Tutorials are step-by-step guides that take you from scratch to a specified goal. Get inspired by a range of videos spanning from basics to more advanced topics."
+			link = "https://www.youtube.com/watch?v=MSfxqHI2y-M&list=PLBTgwgsWWcT_VMMrwsy3Ao7_ubazEGL4s"
 			text = "Open Tutorials"
 
 			[[params.Learn.list]]
 			headline = "HowTos"
       icon = "fa-lightbulb-o"
       title = "HowTos"
-      description = "Lorem Ipsum"
-			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
+      description = "How-To guides answer a specific question."
+			link = "https://www.youtube.com/watch?v=wEziL9RTkMM&list=PLBTgwgsWWcT-G9lk-IlKLkGZJ9NnXcuBV"
 			text = "Open HowTos"
 
       [[params.Learn.list]]
 			icon = "fa fa-bolt"
 			title = "Explanation"
-			description = "Get answers to your questions or find them in existing discussions in the vvvv Forum."
-			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
+			description = "Here we explain the bigger picture providing background and context."
+			link = "https://vvvv.gitbooks.io/the-gray-book/content/en/introduction/vl/_language.html"
 			text = "Open Explanation"
 
 			[[params.Learn.list]]
       icon = "fa-book"
       title = "Reference"
-      description = "Get inspired by a range of videos on a variety of topics spanning from basics to more advanced."
-			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
+      description = "The reference guide comprises of technical descriptions of the innards of vvvv"
+			link = "https://vvvv.gitbooks.io/the-gray-book/content/en/reference.html"
 			text = "Open Reference"
 
 	# Contact section
 		[params.contact]
-			headline = "Let's Get In Touch!"
+			headline = "Contact"
 			description = " "
 
 		[params.contact.imprint]
 		headline = "Imprint"
-		text ="vvvv group<br> joreg, Max Wolf, Sebastian Gregor, Sebastian Oschatz <br>Oranienstrasse 10 <br> 10997 Berlin/Germany <br><br>contact: groupӘvvvv.org"
+		text ="vvvv - Dießl & Gregor GbR<br>Oranienstrasse 10 <br> 10997 Berlin/Germany<br>VAT: DE275566955<br><br>groupӘvvvv.org"
