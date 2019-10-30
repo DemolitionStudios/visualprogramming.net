@@ -11,41 +11,30 @@
             </button>
             {{ with .Site.Params.navigation.brand }}
                 <a class="navbar-brand page-scroll noUnderline" href="#page-top">{{ . | markdownify }}</a>
+                {{ partial "temporary.html" }}
             {{ end }}
         </div>
         {{ "<!-- Collect the nav links, forms, and other content for toggling -->" | safeHTML }}
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                {{ if .Site.Params.navigation.links.about }}
-                    <li>
-                        <a class="page-scroll noUnderline" href="#about">{{ .Site.Params.navigation.links.about }}</a>
-                    </li>
-                {{ end }}
-                {{ if and .Site.Params.services.list .Site.Params.navigation.links.services }}
-                    <li>
-                        <a class="page-scroll noUnderline" href="#services">{{ .Site.Params.navigation.links.services }}</a>
-                    </li>
-                {{ end }}
-                {{ if and .Site.Data.projects .Site.Params.navigation.links.portfolio }}
-                    <li>
-                        <a class="page-scroll noUnderline" href="#portfolio">{{ .Site.Params.navigation.links.portfolio }}</a>
-                    </li>
-                {{ end }}
-                {{ if .Site.Params.navigation.links.licensing }}
+                <li>
+                    <a class="page-scroll noUnderline" href="#download">{{ .Site.Params.navigation.links.download }}</a>
+                </li>
+                <li>
+                    <a class="page-scroll noUnderline" href="#learn">{{ .Site.Params.navigation.links.learn }}</a>
+                </li>
+                <li>
+                    <a class="page-scroll noUnderline" href="#forum">{{ .Site.Params.navigation.links.forum }}</a>
+                </li>
+                <li>
+                    <a class="page-scroll noUnderline" href="#gallery">{{ .Site.Params.navigation.links.gallery }}</a>
+                </li>
                 <li>
                     <a class="page-scroll noUnderline" href="#licensing">{{ .Site.Params.navigation.links.licensing }}</a>
                 </li>
-                {{ end }}
-                {{ if and .Site.Params.location .Site.Params.navigation.links.location }}
                 <li>
-                    <a class="page-scroll noUnderline" href="#location">{{ .Site.Params.navigation.links.location }}</a>
+                    <a class="page-scroll noUnderline" href="#contact">{{ .Site.Params.navigation.links.contact }}</a>
                 </li>
-                {{ end }}
-                {{ if and .Site.Params.contact .Site.Params.navigation.links.contact }}
-                    <li>
-                        <a class="page-scroll noUnderline" href="#contact">{{ .Site.Params.navigation.links.contact }}</a>
-                    </li>
-                {{ end }}
             </ul>
         </div>
         {{ "<!-- /.navbar-collapse -->" | safeHTML }}

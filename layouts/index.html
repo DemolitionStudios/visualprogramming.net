@@ -4,40 +4,42 @@
         {{ partial "head.html" . }}
     </head>
     <body id="page-top">
-        {{ if or .Site.Params.navigation.links.about .Site.Params.navigation.links.services .Site.Params.navigation.links.portfolio .Site.Params.navigation.links.contact }}
-            {{ partial "nav.html" . }}
-        {{ end }}
+        {{ partial "nav" . }}
 
         {{ if .Site.Params.hero }}
             {{ partial "hero.html" . }}
         {{ end }}
 
-        {{ if .Site.Params.about }}
-            {{ partial "about.html" . }}
+        {{ if .Site.Params.Download }}
+            {{ partial "download.html" . }}
         {{ end }}
 
-        {{ if .Site.Params.services.list }}
-            {{ partial "services.html" . }}
+        {{ if .Site.Params.Learn.list }}
+            {{ partial "learn.html" . }}
         {{ end }}
 
-        <!-- IMAGES -->
+        {{ if .Site.GetPage "/Forum.md"}}
+            {{ partial "forum.html" . }}
+        {{ end }}
 
-        {{ with .Site.Params.Portfolio.headline }}
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">{{ . }}</h2>
-                        <hr class="primary">
+        <!-- Gallery -->
+        <section class="no-padding" id="gallery">
+            {{ with .Site.Params.Gallery.headline }}
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading">{{ . }}</h2>
+                            <hr class="primary">
+                        </div>
                     </div>
                 </div>
-            </div>
-        {{ end }}
+            {{ end }}
 
-        {{ range where .Site.Pages.ByWeight.Reverse "Section" "blog" }}
-            {{ partial "portfolio.html" . }}
-        {{ end }}
-
-        <!-- END IMAGES -->
+            {{ range where .Site.Pages.ByWeight.Reverse "Section" "blog" }}
+                {{ partial "gallery.html" . }}
+            {{ end }}
+        </section>
+        <!-- END Gallery -->
 
         {{ if .Site.GetPage "/Licensing.md"}}
             {{ partial "licensing.html" . }}

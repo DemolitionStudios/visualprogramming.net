@@ -1,6 +1,6 @@
-{{ "<!-- SERVICES -->" | safeHTML }}
-<section id="services">
-    {{ with .Site.Params.services.headline }}
+{{ "<!-- LEARN -->" | safeHTML }}
+<section id="learn">
+    {{ with .Site.Params.Learn.headline }}
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -12,7 +12,7 @@
     {{ end }}
     <div class="container">
         <div class="row">
-            {{ range .Site.Params.services.list }}
+            {{ range .Site.Params.Learn.list }}
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <a href="{{ .link }}" class="noUnderline">

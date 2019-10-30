@@ -14,21 +14,42 @@
                 {{ end }}
             </div>
         </div>
-        <div class="d-flex justify-content-center">
-          <div class="col-sm-1 col-sm-offset-1">
-                <a href="https://riot.im/app/#/room/#vvvv:matrix.org" target="_blank" class="noUnderline">
-                  <img src="img/icons/riot-32x32-black.png" alt ="Riot.im">
+
+
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Stay in the loop</h3>
+          </div>
+          <div class="col-sm-4">
+
+          </div>
+          <div class="col-sm-2">
+            <h3>Get in touch</h3>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Stay in the loop</h3>
+            {{ partial "newsletterForm"}}
+          </div>
+
+              <h3>Follow us</h3>
+              <div class="col-md-1">
+                <a href="https://mastodon.xyz/@vvvv" target="_blank" class="noUnderline">
+                  <img src="img/icons/mastodon32x32.png" alt ="Mastodon.social">
                 </a>
-            </div>
-            <div class="col-sm-1">
-                <a href="https://vimeo.com/vvvvleaks" target="_blank" class="noUnderline">
-                  <img src="img/icons/vimeo-32x32.png" alt ="Vimeo">
-                </a>
-            </div>
-            <div class="col-sm-1">
-                <a href="https://www.youtube.com/channel/UCu-xqv-TLwv6L0An7MJJA5A" target="_blank" class="noUnderline">
-                  <img src="img/icons/youtube-32x32.png" alt ="Youtube">
-                </a>
+              </div>
+              <div class="col-md-1">
+                    <a href="https://vimeo.com/vvvvleaks" target="_blank" class="noUnderline">
+                      <img src="img/icons/vimeo-32x32.png" alt ="Vimeo">
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="https://www.youtube.com/channel/UCu-xqv-TLwv6L0An7MJJA5A" target="_blank" class="noUnderline">
+                      <img src="img/icons/youtube-32x32.png" alt ="Youtube">
+                    </a>
+                </div>
             </div>
             <div class="col-sm-2">
               <a href="https://gettogether.community/events/1755/vvvv-berlin-meetup-14/" target="_blank" class="noUnderline">
@@ -36,13 +57,16 @@
                 </a>
             </div>
             <div class="col-sm-1">
-              <a href="https://mastodon.xyz/@vvvv" target="_blank" class="noUnderline">
-                <img src="img/icons/mastodon32x32.png" alt ="Mastodon.social">
-              </a>
-            </div>
-            <div class="col-sm-4">
-              {{ partial "newsletterForm"}}
-            </div>
+                  <a href="https://riot.im/app/#/room/#vvvv:matrix.org" target="_blank" class="noUnderline">
+                    <img src="img/icons/riot-32x32-black.png" alt ="Riot.im">
+                  </a>
+              </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>{{ .Site.Params.Contact.Imprint.Headline | markdownify}}</h3>
+            {{ .Site.Params.Contact.Imprint.Text | markdownify}}
           </div>
+        </div>
     </div>
 </section>

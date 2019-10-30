@@ -37,66 +37,86 @@ home = [ "HTML", "RSS", "JSON"]
 		brand = "Visualprogramming.net"
 
 		[params.navigation.links]
-			about     = "Download"
-			services  = "Documentation"
-			portfolio = "Blog"
+			download  = "Download"
+			Learn		  = "Learn"
+			forum			= "Forum"
+			gallery		= "Gallery"
 			licensing = "Licensing"
 			contact   = "Contact"
 
 
 	# Hero section
-	[params.hero]
+		[params.Hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
-		slogan     = "vvvv gamma"
+		slogan     = "vvvv"
 		subtitle   = "[vvvv gamma](//visualprogramming.net) VL is a new visual programming language supported in vvvv that combines dataflow paradigms with features from object-oriented programming. It builds directly to the .NET Intermediate Language and can also consume .NET libraries."
-		buttonText = "Find out more"
+		buttonText = "Try it out!"
+		buttonLink = "download"
 
-	# About section
-	[params.about]
-		headline    = "Get vvvv gamma"
+		# Download section
+
+		[params.Download]
+		headline = "Download"
+
+		[params.Download.beta]
+		headline    = "vvvv beta"
+		description = "Get your beta. 20 years in development."
+
+		[params.Download.beta.button]
+		text  = "Download beta"
+		link = "https://vvvv.org/downloads"
+
+		[params.Download.gamma]
+		headline    = "vvvv gamma"
 		description = "Get your [vvvv gamma preview](//vvvv.org/blog/vvvv-gamma-2019.1-preview)"
 
-		[params.about.button]
-			text  = "Download"
-			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
+		[params.Download.gamma.button]
+		text  = "Download gamma"
+		link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
 
-# Portfolio section
-		[params.Portfolio]
+		# Gallery section
+		[params.Gallery]
 		headline    = "Gallery"
 
-	# Service section
-	[params.services]
-			[[params.services.list]]
-			headline = "Documentation"
-      icon = "fa-book"
-      title = "Documentation"
-      description = "Our templates are updated regularly so they don't break."
-			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
-			text = "Open Documentation"
+	# Learn section
+	[params.Learn]
 
-      [[params.services.list]]
-			icon = "fa-comment"
-			title = "Forum"
-			description = "Get answers to your questions or find them in existing discussions in the vvvv Forum."
-			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
-			text = "Open Forum"
+			headline = "Learn"
 
-			[[params.services.list]]
-      icon = "fa-eye"
-      title = "Tutorials"
-      description = "Get inspired by a range of videos on a variety of topics spanning from basics to more advanced."
+			[[params.Learn.list]]
+			icon = "fa-eye"
+			title = "Tutorials"
+			description = "Lorem Ipsum"
 			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
 			text = "Open Tutorials"
 
-      [[params.services.list]]
-      icon = "fa-heart"
-      title = "Made with Love"
-      description = "We are on our mission since 2000. History is still in the making."
-			link = "https://meso.design/en/articles/the-flow-of-creative-expression-paving-the-way-for-vvvv"
-			text = "Paving the way for vvvv"
+			[[params.Learn.list]]
+			headline = "HowTos"
+      icon = "fa-lightbulb-o"
+      title = "HowTos"
+      description = "Lorem Ipsum"
+			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
+			text = "Open HowTos"
 
+      [[params.Learn.list]]
+			icon = "fa fa-bolt"
+			title = "Explanation"
+			description = "Get answers to your questions or find them in existing discussions in the vvvv Forum."
+			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
+			text = "Open Explanation"
+
+			[[params.Learn.list]]
+      icon = "fa-book"
+      title = "Reference"
+      description = "Get inspired by a range of videos on a variety of topics spanning from basics to more advanced."
+			link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
+			text = "Open Reference"
 
 	# Contact section
-	[params.contact]
-		headline = "Let's Get In Touch!"
-		description = " "
+		[params.contact]
+			headline = "Let's Get In Touch!"
+			description = " "
+
+		[params.contact.imprint]
+		headline = "Imprint"
+		text ="vvvv group<br> joreg, Max Wolf, Sebastian Gregor, Sebastian Oschatz <br>Oranienstrasse 10 <br> 10997 Berlin/Germany <br><br>contact: groupӘvvvv.org"
