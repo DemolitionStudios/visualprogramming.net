@@ -25,8 +25,8 @@ home = [ "HTML", "RSS", "JSON"]
 
 	# To provide some metadata for search engines feel free to add some
 	# information about you and your website.
-	name = "Visualprogramming.net - vvvv gamma"
-	description = "vvvv gamma"
+	name = "visualprogramming.net - vvvv gamma"
+	description = "vvvv is a visual programming environment for .NET"
 
 	# The path must be relative to the static folder
 	favicon = "favicon.ico"
@@ -34,7 +34,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 	# Navigation
 	[params.navigation]
-		brand = "Visualprogramming.net"
+		brand = "visualprogramming.net"
 
 		[params.navigation.links]
 			download  = "Download"
@@ -86,16 +86,16 @@ home = [ "HTML", "RSS", "JSON"]
 			[[params.Learn.list]]
 			icon = "fa-eye"
 			title = "Tutorials"
-			description = "Tutorials are step-by-step guides that take you from scratch to a specified goal. Get inspired by a range of videos spanning from basics to more advanced topics."
-			link = "https://www.youtube.com/watch?v=MSfxqHI2y-M&list=PLBTgwgsWWcT_VMMrwsy3Ao7_ubazEGL4s"
+			description = "Tutorials are step-by-step guides that take you from scratch to a specified goal."
+			link = "https://www.youtube.com/playlist?list=PLBTgwgsWWcT_VMMrwsy3Ao7_ubazEGL4s"
 			text = "Open Tutorials"
 
 			[[params.Learn.list]]
 			headline = "HowTos"
       icon = "fa-lightbulb-o"
       title = "HowTos"
-      description = "How-To guides answer a specific question."
-			link = "https://www.youtube.com/watch?v=wEziL9RTkMM&list=PLBTgwgsWWcT-G9lk-IlKLkGZJ9NnXcuBV"
+      description = "How-To guides show how to solve a specific problem in a series of steps."
+			link = "https://www.youtube.com/playlist?list=PLBTgwgsWWcT-G9lk-IlKLkGZJ9NnXcuBV"
 			text = "Open HowTos"
 
       [[params.Learn.list]]
@@ -108,7 +108,7 @@ home = [ "HTML", "RSS", "JSON"]
 			[[params.Learn.list]]
       icon = "fa-book"
       title = "Reference"
-      description = "The reference guide comprises of technical descriptions of the innards of vvvv"
+      description = "The reference guide comprises of technical descriptions of the innards of vvvv."
 			link = "https://vvvv.gitbooks.io/the-gray-book/content/en/reference.html"
 			text = "Open Reference"
 
