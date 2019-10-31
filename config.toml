@@ -63,7 +63,7 @@ home = [ "HTML", "RSS", "JSON"]
 		description = "In development since 2001, vvvv beta has been used by many companies worldwide to create large media environments with physical interfaces, real-time motion graphics, audio and video that can interact with many users simultaneously.<p>We recommend vvvv beta if you need the following:<p><tr><li>3d graphics</li><li>3d physics</li><li>2d physics</li><li>Audio/Video playback</li></tr>"
 
 		[params.Download.beta.button]
-		text  = "Download beta"
+		text  = "Go to vvvv.org"
 		link = "https://vvvv.org/downloads"
 
 		[params.Download.gamma]
