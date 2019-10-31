@@ -39,8 +39,8 @@ home = [ "HTML", "RSS", "JSON"]
 		[params.navigation.links]
 			download  = "Download"
 			Learn		  = "Learn"
-			forum			= "Forum"
-			gallery		= "Gallery"
+			forum			= "Community"
+			gallery		= "Showcase"
 			licensing = "Licensing"
 			contact   = "Contact"
 
@@ -76,7 +76,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 		# Gallery section
 		[params.Gallery]
-		headline    = "Gallery"
+		headline    = "Showcase"
 
 	# Learn section
 	[params.Learn]

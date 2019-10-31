@@ -1,5 +1,5 @@
 ---
-headline: Forum
+headline: Community
 buttonTitle: "Open Forum"
 buttonLink: "https://discourse.vvvv.org/c/vvvv-gamma"
 ---
