@@ -10,18 +10,19 @@
             </div>
         </div>
         <div class="row">
-          <div class="col-lg-6 text-center">
+          <div class="col-md-6 text-center">
                 {{ with .Site.Params.download.beta }}
                     <h3>{{ .headline | markdownify }}</h3>
                     <p class="text-faded">{{ .description | markdownify }}</p>
                     <a href="{{ .button.link }}" class="btn btn-default btn-xl">{{ .button.text }}</a>
                 {{ end }}
             </div>
-          <div class="col-lg-6 text-center">
+          <div class="col-md-6 text-center">
                 {{ with .Site.Params.download.gamma }}
                     <h3>{{ .headline | markdownify }}</h3>
                     <p class="text-faded">{{ .description | markdownify }}</p>
                     <a href="{{ .button.link }}" class="btn btn-default btn-xl">{{ .button.text }}</a>
+                    <p class="version text-faded">{{ .button.version | markdownify }}</p>
                 {{ end }}
             </div>
         </div>

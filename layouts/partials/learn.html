@@ -13,13 +13,13 @@
     <div class="container">
         <div class="row">
             {{ range .Site.Params.Learn.list }}
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
+            <div class="col-lg-3 text-center">
+                <div>
                     <a href="{{ .link }}" class="noUnderline">
-					<i class="fa fa-4x {{ .icon }} text-primary"></i>
-					</a>
+          					       <i class="fa fa-4x {{ .icon }}"></i>
+          					</a>
                     <h3>{{ .title }}</h3>
-                        <p class="text-muted">{{ .description }}</p><a href="{{ .link }}" class="btn btn-default btn-xl noUnderline">{{ .text }}</a>
+                        <p class="text-muted">{{ .description }}</p><br><a href="{{ .link }}" class="btn btn-default btn-xl noUnderline onWhite">{{ .text }}</a>
                 </div>
             </div>
             {{ end }}

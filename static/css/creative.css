@@ -44,6 +44,12 @@ a:focus {
     text-decoration: none;
 }
 
+.version {
+  font-size: 0.9em;
+  padding-top: 0.5em;
+}
+
+
 #about a {
   text-decoration: none;
   border-bottom: 3px solid rgba(52, 52, 52, .7);
@@ -368,6 +374,30 @@ header .header-content .header-content-inner p {
     margin-top: 0;
 }
 
+.white
+{
+  color: #fff;
+}
+
+.grayDark
+{
+  color: #333;
+}
+
+#community
+{
+  background-color: #fff;
+}
+
+#learn
+{
+  background-color: #eee;
+}
+
+.community-box {
+  background-color: #666;
+}
+
 .service-box {
     margin: 50px auto 0;
     max-width: 400px;
@@ -445,6 +475,18 @@ header .header-content .header-content-inner p {
     padding-right: 0;
     padding-left: 0;
 }
+
+
+.btn.onWhite
+{
+  background-color: #ddd;
+}
+
+.btn.onWhite:hover
+{
+  background-color: #ffa800;
+}
+
 
 .btn-default {
     border-color: #fff;
@@ -559,6 +601,7 @@ fieldset[disabled] .btn-primary.active {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
 }
+
 
 .btn-xl {
     padding: 15px 30px;

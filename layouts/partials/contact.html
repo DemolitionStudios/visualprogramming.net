@@ -21,7 +21,6 @@
             <h3><strong>Stay in the loop</strong></h3>
             {{ partial "newsletterForm"}}
           </div>
-
               <div class="col-sm-4 col-sm-offset-1">
                 <h3><strong>Follow us</strong></h3>
                 <div class="row">
@@ -44,28 +43,9 @@
               </div>
 
               <div class="col-sm-4">
-                <h3><strong>Get in touch</strong></h3>
-                <div class="row">
-                    <div class="col-sm-6">
-                      <a href="https://gettogether.community/events/1755/vvvv-berlin-meetup-14/" target="_blank" class="noUnderline">
-                          <img src="img/icons/gettogether_logo_w_v1.png" alt ="gettogether">
-                        </a>
-                    </div>
-                    <div class="col-sm-1">
-                          <a href="https://riot.im/app/#/room/#vvvv:matrix.org" target="_blank" class="noUnderline">
-                            <img src="img/icons/riot-32x32-black.png" alt ="Riot.im">
-                          </a>
-                    </div>
-                </div>
+                <h3><strong>{{ .Site.Params.Contact.Imprint.Headline | markdownify}}</strong></h3>
+                {{ .Site.Params.Contact.Imprint.Text | markdownify}}
               </div>
-
-        </div>
-        <br><br>
-        <div class="row">
-          <div class="col-sm-4">
-            <h3>{{ .Site.Params.Contact.Imprint.Headline | markdownify}}</h3>
-            {{ .Site.Params.Contact.Imprint.Text | markdownify}}
-          </div>
         </div>
     </div>
 </section>

@@ -1,0 +1,21 @@
+{{ "<!-- SHOWREEL -->" | safeHTML }}
+{{ with .Site.Params.Showreel }}
+<section id="gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">{{ .headline }}</h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row no-gutter">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            {{ partial "vimeo" .vimeo }}
+          </div>
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -39,7 +39,7 @@ home = [ "HTML", "RSS", "JSON"]
 		[params.navigation.links]
 			download  = "Download"
 			Learn		  = "Learn"
-			forum			= "Community"
+			community	= "Community"
 			gallery		= "Showcase"
 			licensing = "Licensing"
 			contact   = "Contact"
@@ -73,10 +73,39 @@ home = [ "HTML", "RSS", "JSON"]
 		[params.Download.gamma.button]
 		text  = "Download gamma"
 		link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
+		version = "(Version: preview 8923)"
 
 		# Gallery section
 		[params.Gallery]
 		headline    = "Showcase"
+
+	#Community section
+	[params.Community]
+		headline = "Community"
+
+		[[params.Community.list]]
+		img = "img/icons/riot-32x32-black.png"
+		imgAlt = "vvvv Forum"
+		title = "Forum"
+		description = "Get answers to your questions or find them in existing discussions in the vvvv forum."
+		link = "https://discourse.vvvv.org/c/vvvv-gamma"
+		text = "Open Forum"
+
+		[[params.Community.list]]
+		img = "img/icons/riot-32x32-black.png"
+		imgAlt = "vvvv on Matrix"
+		title = "Chat"
+		description = "Join us for a chat: Get help 24/7 or just hang out with your fellow patchers."
+		link = "https://riot.im/app/#/room/#vvvv:matrix.org"
+		text = "Open Riot"
+
+		[[params.Community.list]]
+		img = "img/icons/gettogether_logo_w_v1.png"
+		imgAlt = "vvvv GetTogehter"
+		title = "Meetups"
+		description = "Join us for a meetup: real-world, in-person drinks and presentations around vvvv."
+		link = "https://gettogether.community/events/1755/vvvv-berlin-meetup-14/"
+		text = "Open Gettogether"
 
 	# Learn section
 	[params.Learn]
