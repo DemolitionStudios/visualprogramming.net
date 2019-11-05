@@ -80,14 +80,29 @@ p {
     line-height: 1.5;
 }
 
+li {
+    margin-bottom: 7px;
+    font-size: 16px;
+}
+
 .tag
 {
     background-color: #000;
+    color: #eee;
+    padding: 0em 0.2em;
 }
 
 .bold
 {
   font-weight: bold;
+}
+
+.underButton
+{
+  margin-left: 2em;
+  margin-top: 0.4em;
+  color: #888;
+  font-size: 14px;
 }
 
 .temporary {
@@ -486,6 +501,10 @@ header .header-content .header-content-inner p {
     padding-left: 0;
 }
 
+.btn.inactive:hover
+{
+  cursor: default;
+}
 
 .btn.onWhite
 {
@@ -543,7 +562,8 @@ fieldset[disabled] .btn-default:active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
     border-color: #fff;
-    background-color: #fff;
+    background-color: #eee;
+    color: #666;
 }
 
 .btn-default .badge {

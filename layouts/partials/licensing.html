@@ -10,21 +10,40 @@
                 </div>
               </div>
             {{ end }}
+
         <div class="row">
-        {{ with .Site.GetPage "/Free.md" }}
-          {{ partial "Licensing-block" . }}
-        {{ end }}
-        {{ with .Site.GetPage "/Commercial.md" }}
-          {{ partial "Licensing-block" . }}
-        {{ end }}
-        </div>
-        <div class="row">
-          {{ with .Site.GetPage "/TRUST.md" }}
-            {{ partial "Licensing-block" . }}
+          {{ with .Site.GetPage "/Free.md" }}
+            <div class="col-md-4">
+                <h3 class="section-heading bold">{{ .Params.headline }}</h3>
+                {{ with .Content }}
+                    <p>{{ . | markdownify }}</p>
+                {{ end }}
+            </div>
           {{ end }}
-          {{ with .Site.GetPage "/Buy.md" }}
-            {{ partial "Licensing-block" . }}
+          {{ with .Site.GetPage "/Commercial.md" }}
+            <div class="col-md-4">
+                <h3 class="section-heading bold">{{ .Params.headline }}</h3>
+                {{ with .Content }}
+                    <p>{{ . | markdownify }}</p>
+                {{ end }}
+
+            {{ with .Site.GetPage "/Buy.md" }}
+              <a href="{{ .Params.buttonBetaLink }}" class="btn btn-primary btn-xl noUnderline" target="_blank">{{ .Params.buttonBetaText }}</a>
+              <br><br>
+              <a href="{{ .Params.buttonGammaLink }}" class="btn btn-default btn-xl noUnderline onWhite disabled" target="_blank">{{ .Params.buttonGammaText }}</a>
+              <p class="underButton">{{ .Params.buttonGammaComment }}</p>
+            {{ end }}
+            </div>
           {{ end }}
-        </div>
+
+            {{ with .Site.GetPage "/TRUST.md" }}
+            <div class="col-md-4">
+              <h3 class="section-heading bold">{{ .Params.headline }}</h3>
+              {{ with .Content }}
+                  <p>{{ . | markdownify }}</p>
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
     </div>
 </section>

@@ -1,6 +1,7 @@
 ---
-headline: Buy Licenses
+buttonBetaText: Buy licenses for vvvv beta
+buttonBetaLink: https://vvvv.org/documentation/licensing
+buttonGammaText: Buy licenses for vvvv gamma
+buttonGammaLink:
+buttonGammaComment: (still to come)
 ---
-
-- [Licenses for vvvv beta](https://vvvv.org/documentation/licensing)
-- Licenses for vvvv gamma are still to come
