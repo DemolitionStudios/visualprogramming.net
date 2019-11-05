@@ -1,4 +1,4 @@
-baseURL = "http://visualprogramming.net/"
+baseURL = "https://visualprogramming.net/"
 languageCode = "en-us"
 title = "Visualprogramming.net"
 
@@ -60,7 +60,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.Download.beta]
 		headline    = "vvvv beta"
-		description = "In development since 2001, vvvv beta has been used by many companies worldwide to create large media environments with physical interfaces, real-time motion graphics, audio and video that can interact with many users simultaneously.<p>We recommend vvvv beta if you need the following:<p><tr><li>DX9/DX11 3d graphics</li><li>3d physics</li><li>2d physics</li><li>Audio/Video playback</li><li>Multiscreen Setups</li><li>Projection Mapping</li></tr>"
+		description = "In development since 2001, vvvv beta has been used by many companies worldwide to create large media environments with physical interfaces, real-time motion graphics, audio and video that can interact with many users simultaneously.<p>We recommend vvvv beta if you need the following:<p><tr><li>3d graphics</li><li>3d physics</li><li>2d physics</li><li>Audio/Video playback</li><li>Multiscreen Setups</li><li>Projection Mapping</li></tr>"
 
 		[params.Download.beta.button]
 		text  = "Go to vvvv.org"
@@ -68,7 +68,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.Download.gamma]
 		headline    = "vvvv gamma"
-		description = "In preview since April 2019, vvvv gamma is the next generation of vvvv, entirely rewritten from scratch. With the essential 3d engine still to come, it already proves to be useful in many areas that don't require 3d graphics.<p>We recommend vvvv gamma if you need the following:<p><tr><li>2d graphics</li><li>OpenCV</li><li>Kinect2, Intel RealSense,...</li><li>OSC, TUIO, Rs232, UDP, WebSocket, MQTT,...</li><li>Integration of .NET libraries</li><li>Create Executables</li></tr>"
+		description = "In preview since April 2019, vvvv gamma is the next generation of vvvv, entirely rewritten from scratch. With the essential 3d engine still to come, it already proves to be useful in many areas that don't require 3d graphics.<p>We recommend vvvv gamma if you need the following:<p><tr><li>2d graphics</li><li>OpenCV</li><li>Devices and Protocols</li><li>Multithreading</li><li>Integration of .NET libraries</li><li>Create Executables</li></tr>"
 
 		[params.Download.gamma.button]
 		text  = "Download gamma"
@@ -131,7 +131,7 @@ home = [ "HTML", "RSS", "JSON"]
 			icon = "fa fa-bolt"
 			title = "Explanation"
 			description = "Here we explain the bigger picture providing background and context."
-			link = "https://vvvv.gitbooks.io/the-gray-book/content/en/introduction/vl/_language.html"
+			link = "https://vvvv.gitbooks.io/the-gray-book/content/en/"
 			text = "Open Explanation"
 
 			[[params.Learn.list]]
