@@ -12,11 +12,11 @@
               {{ range .list }}
               <div class="col-sm-4 text-center">
                   <div>
-                      <a href="{{ .link }}" class="noUnderline">
+                      <a href="{{ .link }}" class="noUnderline" target="_blank">
             					       <img src ="{{ .img }}" alt = "{{ .imgAlt }}">
             					</a>
                       <h3>{{ .title }}</h3>
-                          <p class="text-muted">{{ .description }}</p><br><a href="{{ .link }}" class="btn btn-default btn-xl noUnderline onWhite">{{ .text }}</a>
+                          <p class="text-muted">{{ .description }}</p><br><a href="{{ .link }}" class="btn btn-default btn-xl noUnderline onWhite" target="_blank">{{ .text }}</a>
                   </div>
               </div>
               {{ end }}

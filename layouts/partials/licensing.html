@@ -1,18 +1,30 @@
 {{ "<!-- LICENSING -->" | safeHTML }}
-{{ with .Site.GetPage "/Licensing.md" }}
+
 <section id="licensing">
         <div class="container">
+          {{ with .Site.GetPage "/Licensing.md" }}
               <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">{{ .Params.headline }}</h2>
                     <hr class="primary">
                 </div>
-            </div>
+              </div>
+            {{ end }}
         <div class="row">
-          {{ with .Content }}
-              <p>{{ . | markdownify }}</p>
+        {{ with .Site.GetPage "/Free.md" }}
+          {{ partial "Licensing-block" . }}
+        {{ end }}
+        {{ with .Site.GetPage "/Commercial.md" }}
+          {{ partial "Licensing-block" . }}
+        {{ end }}
+        </div>
+        <div class="row">
+          {{ with .Site.GetPage "/TRUST.md" }}
+            {{ partial "Licensing-block" . }}
+          {{ end }}
+          {{ with .Site.GetPage "/Buy.md" }}
+            {{ partial "Licensing-block" . }}
           {{ end }}
         </div>
     </div>
 </section>
-{{ end }}

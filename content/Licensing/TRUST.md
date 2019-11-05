@@ -1,26 +1,6 @@
 ---
-headline: Our Licensing Model
+headline: T.R.U.S.T
 ---
-## Free Use
-
-vvvv can be used freely without any limitations for the following purposes:
-
-- Evaluation
-- Non-commercial use
-- FOSS development
-- Contribution development
-- Teaching and learning vvvv
-
-## Commercial Use
-
-Use for any commercial purposes requires a per-developer license. Commercial use includes funded academic research or use in NPOs.
-
-## Buy Licenses
-
-- [vvvv beta](https://vvvv.org/documentation/licensing)
-- Licenses for vvvv gamma are still to come
-
-## T.R.U.S.T
 vvvv is protected by our (pattern pending) T.R.U.S.T model:
 
 - No copy-protection

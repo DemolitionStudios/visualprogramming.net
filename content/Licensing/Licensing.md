@@ -1,0 +1,3 @@
+---
+headline: Our Licensing Model
+---

@@ -84,7 +84,7 @@ home = [ "HTML", "RSS", "JSON"]
 		headline = "Community"
 
 		[[params.Community.list]]
-		img = "img/icons/riot-32x32-black.png"
+		img = "img/icons/Discourse-32x32.png"
 		imgAlt = "vvvv Forum"
 		title = "Forum"
 		description = "Get answers to your questions or find them in existing discussions in the vvvv forum."

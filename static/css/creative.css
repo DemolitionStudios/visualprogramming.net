@@ -85,6 +85,11 @@ p {
     background-color: #000;
 }
 
+.bold
+{
+  font-weight: bold;
+}
+
 .temporary {
   width: 12.1em;
   height: 12.1em;
@@ -153,7 +158,7 @@ p {
 
 .temporary:after {
   /* Set the text from the data-ribbon attribute */
-  content: attr(data-ribbon);
+  content: attr(text);
 
   /* Set the text properties */
   color: #fff;
