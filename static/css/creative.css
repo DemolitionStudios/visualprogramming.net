@@ -80,6 +80,11 @@ p {
     line-height: 1.5;
 }
 
+.tag
+{
+    background-color: #000;
+}
+
 .temporary {
   width: 12.1em;
   height: 12.1em;
