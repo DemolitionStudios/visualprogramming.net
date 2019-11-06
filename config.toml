@@ -47,7 +47,7 @@ home = [ "HTML", "RSS", "JSON"]
 		# Ribbon
 		[params.Ribbon]
 		text 			= "PRELIMINARY"
-		tooltip 	= "Work in progress"
+		tooltip 	= "A unified website for both vvvv beta and vvvv gamma is still to come. For now find everything about vvvv gamma on this page and go to vvvv.org to learn about vvvv beta."
 
 		# Hero section
 		[params.Hero]
