@@ -11,7 +11,9 @@
             </button>
             {{ with .Site.Params.navigation.brand }}
                 <a class="navbar-brand page-scroll noUnderline" href="#page-top">{{ . | markdownify }}</a>
-                {{ partial "temporary.html" }}
+            {{ end }}
+            {{ with .Site.Params.Ribbon }}
+              {{ partial "temporary.html" . }}
             {{ end }}
         </div>
         {{ "<!-- Collect the nav links, forms, and other content for toggling -->" | safeHTML }}
@@ -28,7 +30,7 @@
                 </li>
                 {{ if or .Site.Params.Blog .Site.Params.Showreel}}
                   <li>
-                      <a class="page-scroll noUnderline" href="#{{ .Site.Params.navigation.links.gallery }}">{{ .Site.Params.navigation.links.gallery }}</a>
+                      <a class="page-scroll noUnderline" href="#Gallery">{{ .Site.Params.navigation.links.gallery }}</a>
                   </li>
                 {{ end }}
                 <li>

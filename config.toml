@@ -32,20 +32,24 @@ home = [ "HTML", "RSS", "JSON"]
 	favicon = "favicon.ico"
 
 
-	# Navigation
-	[params.navigation]
-		brand = "visualprogramming.net"
+		# Navigation
+		[params.navigation]
+		brand 		= "visualprogramming.net"
 
 		[params.navigation.links]
-			download  = "Download"
-			Learn		  = "Learn"
-			community	= "Community"
-			gallery		= "Showcase"
-			licensing = "Licensing"
-			contact   = "Contact"
+		download  = "Download"
+		Learn		  = "Learn"
+		community	= "Community"
+		gallery		= "Showcase"
+		licensing = "Licensing"
+		contact   = "Contact"
 
+		# Ribbon
+		[params.Ribbon]
+		text 			= "PRELIMINARY"
+		tooltip 	= "Work in progress"
 
-	# Hero section
+		# Hero section
 		[params.Hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
 		slogan     = "vvvv"
