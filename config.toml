@@ -51,7 +51,7 @@ home = [ "HTML", "RSS", "JSON"]
 		slogan     = "vvvv"
 		subtitle   = "vvvv is a visual live-programming environment that serves you from rapid prototyping to final production. It comes with a focus on <span class=\"tag\">#creativecoding</span>, <span class=\"tag\">#interactiondesign</span>, <span class=\"tag\">#physicalcomputing</span>, <span class=\"tag\">#datavisualization</span>, <span class=\"tag\">#computervision</span> and related fields. <p>	For your coding convenience it combines aspects of dataflow and object oriented programming. It can easily be extended by using any .NET library or writing C# code."
 		buttonText = "Try it out!"
-		buttonLink = "download"
+		buttonLink = "Download"
 
 		# Download section
 
@@ -75,14 +75,13 @@ home = [ "HTML", "RSS", "JSON"]
 		link = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:31068/artifacts/content/vvvv_gamma_2019.1.0-0930-g60a3dd6ea9_setup.exe"
 		version = "(Version: preview 930)"
 
-		# Blog section
-		#[params.Blog]
-		#headline    = "Showcase"
+		#Blog section
+		[params.Blog]
+		headline    = "Showcase"
 
-		#[params.Showreel]
-		#Showreel section
-		#headline = "Showcase"
-		#vimeo = 351014907
+		# [params.Showreel]
+		# headline = "Showcase"
+		# vimeo = 351014907
 
 	#Community section
 	[params.Community]
