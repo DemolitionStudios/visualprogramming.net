@@ -49,7 +49,7 @@ home = [ "HTML", "RSS", "JSON"]
 		[params.Hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
 		slogan     = "vvvv"
-		subtitle   = "vvvv is a visual live-programming environment. It takes you from rapid prototyping to final production with a focus on creative coding, interaction design, physical computing, data visualization, computer vision and related fields.<p>	For your coding convenience it combines aspects of dataflow and object oriented programming. It can easily be extended by using any .NET library or writing C# code."
+		subtitle   = "vvvv is a visual live-programming environment. It takes you from rapid prototyping to final production with a focus on creative coding, interaction design, physical computing, data visualization, computer vision and related fields.<p>For your coding convenience it combines aspects of dataflow and object oriented programming. Miss a feature? Easily extend it by using any .NET library or writing C# code."
 		buttonText = "Try it out!"
 		buttonLink = "Download"
 
@@ -72,7 +72,7 @@ home = [ "HTML", "RSS", "JSON"]
 		description = "In preview since April 2019, vvvv gamma is the next generation of vvvv, entirely rewritten from scratch.<p>Recommended for:<p><tr><li>2d Graphics</li><li>Computer Vision</li><li>Devices and Protocols</li><li>Multithreading</li><li>Integration of .NET libraries</li><li>Creating Executables</li></tr>"
 
 		[params.Download.gamma.button]
-		text  = "Download gamma"
+		text  = "Download"
 		link = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:31068/artifacts/content/vvvv_gamma_2019.1.0-0930-g60a3dd6ea9_setup.exe"
 		version = "(Version: preview 930)"
 		target = "_self"
