@@ -1,6 +1,6 @@
 {{ "<!-- Temporary -->" | safeHTML }}
-<div class="ribbon left-top fixed" text="PRELIMINARY">
+<div class="ribbon left-top fixed" text="{{ .text }}" title="{{ .tooltip }}">
   ::before
-  PRELIMINARY
+    {{ .text }}
   ::after
 </div>
