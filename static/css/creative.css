@@ -408,6 +408,11 @@ header .header-content .header-content-inner p {
         max-width: 80%;
         font-size: 18px;
     }
+
+    .navbar-default .nav > li>a,
+    .navbar-default .nav > li>a:focus {
+            color: rgba(255,255,255,.9);
+    }
 }
 
 .section-heading {

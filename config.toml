@@ -81,9 +81,9 @@ home = [ "HTML", "RSS", "JSON"]
 		# [params.Blog]
 		# headline    = "Showcase"
 
-		# [params.Showreel]
-		# headline = "Showcase"
-		# vimeo = 351014907
+		[params.Showreel]
+		headline = "Showcase"
+		vimeo = 351014907
 
 	#Community section
 	  [params.Community]
