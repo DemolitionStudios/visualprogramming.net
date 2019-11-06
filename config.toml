@@ -49,7 +49,7 @@ home = [ "HTML", "RSS", "JSON"]
 		[params.Hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
 		slogan     = "vvvv"
-		subtitle   = "vvvv is a visual live-programming environment that serves you from rapid prototyping to final production. It comes with a focus on <span class=\"tag\">#creativecoding</span>, <span class=\"tag\">#interactiondesign</span>, <span class=\"tag\">#physicalcomputing</span>, <span class=\"tag\">#datavisualization</span>, <span class=\"tag\">#computervision</span> and related fields. <p>	For your coding convenience it combines aspects of dataflow and object oriented programming. It can easily be extended by using any .NET library or writing C# code."
+		subtitle   = "vvvv is a visual live-programming environment. It takes you from rapid prototyping to final production with a focus on creative coding, interaction design, physical computing, data visualization, computer vision and related fields.<p>	For your coding convenience it combines aspects of dataflow and object oriented programming. It can easily be extended by using any .NET library or writing C# code."
 		buttonText = "Try it out!"
 		buttonLink = "Download"
 
@@ -60,7 +60,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.Download.beta]
 		headline    = "vvvv beta"
-		description = "In development since 2001, vvvv beta has been used by many companies worldwide to create large media environments with physical interfaces, real-time motion graphics, audio and video that can interact with many users simultaneously.<p>We recommend vvvv beta if you need the following:<p><tr><li>3d graphics</li><li>3d physics</li><li>2d physics</li><li>Audio/Video playback</li><li>Multiscreen Setups</li><li>Projection Mapping</li></tr>"
+		description = "In development since 2001, vvvv beta has been used by many companies worldwide to create large media environments.<p>Recommended for:<p><tr><li>3d Graphics</li><li>Physics</li><li>Audio/Video Playback</li><li>Multiscreen Setups</li><li>Projection Mapping</li><li>Client-Server Setups</li></tr>"
 
 		[params.Download.beta.button]
 		text  = "Go to vvvv.org"
@@ -69,7 +69,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.Download.gamma]
 		headline    = "vvvv gamma"
-		description = "In preview since April 2019, vvvv gamma is the next generation of vvvv, entirely rewritten from scratch. With the essential 3d engine still to come, it already proves to be useful in many areas that don't require 3d graphics.<p>We recommend vvvv gamma if you need the following:<p><tr><li>2d graphics</li><li>OpenCV</li><li>Devices and Protocols</li><li>Multithreading</li><li>Integration of .NET libraries</li><li>Create Executables</li></tr>"
+		description = "In preview since April 2019, vvvv gamma is the next generation of vvvv, entirely rewritten from scratch.<p>Recommended for:<p><tr><li>2d Graphics</li><li>Computer Vision</li><li>Devices and Protocols</li><li>Multithreading</li><li>Integration of .NET libraries</li><li>Create Executables</li></tr>"
 
 		[params.Download.gamma.button]
 		text  = "Download gamma"
