@@ -14,14 +14,14 @@
                 {{ with .Site.Params.download.beta }}
                     <h3><strong>{{ .headline | markdownify }}</strong></h3>
                     <p class="text-faded">{{ .description | markdownify }}</p>
-                    <a href="{{ .button.link }}" class="btn btn-primary btn-xl">{{ .button.text }}</a>
+                    <a href="{{ .button.link }}" class="btn btn-primary btn-xl" target="{{ .button.target }}" >{{ .button.text }}</a>
                 {{ end }}
             </div>
           <div class="col-md-6">
                 {{ with .Site.Params.download.gamma }}
                     <h3><strong>{{ .headline | markdownify }}</strong></h3>
                     <p class="text-faded">{{ .description | markdownify }}</p>
-                    <a href="{{ .button.link }}" class="btn btn-primary btn-xl">{{ .button.text }}</a>
+                    <a href="{{ .button.link }}" class="btn btn-primary btn-xl" target="{{ .button.target }}" >{{ .button.text }}</a>
                     <span class="version text">&nbsp;&nbsp;{{ .button.version | markdownify }}</span>
                 {{ end }}
             </div>

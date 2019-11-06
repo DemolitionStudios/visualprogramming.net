@@ -65,6 +65,7 @@ home = [ "HTML", "RSS", "JSON"]
 		[params.Download.beta.button]
 		text  = "Go to vvvv.org"
 		link = "https://vvvv.org/downloads"
+		target = "_blank"
 
 		[params.Download.gamma]
 		headline    = "vvvv gamma"
@@ -74,6 +75,7 @@ home = [ "HTML", "RSS", "JSON"]
 		text  = "Download gamma"
 		link = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:31068/artifacts/content/vvvv_gamma_2019.1.0-0930-g60a3dd6ea9_setup.exe"
 		version = "(Version: preview 930)"
+		target = "_self"
 
 		#Blog section
 		# [params.Blog]
