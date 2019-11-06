@@ -419,6 +419,11 @@ header .header-content .header-content-inner p {
   background-color: #eee;
 }
 
+.topMargin
+{
+  margin-top: 2em;
+}
+
 .community-box {
   background-color: #666;
 }
