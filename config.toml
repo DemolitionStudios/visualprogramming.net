@@ -60,7 +60,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.Download.beta]
 		headline    = "vvvv beta"
-		description = "In development since 2001, vvvv beta has been used by many companies worldwide to create large media environments.<p>We recommend vvvv beta if you need the following:<p><tr><li>3d Graphics</li><li>Physics</li><li>Audio/Video Playback</li><li>Multiscreen Setups</li><li>Projection Mapping</li><li>Client-Server Architecture</li></tr>"
+		description = "In development since 2001, vvvv beta has been used by many companies worldwide to create large media environments.<p>Recommended for:<p><tr><li>3d Graphics</li><li>Physics</li><li>Audio/Video Playback</li><li>Multiscreen Setups</li><li>Projection Mapping</li><li>Client-Server Setups</li></tr>"
 
 		[params.Download.beta.button]
 		text  = "Go to vvvv.org"
@@ -69,7 +69,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.Download.gamma]
 		headline    = "vvvv gamma"
-		description = "In preview since April 2019, vvvv gamma is the next generation of vvvv, entirely rewritten from scratch.<p>We recommend vvvv gamma if you need the following:<p><tr><li>2d Graphics</li><li>OpenCV</li><li>Devices and Protocols</li><li>Multithreading</li><li>Integration of .NET libraries</li><li>Create Executables</li></tr>"
+		description = "In preview since April 2019, vvvv gamma is the next generation of vvvv, entirely rewritten from scratch.<p>Recommended for:<p><tr><li>2d Graphics</li><li>OpenCV</li><li>Devices and Protocols</li><li>Multithreading</li><li>Integration of .NET libraries</li><li>Create Executables</li></tr>"
 
 		[params.Download.gamma.button]
 		text  = "Download gamma"
