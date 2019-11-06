@@ -76,15 +76,15 @@ home = [ "HTML", "RSS", "JSON"]
 		version = "(Version: preview 930)"
 
 		#Blog section
-		[params.Blog]
-		headline    = "Showcase"
+		# [params.Blog]
+		# headline    = "Showcase"
 
 		# [params.Showreel]
 		# headline = "Showcase"
 		# vimeo = 351014907
 
 	#Community section
-	[params.Community]
+	  [params.Community]
 		headline = "Community"
 
 		[[params.Community.list]]

@@ -47,6 +47,7 @@ a:focus {
 .version {
   font-size: 0.9em;
   padding-top: 0.5em;
+  color: #aaa;
 }
 
 
@@ -59,6 +60,12 @@ a:focus {
 #about a:hover,
 #about a:focus {
     color: #333333;
+}
+
+#Download
+{
+  color: #f0f0f0;
+  background-color: #555;
 }
 
 h1,
@@ -208,7 +215,7 @@ li {
 }
 
 .bg-primary {
-    background-color: #ffa800;
+    background-color: #e89900;
 }
 
 .bg-dark {
@@ -245,12 +252,12 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #ffa800;
+    color: #999;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #ffa800;
+    color: #999;
 }
 
 .navbar-default .nav > li>a,
@@ -309,12 +316,12 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #ffa800;
+        color: #666;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #333333;
+        color: #000;
     }
 
     .navbar-default.affix .nav > li>a,
