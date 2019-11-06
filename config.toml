@@ -72,8 +72,8 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.Download.gamma.button]
 		text  = "Download gamma"
-		link = "https://vvvv.org/blog/vvvv-gamma-2019.1-preview"
-		version = "(Version: preview 8923)"
+		link = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:31068/artifacts/content/vvvv_gamma_2019.1.0-0930-g60a3dd6ea9_setup.exe"
+		version = "(Version: preview 930)"
 
 		# Gallery section
 		[params.Gallery]
@@ -104,7 +104,7 @@ home = [ "HTML", "RSS", "JSON"]
 		imgAlt = "vvvv GetTogehter"
 		title = "Meetups"
 		description = "Join us for a meetup: real-world, in-person drinks and presentations around vvvv."
-		link = "https://gettogether.community/vvvv/"
+		link = "https://gettogether.community/vvvv/events/"
 		text = "Open Gettogether"
 
 	# Learn section
