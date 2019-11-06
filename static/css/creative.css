@@ -409,14 +409,24 @@ header .header-content .header-content-inner p {
   color: #333;
 }
 
-#community
+#Community
 {
   background-color: #fff;
 }
 
-#learn
+#Learn
 {
   background-color: #eee;
+}
+
+#Showcase
+{
+  background-color: #333;
+}
+
+#Showcase h2
+{
+  color: #fff;
 }
 
 .topMargin
