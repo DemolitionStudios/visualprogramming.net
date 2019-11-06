@@ -75,9 +75,14 @@ home = [ "HTML", "RSS", "JSON"]
 		link = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:31068/artifacts/content/vvvv_gamma_2019.1.0-0930-g60a3dd6ea9_setup.exe"
 		version = "(Version: preview 930)"
 
-		# Gallery section
-		[params.Gallery]
-		headline    = "Showcase"
+		# Blog section
+		#[params.Blog]
+		#headline    = "Showcase"
+
+		#[params.Showreel]
+		#Showreel section
+		#headline = "Showcase"
+		#vimeo = 351014907
 
 	#Community section
 	[params.Community]

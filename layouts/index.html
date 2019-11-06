@@ -22,24 +22,13 @@
             {{ partial "community.html" . }}
         {{ end }}
 
-        <!-- Gallery -->
-        <section class="no-padding" id="gallery">
-            {{ with .Site.Params.Gallery.headline }}
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <h2 class="section-heading">{{ . }}</h2>
-                            <hr class="primary">
-                        </div>
-                    </div>
-                </div>
-            {{ end }}
+        {{ if .Site.Params.Blog }}
+          {{ partial "blog.html" . }}
+        {{ end }}
 
-            {{ range where .Site.Pages.ByWeight.Reverse "Section" "blog" }}
-                {{ partial "gallery.html" . }}
-            {{ end }}
-        </section>
-        <!-- END Gallery -->
+        {{ if .Site.Params.Showreel }}
+          {{ partial "showreel.html" . }}
+        {{ end }}
 
         {{ if .Site.GetPage "/Licensing.md"}}
             {{ partial "licensing.html" . }}
