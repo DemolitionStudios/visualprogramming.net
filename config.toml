@@ -49,7 +49,7 @@ home = [ "HTML", "RSS", "JSON"]
 		[params.Hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
 		slogan     = "vvvv"
-		subtitle   = "vvvv is a visual live-programming environment that serves you from rapid prototyping to final production. It comes with a focus on <span class=\"tag\">#creativecoding</span>, <span class=\"tag\">#interactiondesign</span>, <span class=\"tag\">#physicalcomputing</span>, <span class=\"tag\">#datavisualization</span>, <span class=\"tag\">#computervision</span> and related fields. <p>	For your coding convenience it combines aspects of dataflow and object oriented programming. It can easily be extended by using any .NET library or writing C# code."
+		subtitle   = "vvvv is a visual live-programming environment. It takes you from rapid prototyping to final production with a focus on creative coding, interaction design, physical computing, data visualization, computer vision and related fields.<p>	For your coding convenience it combines aspects of dataflow and object oriented programming. It can easily be extended by using any .NET library or writing C# code."
 		buttonText = "Try it out!"
 		buttonLink = "Download"
 
