@@ -12,16 +12,17 @@
             {{ end }}
 
         <div class="row">
-          {{ with .Site.GetPage "/Free.md" }}
-            <div class="col-md-4 topMargin">
-                <h3 class="section-heading bold">{{ .Params.headline }}</h3>
-                {{ with .Content }}
-                    <p>{{ . | markdownify }}</p>
-                {{ end }}
-            </div>
+          {{ with .Site.GetPage "/TRUST.md" }}
+          <div class="col-md-4 topMargin paddingRight">
+            <h3 class="section-heading bold">{{ .Params.headline }}</h3>
+            {{ with .Content }}
+                <p>{{ . | markdownify }}</p>
+            {{ end }}
+          </div>
           {{ end }}
+
           {{ with .Site.GetPage "/Commercial.md" }}
-            <div class="col-md-4 topMargin">
+            <div class="col-md-4 topMargin paddingRight">
                 <h3 class="section-heading bold">{{ .Params.headline }}</h3>
                 {{ with .Content }}
                     <p>{{ . | markdownify }}</p>
@@ -36,14 +37,16 @@
             </div>
           {{ end }}
 
-            {{ with .Site.GetPage "/TRUST.md" }}
-            <div class="col-md-4 topMargin">
-              <h3 class="section-heading bold">{{ .Params.headline }}</h3>
-              {{ with .Content }}
-                  <p>{{ . | markdownify }}</p>
-              {{ end }}
+          {{ with .Site.GetPage "/Free.md" }}
+            <div class="col-md-4 topMargin paddingRight">
+                <h3 class="section-heading bold">{{ .Params.headline }}</h3>
+                {{ with .Content }}
+                    <p>{{ . | markdownify }}</p>
+                {{ end }}
             </div>
-            {{ end }}
+          {{ end }}
+
+
           </div>
     </div>
 </section>

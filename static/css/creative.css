@@ -424,6 +424,11 @@ header .header-content .header-content-inner p {
   margin-top: 2em;
 }
 
+.paddingRight
+{
+  padding-right: 3em;
+}
+
 .community-box {
   background-color: #666;
 }
