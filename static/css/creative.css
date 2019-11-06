@@ -239,6 +239,11 @@ aside {
     padding: 0;
 }
 
+.navbar-default .nav > li>a,
+.navbar-default .nav > li>a:focus {
+        color: rgba(255,255,255,.9);
+}
+
 .navbar-default {
     border-color: rgba(34,34,34,.05);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
@@ -283,6 +288,9 @@ aside {
 .navbar-default .nav>li.active>a:focus:hover {
     background-color: transparent;
 }
+
+
+
 
 @media(min-width:768px) {
     .navbar-default {
@@ -371,7 +379,7 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    color: rgba(255,255,255,.85);
+    color: #f0f0f0;
 }
 
 @media(min-width:768px) {
