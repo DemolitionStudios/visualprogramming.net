@@ -88,7 +88,7 @@ home = [ "HTML", "RSS", "JSON"]
 		[params.Showreel]
 		headline = "Showcase"
 		subline = "Projects in this showreel were realized mostly with vvvv beta in about the past 5 years."
-		vimeo = 351014907
+		vimeo = 371511910
 
 	#Community section
 	  [params.Community]
