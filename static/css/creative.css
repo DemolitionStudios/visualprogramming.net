@@ -431,13 +431,14 @@ header .header-content .header-content-inner p {
 
 #Community
 {
-  background-color: #fff;
+  background-color: #eee;
 }
 
 #Learn
 {
-  background-color: #eee;
+  background-color: #fff;
 }
+
 
 #Gallery
 {
@@ -447,6 +448,11 @@ header .header-content .header-content-inner p {
 #Gallery h2
 {
   color: #fff;
+}
+
+#Gallery .vimeoVideo
+{
+  box-shadow: 0px 5px 25px 7px rgba(0, 0, 0, 0.5);
 }
 
 .topMargin
@@ -548,7 +554,7 @@ header .header-content .header-content-inner p {
 
 .btn.onWhite
 {
-  background-color: #ddd;
+  background-color: #d0d0d0;
 }
 
 .btn.onWhite:hover

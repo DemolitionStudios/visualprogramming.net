@@ -95,7 +95,7 @@ home = [ "HTML", "RSS", "JSON"]
 		headline = "Community"
 
 		[[params.Community.list]]
-		img = "img/icons/Discourse-32x32.png"
+		img = "img/icons/Discourse-32x32_gray.png"
 		imgAlt = "vvvv Forum"
 		title = "Forum"
 		description = "Get answers to your questions or find them in existing discussions in the vvvv forum."
@@ -111,7 +111,7 @@ home = [ "HTML", "RSS", "JSON"]
 		text = "Open Riot"
 
 		[[params.Community.list]]
-		img = "img/icons/gettogether_logo_w_32x32.png"
+		img = "img/icons/gettogether_logo_w_32x32_gray.png"
 		imgAlt = "vvvv GetTogehter"
 		title = "Meetups"
 		description = "Join us for a meetup: real-world, in-person drinks and presentations around vvvv."

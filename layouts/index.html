@@ -14,6 +14,10 @@
             {{ partial "download.html" . }}
         {{ end }}
 
+        {{ if .Site.Params.Showreel }}
+          {{ partial "showreel.html" . }}
+        {{ end }}
+
         {{ if .Site.Params.Learn.list }}
             {{ partial "learn.html" . }}
         {{ end }}
@@ -24,11 +28,7 @@
 
         {{ if .Site.Params.Blog }}
           {{ partial "blog.html" . }}
-        {{ end }}
-
-        {{ if .Site.Params.Showreel }}
-          {{ partial "showreel.html" . }}
-        {{ end }}
+        {{ end }}  
 
         {{ if .Site.GetPage "/Licensing.md"}}
             {{ partial "licensing.html" . }}
