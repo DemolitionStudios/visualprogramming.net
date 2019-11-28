@@ -47,14 +47,14 @@ home = [ "HTML", "RSS", "JSON"]
 		# Ribbon
 		[params.Ribbon]
 		text 			= "PRELIMINARY"
-		tooltip 	= "Work in progress"
+		tooltip 	= "A unified website for both vvvv beta and vvvv gamma is still to come. For now find everything about vvvv gamma on this page and go to vvvv.org to learn about vvvv beta."
 
 		# Hero section
 		[params.Hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
 		slogan     = "vvvv"
-		subtitle   = "vvvv is a visual live-programming environment. It takes you from rapid prototyping to final production with a focus on creative coding, interaction design, physical computing, data visualization, computer vision and related fields.<p>	For your coding convenience it combines aspects of dataflow and object oriented programming. It can easily be extended by using any .NET library or writing C# code."
-		buttonText = "Try it out!"
+		subtitle   = "vvvv is a visual live-programming environment. It takes you from rapid prototyping to final production with a focus on creative coding, interaction design, physical computing, data visualization, computer vision and related fields.<p>For your coding convenience, vvvv combines aspects of dataflow and object-oriented programming. It can easily be extended with any .NET library or by writing C# code."
+		buttonText = "Try it!"
 		buttonLink = "Download"
 
 		# Download section
@@ -76,9 +76,9 @@ home = [ "HTML", "RSS", "JSON"]
 		description = "In preview since April 2019, vvvv gamma is the next generation of vvvv, entirely rewritten from scratch.<p>Recommended for:<p><tr><li>2d Graphics</li><li>Computer Vision</li><li>Devices and Protocols</li><li>Multithreading</li><li>Integration of .NET libraries</li><li>Creating Executables</li></tr>"
 
 		[params.Download.gamma.button]
-		text  = "Download gamma"
-		link = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:31068/artifacts/content/vvvv_gamma_2019.1.0-0930-g60a3dd6ea9_setup.exe"
-		version = "(Version: preview 930)"
+		text  = "Download"
+		link = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:31292/artifacts/content/vvvv_gamma_2019.1.0-0975-gbe94390fc5_setup.exe"
+		version = "(Version: preview 975)"
 		target = "_self"
 
 		#Blog section
@@ -87,7 +87,8 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.Showreel]
 		headline = "Showcase"
-		vimeo = 351014907
+		subline = "Projects in this showreel were realized mostly with vvvv beta within the past few years."
+		vimeo = 371511910
 
 	#Community section
 	  [params.Community]
@@ -124,32 +125,32 @@ home = [ "HTML", "RSS", "JSON"]
 
 			[[params.Learn.list]]
 			icon = "fa-eye"
-			title = "Tutorials"
-			description = "Tutorials are step-by-step guides that take you from scratch to a specified goal."
+			title = "Tutorial Videos"
+			description = "Beginners start here: Get a feeling for working with vvvv."
 			link = "https://www.youtube.com/playlist?list=PLBTgwgsWWcT_VMMrwsy3Ao7_ubazEGL4s"
 			text = "Open Tutorials"
 
 			[[params.Learn.list]]
 			headline = "HowTos"
       icon = "fa-lightbulb-o"
-      title = "HowTos"
-      description = "How-To guides show how to solve a specific problem in a series of steps."
+      title = "HowTo Videos"
+      description = "Specific questions answered step-by-step."
 			link = "https://www.youtube.com/playlist?list=PLBTgwgsWWcT-G9lk-IlKLkGZJ9NnXcuBV"
 			text = "Open HowTos"
 
       [[params.Learn.list]]
-			icon = "fa fa-bolt"
-			title = "Explanation"
-			description = "Here we explain the bigger picture providing background and context."
-			link = "https://vvvv.gitbooks.io/the-gray-book/content/en/"
-			text = "Open Explanation"
-
-			[[params.Learn.list]]
       icon = "fa-book"
       title = "Reference"
-      description = "The reference guide comprises of technical descriptions of the innards of vvvv."
+      description = "The manual: Technical descriptions of vvvv in detail."
 			link = "https://vvvv.gitbooks.io/the-gray-book/content/en/reference.html"
 			text = "Open Reference"
+
+			[[params.Learn.list]]
+			icon = "fa fa-bolt"
+			title = "Explanations"
+			description = "The bigger picture: Providing background and context."
+			link = "https://vvvv.gitbooks.io/the-gray-book/content/en/"
+			text = "Open Explanation"
 
 	# Contact section
 		[params.contact]
