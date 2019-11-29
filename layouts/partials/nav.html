@@ -22,17 +22,17 @@
                 <li>
                     <a class="page-scroll noUnderline" href="#{{ .Site.Params.navigation.links.download }}">{{ .Site.Params.navigation.links.download }}</a>
                 </li>
+                {{ if or .Site.Params.Blog .Site.Params.Showreel}}
+                  <li>
+                      <a class="page-scroll noUnderline" href="#Gallery">{{ .Site.Params.navigation.links.gallery }}</a>
+                  </li>
+                {{ end }}
                 <li>
                     <a class="page-scroll noUnderline" href="#{{ .Site.Params.navigation.links.learn }}">{{ .Site.Params.navigation.links.learn }}</a>
                 </li>
                 <li>
                     <a class="page-scroll noUnderline" href="#{{ .Site.Params.navigation.links.community }}">{{ .Site.Params.navigation.links.community }}</a>
                 </li>
-                {{ if or .Site.Params.Blog .Site.Params.Showreel}}
-                  <li>
-                      <a class="page-scroll noUnderline" href="#Gallery">{{ .Site.Params.navigation.links.gallery }}</a>
-                  </li>
-                {{ end }}
                 <li>
                     <a class="page-scroll noUnderline" href="#{{ .Site.Params.navigation.links.licensing }}">{{ .Site.Params.navigation.links.licensing }}</a>
                 </li>

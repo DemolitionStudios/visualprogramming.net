@@ -38,9 +38,9 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.navigation.links]
 		download  = "Download"
+		gallery		= "Showcase"
 		Learn		  = "Learn"
 		community	= "Community"
-		gallery		= "Showcase"
 		licensing = "Licensing"
 		contact   = "Contact"
 
