@@ -38,9 +38,9 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.navigation.links]
 		download  = "Download"
+		gallery		= "Showcase"
 		Learn		  = "Learn"
 		community	= "Community"
-		gallery		= "Showcase"
 		licensing = "Licensing"
 		contact   = "Contact"
 
@@ -77,8 +77,8 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.Download.gamma.button]
 		text  = "Download"
-		link = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:31292/artifacts/content/vvvv_gamma_2019.1.0-0975-gbe94390fc5_setup.exe"
-		version = "(Version: preview 975)"
+		link = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:31715/artifacts/content/vvvv_gamma_2019.2.0-0321-gbd3313bfcc_setup.exe"
+		version = "(Version: 2019.2 preview 0321)"
 		target = "_self"
 
 		#Blog section
