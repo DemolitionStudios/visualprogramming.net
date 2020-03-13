@@ -1,0 +1,32 @@
+headline = "Live Visual Programming - how does it feel"
+
+[[feature]]
+headline = "Inspect your data while the program is running"
+img = "img/HowDoesItFeel.png"
+
+[[feature]]
+headline = "Import any of >100k .NET nugets during runtime"
+
+[[feature]]
+headline = "Extend your application with C# while it is running"
+
+[[feature]]
+headline = "Design and modify your Datatypes while the program is running"
+
+[[feature]]
+headline = "Refactor your program without stopping it"
+
+[[feature]]
+headline = "Handle errors while the program keeps running"
+
+[[feature]]
+headline = "Export your program while it is running"
+
+[[feature]]
+headline = "Profile the execution time of your program"
+
+[[feature]]
+headline = "Interactive help integration"
+
+[[feature]]
+headline = "Interactive help integration"
