@@ -714,6 +714,7 @@ fieldset[disabled] .btn-default.active {
     border-color: #ed431f;
     color: #fff;
     background-color: #ee4b28;
+    box-shadow: none;
 }
 
 .btn-primary:active,
