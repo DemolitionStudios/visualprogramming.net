@@ -3,30 +3,133 @@ headline = "Live Visual Programming - how does it feel"
 [[feature]]
 headline = "Inspect your data while the program is running"
 img = "img/HowDoesItFeel.png"
+description = "Inspect your data while the program is running"
 
 [[feature]]
 headline = "Import any of >100k .NET nugets during runtime"
+description = "Inspect your data while the program is running"
 
 [[feature]]
 headline = "Extend your application with C# while it is running"
+description = "Inspect your data while the program is running"
 
 [[feature]]
 headline = "Design and modify your Datatypes while the program is running"
+description = "Inspect your data while the program is running"
 
 [[feature]]
 headline = "Refactor your program without stopping it"
+description = "Inspect your data while the program is running"
 
 [[feature]]
 headline = "Handle errors while the program keeps running"
+description = "Inspect your data while the program is running"
 
 [[feature]]
 headline = "Export your program while it is running"
+description = "Inspect your data while the program is running"
 
 [[feature]]
 headline = "Profile the execution time of your program"
+description = "Inspect your data while the program is running"
 
 [[feature]]
 headline = "Interactive help integration"
+description = "Inspect your data while the program is running"
 
-[[feature]]
-headline = "Interactive help integration"
+[language]
+
+  headline = "The visual language"
+
+  [[language.feature]]
+  headline = "Statically typed"
+
+  [[language.feature]]
+  headline = "Generics aka parametric polymorphism (with bounded quantification)"
+
+  [[language.feature]]
+  headline = "Combines features of dataflow and object oriented programming"
+
+  [[language.feature]]
+  headline = "Adaptive Nodes aka adhoc polymorphism"
+
+  [[language.feature]]
+  headline = "Interfaces aka subtype polymorphism"
+
+  [[language.feature]]
+  headline = "Automagic type inference"
+
+  [[language.feature]]
+  headline = "First class support for mutable and immutable datatypes"
+
+  [[language.feature]]
+  headline = "Strict evaluation"
+
+  [[language.feature]]
+  headline = "Reactive/Async programming"
+
+  [[language.feature]]
+  headline = "Easy multithreading"
+
+  [[language.feature]]
+  headline = "Process nodes aka simple lifetime management"
+
+  [[language.feature]]
+  headline = "Regions aka visual code blocks (loops, if, delegates, ...)"
+
+  [[language.feature]]
+  headline = "Compiles to C# using Roslyn"
+
+  [[language.feature]]
+  headline = "Consumes any .NET assembly by providing all methods as nodes"
+
+[libraries]
+
+    headline = "Libraries"
+
+    [[libraries.feature]]
+    headline = "core: 2d drawing: pixels or normalized, GPU accelerated, svg, pdf export, serialization,...json, xml..."
+
+    [[libraries.feature]]
+    headline = "supported protocols: osc, midi, dmx, artnet, firmata, udp, rcp, http, websocket,..netmq, mqtt"
+
+    [[libraries.feature]]
+    headline = "hardware: kinect, realsense, orbbec, nuitrack,...leap, uEye"
+
+    [[libraries.feature]]
+    headline = "user contribs: ui lib, timeline "
+
+    [[libraries.feature]]
+    headline = "access >100k .NET packages"
+
+    [[libraries.feature]]
+    headline = "audio/video"
+
+[hde]
+
+    headline = "HDE"
+
+    [[hde.feature]]
+    headline = "zoom, pan"
+
+    [[hde.feature]]
+    headline = "autobackup"
+
+    [[hde.feature]]
+    headline = "nodebrowser"
+
+    [[hde.feature]]
+    headline = "extendable: patch your own tooltips"
+
+    [[hde.feature]]
+    headline = "reference documents, nugets"
+
+[future]
+
+    headline = "Coming later this year"
+
+    [[future.feature]]
+    headline = "Integration of the Xenko 3d Engine"
+
+    [[future.feature]]
+    headline = ".Net Core export"

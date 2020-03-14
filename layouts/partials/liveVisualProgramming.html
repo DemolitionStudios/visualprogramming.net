@@ -12,28 +12,29 @@
     {{ end }}
     <div class="container">
         <div class="row">
-            <div class="col-md-8 text-left topMargin">
-              <ul>
-                {{ range .feature }}
-                <li>{{ .headline }}</li>
-                <img src="{{ .img }}"/>
-                {{ end }}
-              </ul>
-            </div>
-
             <div id="liveCarousel">
               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  {{ range $index, $element := .feature }}
+                    <li data-target="#carouselExampleIndicators" data-slide-to="{{ $index }}" class="{{ if eq $index 1 }} active {{ end }}"></li>
+                  {{ end }}
                 </ol>
-
                 <div class="carousel-inner">
                   {{ range $index, $element := .feature }}
-                    <div class="carousel-item {{ if $index eq 1 }} active {{ end }}">
-                      {{ $element.headline }}
-                      <img src="{{ .img }}" class="d-block w-100" alt="...">
+                    <div class="carousel-item {{ if eq $index 1 }} active {{ end }}">
+                      <div class="feature">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-3 offset-md-2">
+                              <img src="img/HowDoesItFeel.png" alt="..." class="img-fluid">
+                            </div>
+                            <div class="col-md-5">
+                              <h5>{{ $element.headline }}</h5>
+                              <p>{{ $element.description }}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   {{ end }}
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -46,10 +47,84 @@
                 </a>
               </div>
             </div>
-
         </div>
+      </div>
+
+      <br>
+      <br>
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2 text-center">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#featuresModal">
+            See all at once
+          </button>
+        </div>
+        <div class="col col-lg-2 text-center">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#featuresModal">
+            More Details
+          </button>
+        </div>
+      </div>
+
     </div>
 
+<!-- MODAL WINDOW -->
+  <div class="modal" id="featuresModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Top Features</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
 
-
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-language" role="tab" aria-controls="v-pills-home" aria-selected="true">{{ .language.headline }}</a>
+                  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-libraries" role="tab" aria-controls="v-pills-profile" aria-selected="false">{{ .libraries.headline }}</a>
+                  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-hde" role="tab" aria-controls="v-pills-profile" aria-selected="false">{{ .hde.headline }}</a>
+                  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-future" role="tab" aria-controls="v-pills-profile" aria-selected="false">{{ .future.headline }}</a>
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-language" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                      <ul>
+                        {{ range .language.feature }}
+                        <li>{{ .headline }}</li>
+                        {{ end }}
+                      </ul>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-libraries" role="tabpanel" aria-labelledby="v-pills-libraries-tab">
+                      <ul>
+                        {{ range .libraries.feature }}
+                        <li>{{ .headline }}</li>
+                        {{ end }}
+                      </ul>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-hde" role="tabpanel" aria-labelledby="v-pills-hde-tab">
+                      <ul>
+                        {{ range .hde.feature }}
+                        <li>{{ .headline }}</li>
+                        {{ end }}
+                      </ul>
+                    </div>
+                  <div class="tab-pane fade" id="v-pills-future" role="tabpanel" aria-labelledby="v-pills-future-tab">
+                      <ul>
+                        {{ range .future.feature }}
+                        <li>{{ .headline }}</li>
+                        {{ end }}
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

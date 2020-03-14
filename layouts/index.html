@@ -33,10 +33,6 @@
             {{ partial "liveVisualProgramming.html" . }}
           {{ end }}
 
-          {{ with .Site.Data.TopFeatures}}
-              {{ partial "topFeatures.html" . }}
-          {{ end }}
-
           {{ if .Site.GetPage "/Licensing.md"}}
               {{ partial "licensing.html" . }}
           {{ end }}
