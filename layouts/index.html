@@ -9,7 +9,7 @@
               {{ partial "hero.html" . }}
           {{ end }}
 
-          {{ with .Site.Data.LiveVisualProgramming }}
+          {{ if .Site.Data.LiveVisualProgramming }}
             {{ partial "liveVisualProgramming.html" . }}
           {{ end }}
 

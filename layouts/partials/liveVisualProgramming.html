@@ -1,5 +1,6 @@
 {{ "<!-- Live Visual Programming -->" | safeHTML }}
 <section id="LiveVisualProgramming">
+    {{with .Site.Data.LiveVisualProgramming}}
     {{ with .headline }}
         <div class="container">
             <div class="row">
@@ -16,7 +17,7 @@
               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="60000">
                 <ol class="carousel-indicators">
                   {{ range $index, $element := .feature }}
-                    <li data-target="#carouselExampleIndicators" data-slide-to="{{ $index }}" class="{{ if eq $index 1 }} active {{ end }}"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="{{ $index }}" class="{{ if eq $index 0 }} active {{ end }}"></li>
                   {{ end }}
                 </ol>
                 <div class="carousel-inner">
@@ -28,7 +29,7 @@
                             <div class="col-md-5 offset-md-1">
                               <!-- <img src="img/HowDoesItFeel.png" alt="..." class="img-fluid"> -->
                               <div align="center" class="embed-responsive embed-responsive-16by9 video">
-                                  <video autoplay loop class="embed-responsive-item" controls>
+                                  <video autoplay class="embed-responsive-item" controls>
                                       <source src="videos/FastToIterate.mp4" type="video/mp4">
                                   </video>
                               </div>
@@ -92,54 +93,48 @@
               </div>
               <div class="col-9">
                 <div class="tab-content" id="v-pills-tabContent">
-                  <div class="tab-pane fade show active" id="v-pills-features" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                  <div class="tab-pane fade show active" id="v-pills-features" role="tabpanel" aria-labelledby="v-pills-features-tab">
                       <div class="container">
                       {{ range $index, $element := .feature }}
                               <div class="row">
                                 <div class="col-md-5 offset-md-1">
                                   <!-- <img src="img/HowDoesItFeel.png" alt="..." class="img-fluid"> -->
                                   <div align="center" class="embed-responsive embed-responsive-16by9">
-                                      <video loop class="embed-responsive-item" controls>
+                                      <video class="embed-responsive-item" controls>
                                           <source src="videos/FastToIterate.mp4" type="video/mp4">
                                       </video>
                                   </div>
                                 </div>
                                 <div class="col-md-5">
                                   <h3><strong>{{ $element.headline }}</strong></h3>
-                                  <p>{{ $element.description }}</p>
+                                  <p>{{ (replace $element.description "\n" "<br/>") | safeHTML }}</p>
                                 </div>
                               </div>
                               <hr/>
                       {{ end }}
                     </div>
                   </div>
-                  <div class="tab-pane fade show" id="v-pills-language" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                      <ul>
-                        {{ range .language.feature }}
-                        <li>{{ .headline }}</li>
-                        {{ end }}
-                      </ul>
+                  {{ end }}
+
+                  <div class="tab-pane fade show" id="v-pills-language" role="tabpanel" aria-labelledby="v-pills-language-tab">
+                    {{ with .Site.GetPage "/Language.md" }}
+                        {{ .Content }}
+                    {{ end }}
                   </div>
                   <div class="tab-pane fade" id="v-pills-libraries" role="tabpanel" aria-labelledby="v-pills-libraries-tab">
-                      <ul>
-                        {{ range .libraries.feature }}
-                        <li>{{ .headline }}</li>
-                        {{ end }}
-                      </ul>
+                    {{ with .Site.GetPage "/Libraries.md" }}
+                        {{ .Content }}
+                    {{ end }}
                   </div>
                   <div class="tab-pane fade" id="v-pills-hde" role="tabpanel" aria-labelledby="v-pills-hde-tab">
-                      <ul>
-                        {{ range .hde.feature }}
-                        <li>{{ .headline }}</li>
-                        {{ end }}
-                      </ul>
+                    {{ with .Site.GetPage "/HDE.md" }}
+                        {{ .Content }}
+                    {{ end }}
                     </div>
                   <div class="tab-pane fade" id="v-pills-future" role="tabpanel" aria-labelledby="v-pills-future-tab">
-                      <ul>
-                        {{ range .future.feature }}
-                        <li>{{ .headline }}</li>
-                        {{ end }}
-                      </ul>
+                    {{ with .Site.GetPage "/Future.md" }}
+                        {{ .Content }}
+                    {{ end }}
                   </div>
                 </div>
               </div>
