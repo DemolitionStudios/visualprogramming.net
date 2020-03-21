@@ -1,10 +1,10 @@
-headline = "Live Visual Programming - how does it feel"
-modalWindowTitle = "Top Features"
+headline = "Overview"
+modalWindowTitle = "Overview"
 
 [[feature]]
 headline = "Visual"
 img = "img/HowDoesItFeel.png"
-description = "vvvv is a visual-first programming environment for the .NET ecosystem. It's language VL combines metaphors known from dataflow, functional and object oriented programming. No need to write any code, unless you really want to."
+description = "vvvv\nis a visual-first programming environment for the .NET ecosystem. It's language VL combines metaphors known from dataflow, functional and object oriented programming. No need to write any code, unless you really want to."
 
 [[feature]]
 headline = "Discoverable"

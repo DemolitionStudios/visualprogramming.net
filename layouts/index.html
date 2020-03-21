@@ -9,6 +9,10 @@
               {{ partial "hero.html" . }}
           {{ end }}
 
+          {{ with .Site.Data.LiveVisualProgramming }}
+            {{ partial "liveVisualProgramming.html" . }}
+          {{ end }}
+
           {{ if .Site.Params.Download }}
               {{ partial "download.html" . }}
           {{ end }}
@@ -27,10 +31,6 @@
 
           {{ if .Site.Params.Blog }}
             {{ partial "blog.html" . }}
-          {{ end }}
-
-          {{ with .Site.Data.LiveVisualProgramming }}
-            {{ partial "liveVisualProgramming.html" . }}
           {{ end }}
 
           {{ if .Site.GetPage "/Licensing.md"}}
