@@ -80,6 +80,16 @@ a:focus {
   color: #000;
 }
 
+#LiveVisualProgramming .modal-dialog .tab-content a
+{
+  color: #ffa800;
+}
+
+#LiveVisualProgramming .modal-dialog .tab-content .gray
+{
+  color: #888;
+}
+
 #LiveVisualProgramming .modal-dialog
 {
   max-width: inherit;

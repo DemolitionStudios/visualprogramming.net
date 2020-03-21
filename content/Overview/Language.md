@@ -3,7 +3,7 @@ title: The Visual Language
 ---
 
 * Statically <a href="http://vvvv.org" target="_blank">Typed</a>
-* Generics aka parametric polymorphism (with bounded quantification)
+* [Generics](http://vvvv.org) {{< gray "aka parametric polymorphism (with bounded quantification)" >}}
 * Combines features of dataflow and object oriented programming
 * Adaptive Nodes aka adhoc polymorphism
 * Interfaces aka subtype polymorphism
