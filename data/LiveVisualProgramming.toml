@@ -1,30 +1,30 @@
-headline = "Overview"
+headline = "Visual Live Programming with vvvv"
 modalWindowTitle = "Overview"
 
 [[feature]]
 headline = "Visual"
 img = "img/HowDoesItFeel.png"
-description = "vvvv\nis a visual-first programming environment for the .NET ecosystem. It's language VL combines metaphors known from dataflow, functional and object oriented programming. No need to write any code, unless you really want to."
+description = "vvvv is a visual-first live programming environment for the .NET ecosystem. It's language VL combines metaphors known from dataflow, functional and object oriented programming.\n\nThere is no need to write any code, unless you really want to."
 
 [[feature]]
-headline = "Discoverable"
+headline = "Live"
 img = "img/HowDoesItFeel.png"
-description = "vvvv comes with a focus on explorability. Tutorial- and HowTo-videos and tons of examples guide you the way. Our chat rooms and discussion forum are open 24/7. "
+description = "vvvv has one mode: Runtime. You modify your program while it is running, compilation happens in the background.\n\nWith its state hot-reload technology, vvvv saves you precious time by never forcing you to restart the program only to see the effects of changes you make."
 
 [[feature]]
-headline = "Fast to Iterate"
+headline = "Fast"
 img = "img/HowDoesItFeel.png"
-description = "vvvv has one main mode: Runtime. Modify your program while it is running, compilation happens in the background. Its state hot-reload technology saves you from having to restart the program "
-
-[[feature]]
-headline = "Efficient"
-img = "img/HowDoesItFeel.png"
-description = "Your programs are compiled and run on the .NET virtual machine. Optimization is in your hands. You decide which parts of a program run on separate threads. "
+description = "vvvv programs are compiled and run on the .NET virtual machine. Optimization is in your hands. You decide which parts of a program run on separate threads."
 
 [[feature]]
 headline = "Extendable"
 img = "img/HowDoesItFeel.png"
-description = "vvvv comes with support for most common hardware and IO protocols. It can consume almost any .NET library and can be extended by writing C# code."
+description = "vvvv comes with support for most common hardware and IO protocols. It can consume almost any .NET library from nuget.org and if that's not enough you can extended it by writing C# code. No proprietary plugin-wrapping code necessary, just pure C#."
+
+[[feature]]
+headline = "Discoverable"
+img = "img/HowDoesItFeel.png"
+description = "vvvv comes with a focus on explorability. Tutorial- and HowTo-videos and tons of examples guide you the way.\n\nIf you need a hand, join us for a chat or ask a question in our forums, which are both open 24/7. "
 
 [[feature]]
 headline = "Proven"
