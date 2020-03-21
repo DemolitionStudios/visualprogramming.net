@@ -1,41 +1,35 @@
 headline = "Live Visual Programming - how does it feel"
+modalWindowTitle = "Top Features"
 
 [[feature]]
-headline = "Inspect your data while the program is running"
+headline = "Visual"
 img = "img/HowDoesItFeel.png"
-description = "Inspect your data while the program is running"
+description = "vvvv is a visual-first programming environment for the .NET ecosystem. It's language VL combines metaphors known from dataflow, functional and object oriented programming. No need to write any code, unless you really want to."
 
 [[feature]]
-headline = "Import any of >100k .NET nugets during runtime"
-description = "Inspect your data while the program is running"
+headline = "Discoverable"
+img = "img/HowDoesItFeel.png"
+description = "vvvv comes with a focus on explorability. Tutorial- and HowTo-videos and tons of examples guide you the way. Our chat rooms and discussion forum are open 24/7. "
 
 [[feature]]
-headline = "Extend your application with C# while it is running"
-description = "Inspect your data while the program is running"
+headline = "Fast to Iterate"
+img = "img/HowDoesItFeel.png"
+description = "vvvv has one main mode: Runtime. Modify your program while it is running, compilation happens in the background. Its state hot-reload technology saves you from having to restart the program "
 
 [[feature]]
-headline = "Design and modify your Datatypes while the program is running"
-description = "Inspect your data while the program is running"
+headline = "Efficient"
+img = "img/HowDoesItFeel.png"
+description = "Your programs are compiled and run on the .NET virtual machine. Optimization is in your hands. You decide which parts of a program run on separate threads. "
 
 [[feature]]
-headline = "Refactor your program without stopping it"
-description = "Inspect your data while the program is running"
+headline = "Extendable"
+img = "img/HowDoesItFeel.png"
+description = "vvvv comes with support for most common hardware and IO protocols. It can consume almost any .NET library and can be extended by writing C# code."
 
 [[feature]]
-headline = "Handle errors while the program keeps running"
-description = "Inspect your data while the program is running"
-
-[[feature]]
-headline = "Export your program while it is running"
-description = "Inspect your data while the program is running"
-
-[[feature]]
-headline = "Profile the execution time of your program"
-description = "Inspect your data while the program is running"
-
-[[feature]]
-headline = "Interactive help integration"
-description = "Inspect your data while the program is running"
+headline = "Proven"
+img = "img/HowDoesItFeel.png"
+description = "VL combines 20 years of practical experience with visual programming and latest developments in language design."
 
 [language]
 

@@ -77,12 +77,24 @@ a:focus {
 #LiveVisualProgramming .modal-dialog a
 {
   border: none;
-  color: #ffa800;
+  color: #000;
 }
 
 #LiveVisualProgramming .modal-dialog
 {
   max-width: inherit;
+}
+
+#LiveVisualProgramming .modal-content
+{
+  min-height: 550px;
+}
+
+#LiveVisualProgramming .modal-dialog hr {
+  margin: 1rem 0rem;
+  max-width: none;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #LiveVisualProgramming
@@ -97,9 +109,8 @@ a:focus {
 
 #liveCarousel
 {
-  padding: 1.5rem 0rem 0rem;
-  margin-right: 0;
-  margin-left: 0;
+  padding: 0rem;
+  margin: 0rem;
   border-width: .2rem;
   position: relative;
   width: 100%;
@@ -108,8 +119,8 @@ a:focus {
 
 #liveCarousel .feature
 {
-  padding: 2rem 0rem;
-  height: 350px;
+  /* padding: 2rem 0rem; */
+  margin: 2rem 0rem 4rem;
   color: #fff;
 }
 
@@ -120,12 +131,13 @@ a:focus {
 
 #liveCarousel p
 {
-  color: #aaa;
+  color: #bbb;
   margin-top: 1em;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
-#liveCarousel img
+#liveCarousel .video
 {
   box-shadow: 0px 5px 25px 7px rgba(0, 0, 0, 0.3);
 }
