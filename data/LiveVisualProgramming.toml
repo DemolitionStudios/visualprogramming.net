@@ -1,4 +1,4 @@
-headline = "Visual Live Programming with vvvv"
+headline = "Live Visual Programming with vvvv"
 modalWindowTitle = "Overview"
 
 [[feature]]
@@ -29,7 +29,7 @@ description = "vvvv can be extended with custom nodes written in pure C#. No pro
 [[feature]]
 headline = "Proven To Perform"
 img = "img/HowDoesItFeel.png"
-description = "vvvv initial release was in 2002 and it has since been used in countless live-shows and permanent installations built by people around the world.\n\nThe latest version, available since April 2020, builds on years of practical experience and user-feedback. "
+description = "vvvv's initial release was in 2002 and it has since been used in countless live-shows and permanent installations built by people around the world.\n\nThe latest version, available since April 2020, builds on years of practical experience and user-feedback and facilitates the creation of more complex and stable applications."
 
 [[feature]]
 headline = "Built To Be Learned"

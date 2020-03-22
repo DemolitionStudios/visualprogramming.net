@@ -2,6 +2,7 @@
 title: Libraries
 ---
 
+### Available nodes
 * Core library with support for serialization, File IO, XML, JSON, ...
 * GPU accelerated 2d drawing based on [SkiaSharp](https://github.com/mono/SkiaSharp) with SVG and PDF export
 * Computer vision based on [OpenCVSharp](https://github.com/shimat/opencvsharp/)

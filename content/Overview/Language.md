@@ -1,7 +1,7 @@
 ---
 title: The Visual Language
 ---
-
+### VL
 * Combines metaphors known from dataflow, functional and object oriented programming
 * Statically typed
 * Strictly evaluated
