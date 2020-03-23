@@ -1,5 +1,5 @@
 ---
-title: The Visual Language
+title: Language
 id: 0
 ---
 ### VL
