@@ -1,7 +1,9 @@
 ---
-title: Fast
-id: 2
+title: Surprisingly Fast
+id: 1
 video: videos/FastToIterate.mp4
 ---
 
-vvvv programs are compiled and run on the .NET virtual machine. Optimization is in your hands. You decide which parts of a program run on separate threads.
+vvvv programs are compiled and run on the .NET virtual machine. As such they are as fast as if you'd write them in C#.
+
+Want to use all the cores of your CPU? With VL it requires no rocket science to have parts of your program run on separate threads.
