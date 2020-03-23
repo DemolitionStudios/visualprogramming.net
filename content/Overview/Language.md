@@ -2,18 +2,18 @@
 title: The Visual Language
 id: 0
 ---
-
-* Statically <a href="http://vvvv.org" target="_blank">Typed</a>
-* [Generics](http://vvvv.org) {{< gray "aka parametric polymorphism (with bounded quantification)" >}}
-* Combines features of dataflow and object oriented programming
-* Adaptive Nodes aka adhoc polymorphism
-* Interfaces aka subtype polymorphism
+### VL
+* Combines metaphors known from dataflow, functional and object oriented programming
+* Statically typed
+* Strictly evaluated
 * Automagic type inference
-* First class support for mutable and immutable datatypes
-* Strict evaluation
+* First class support for both mutable and immutable datatypes
+* Regions {{< gray "aka visual code blocks (loops, if, delegates, ...)" >}}
+* Interfaces {{< gray "aka subtype polymorphism" >}}
+* Generics {{< gray "aka parametric polymorphism (with bounded quantification)" >}}
+* Process nodes {{< gray "aka simple lifetime management" >}}
+* Adaptive nodes {{< gray "aka adhoc polymorphism" >}}
 * Reactive/Async programming
 * Easy multithreading
-* Process nodes aka simple lifetime management
-* Regions aka visual code blocks (loops, if, delegates, ...)
 * Compiles to C# using Roslyn
 * Consumes any .NET assembly by providing all methods as nodes
