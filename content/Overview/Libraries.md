@@ -1,5 +1,6 @@
 ---
 title: Libraries
+id: 1
 ---
 
 * core: 2d drawing: pixels or normalized, GPU accelerated, svg, pdf export, serialization,...json, xml...

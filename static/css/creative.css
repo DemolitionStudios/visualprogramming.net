@@ -90,6 +90,11 @@ a:focus {
   color: #888;
 }
 
+#liveCarousel .gray
+{
+  color: #888;
+}
+
 #LiveVisualProgramming .modal-dialog
 {
   max-width: inherit;

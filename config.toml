@@ -18,13 +18,6 @@ home = [ "HTML", "RSS", "JSON"]
 	# for more icons. The icons are represented by their corresponding
 	# CSS class.
 
-	# All projects of the portfolio are defined in their own files.
-	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
-	# folder into the 'data' directory at the root of this Hugo site.
-	# For more information take a look at the README.
-
-	# To provide some metadata for search engines feel free to add some
-	# information about you and your website.
 	name = "visualprogramming.net - vvvv gamma"
 	description = "vvvv is a visual programming environment for .NET"
 
@@ -57,8 +50,13 @@ home = [ "HTML", "RSS", "JSON"]
 		buttonText = "Try it!"
 		buttonLink = "Download"
 
-		# Download section
+		# Overview Section
+		[params.Overview]
+		headline = "Visual Live Programming with vvvv"
+		modalWindowTitle = "Overview"
 
+		# Download section
+		
 		[params.Download]
 		headline = "Download"
 
