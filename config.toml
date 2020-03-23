@@ -54,9 +54,10 @@ home = [ "HTML", "RSS", "JSON"]
 		[params.Overview]
 		headline = "Visual Live Programming with vvvv"
 		modalWindowTitle = "Overview"
+		modalFeaturesTitle = "Features"
 
 		# Download section
-		
+
 		[params.Download]
 		headline = "Download"
 

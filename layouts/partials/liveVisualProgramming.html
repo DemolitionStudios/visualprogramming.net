@@ -87,7 +87,7 @@
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
                   <!-- Features Menu -->
-                  <a class="nav-link active" id="v-pills-features-tab" data-toggle="pill" href="#v-pills-features" role="tab" aria-controls="v-pills-features" aria-selected="true">Features</a>
+                  <a class="nav-link active" id="v-pills-features-tab" data-toggle="pill" href="#v-pills-features" role="tab" aria-controls="v-pills-features" aria-selected="true">{{ .Site.Params.Overview.modalFeaturesTitle }}</a>
 
                   <!-- Overview Menu -->
                   {{ range $index, $seq := ((where .Site.RegularPages "Section" "Overview").ByParam "id") }}
