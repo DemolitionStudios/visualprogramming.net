@@ -85,16 +85,52 @@
             <div class="row">
               <div class="col-3">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                  <!-- Features Menu -->
+                  <a class="nav-link active" id="v-pills-features-tab" data-toggle="pill" href="#v-pills-features" role="tab" aria-controls="v-pills-features" aria-selected="true">Features</a>
+
+                  <!-- Overview Menu -->
                   {{ range $index, $seq := ((where .Site.RegularPages "Section" "Overview").ByParam "id") }}
-                    <a class="nav-link {{ if eq $index 0 }} active {{ end }}" id="v-pills-{{ .Params.id }}-tab" data-toggle="pill" href="#v-pills-{{ .Params.id }}" role="tab" aria-controls="v-pills-{{ .Params.id }}" aria-selected="{{ if eq $index 0 }} true {{ end }}">{{ .Title }}</a>
+                    <a class="nav-link" id="v-pills-{{ .Params.id }}-tab" data-toggle="pill" href="#v-pills-{{ .Params.id }}" role="tab" aria-controls="v-pills-{{ .Params.id }}" aria-selected="false">{{ .Title }}</a>
                   {{ end }}
                 </div>
               </div>
               <div class="col-9">
                <div class="tab-content" id="v-pills-tabContent">
+
+                 <!-- Features Tab -->
+                 <div class="tab-pane fade show active" id="v-pills-features" role="tabpanel" aria-labelledby="v-pills-features-tab">
+                    {{ range ((where .Site.RegularPages "Section" "TopFeatures").ByParam "id") }}
+                      <div class="row">
+                        <div class="col-md-5">
+                          {{ with .Params.img}}
+                            <img src="{{ . }}" class="img-fluid">
+                          {{ end }}
+                          {{ with .Params.video}}
+                          <div align="center" class="embed-responsive embed-responsive-16by9 video">
+                              <video autoplay class="embed-responsive-item" controls>
+                                  <source src="{{ . }}" type="video/mp4">
+                              </video>
+                          </div>
+                          {{ end }}
+                        </div>
+                        <div class="col-md-6">
+                          <h3><strong>{{ .Title }}</strong></h3>
+                          <p>{{- .Content -}}</p>
+                        </div>
+                      </div>
+                      <hr/>
+                    {{ end }}
+                 </div>
+
+                 <!-- Overview Tabs -->
                  {{ range $index, $seq := ((where .Site.RegularPages "Section" "Overview").ByParam "id") }}
-                   <div class="tab-pane fade {{ if eq $index 0 }}show active{{ end }}" id="v-pills-{{ .Params.id }}" role="tabpanel" aria-labelledby="v-pills-{{ .Params.id }}-tab">
-                      {{ .Content }}
+                   <div class="tab-pane fade" id="v-pills-{{ .Params.id }}" role="tabpanel" aria-labelledby="v-pills-{{ .Params.id }}-tab">
+                     <div class="row">
+                        <div class="col-md-12">
+                           {{ .Content }}
+                        </div>
+                      </div>
                   </div>
                 {{ end }}
                 </div>
