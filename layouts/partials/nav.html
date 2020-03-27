@@ -17,6 +17,9 @@
         <div class="collapse navbar-collapse" id="navbar-links">
             <ul class="navbar-nav nav ml-auto mr-2 pl-5">
                 <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger noUnderline" href="#{{ .Site.Params.navigation.links.features }}">{{ .Site.Params.navigation.links.features }}</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link js-scroll-trigger noUnderline" href="#{{ .Site.Params.navigation.links.download }}">{{ .Site.Params.navigation.links.download }}</a>
                 </li>
                 {{ if or .Site.Params.Blog .Site.Params.Showreel}}

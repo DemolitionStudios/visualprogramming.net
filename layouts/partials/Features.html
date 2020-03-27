@@ -1,5 +1,5 @@
 {{ "<!-- Live Visual Programming -->" | safeHTML }}
-<section id="LiveVisualProgramming">
+<section id="Features">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -21,9 +21,9 @@
                   {{ range ((where .Site.RegularPages "Section" "TopFeatures").ByParam "id") }}
                       <div class="carousel-item {{ if eq .Params.id 0 }} active {{ end }}">
                         <div class="feature">
-                          <div class="container">
+                          <div class="container-fluid">
                             <div class="row justify-content-center">
-                              <div class="col-9">
+                              <div class="col-9 col-lg-5">
                                 {{ with .Params.img}}
                                   <img src="{{ . }}" class="img-fluid">
                                 {{ end }}
@@ -35,14 +35,10 @@
                                 </div>
                                 {{ end }}
                               </div>
-                              <div class="col-9">
+                              <div class="col-9 col-lg-2 mt-3 mt-lg-0">
                                 <div class="row description">
-                                  <div class="col-md-3 align-top text-md-right">
-                                    <h4>{{ .Title }}</h4>
-                                  </div>
-                                  <div class="col-md-9 align-top">
-                                    <p>{{- .Content -}}</p>
-                                  </div>
+                                  <h4>{{ .Title }}</h4>
+                                  <p>{{- .Content -}}</p>
                                 </div>
                               </div>
                             </div>
@@ -62,14 +58,10 @@
             </div>
         </div>
       </div>
-
-      <br>
       <br>
       <div class="row justify-content-md-center">
-        <div class="col col-lg-2 text-center">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal">
-            Learn More
-          </button>
+        <div class="col col-lg-3 text-center">
+          <a href="#{{ .Site.Params.Hero.learnmoreButtonLink }}" class="btn btn-primary btn-xl" data-toggle="modal" data-target="#{{ .Site.Params.Overview.buttonLink }}">{{ .Site.Params.Overview.button }}</a>
         </div>
       </div>
     </div>
@@ -88,55 +80,35 @@
         <div class="modal-body">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-3">
+              <div class="col-sm-3">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
                   <!-- Features Menu -->
                   <a class="nav-link active" id="v-pills-features-tab" data-toggle="pill" href="#v-pills-features" role="tab" aria-controls="v-pills-features" aria-selected="true">{{ .Site.Params.Overview.modalFeaturesTitle }}</a>
 
                   <!-- Overview Menu -->
-                  {{ $sections := (.Site.GetPage "Overview").Sections }}
+                  {{ $sections := ((.Site.GetPage "Overview").Sections).ByParam "id" }}
                   {{ range $index, $sections }}
-                    Hello
                     <a class="nav-link" id="v-pills-{{ .Params.id }}-tab" data-toggle="pill" href="#v-pills-{{ .Params.id }}" role="tab" aria-controls="v-pills-{{ .Params.id }}" aria-selected="false">{{ .Title }}</a>
                   {{ end }}
                 </div>
               </div>
+
               <div class="col-9">
                <div class="tab-content" id="v-pills-tabContent">
                  <!-- Features Tab -->
                  <div class="tab-pane fade show active" id="v-pills-features" role="tabpanel" aria-labelledby="v-pills-features-tab">
                     {{ range ((where .Site.RegularPages "Section" "TopFeatures").ByParam "id") }}
-                      <div class="row">
-                        <div class="col-md-6">
-                          <h3><strong>{{ .Title }}</strong></h3>
-                          <p>{{- .Content -}}</p>
-                        </div>
-                        <div class="col-md-4">
-                          {{ with .Params.img}}
-                            <img src="{{ . }}" class="img-fluid">
-                          {{ end }}
-                          {{ with .Params.video}}
-                          <div align="center" class="embed-responsive embed-responsive-16by9 video">
-                              <video autoplay class="embed-responsive-item" controls>
-                                  <source src="{{ . }}" type="video/mp4">
-                              </video>
-                          </div>
-                          {{ end }}
-                        </div>
-                      </div>
-                      <hr/>
+                      {{ partial "featureTab" .}}
                     {{ end }}
                  </div>
 
                  <!-- Overview Tabs -->
-                 {{ range $index, $seq := ((where .Site.RegularPages "Section" "Overview").ByParam "id") }}
+                 {{ range $index, $sections}}
                    <div class="tab-pane fade" id="v-pills-{{ .Params.id }}" role="tabpanel" aria-labelledby="v-pills-{{ .Params.id }}-tab">
-                     <div class="row">
-                        <div class="col-md-12">
-                           {{ .Content }}
-                        </div>
-                      </div>
+                     {{ range .RegularPages}}
+                        {{ partial "featureTab" .}}
+                     {{ end }}
                   </div>
                 {{ end }}
                 </div>

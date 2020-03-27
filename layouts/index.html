@@ -10,7 +10,7 @@
           {{ end }}
 
           {{ if .Site.Params.Overview }}
-            {{ partial "liveVisualProgramming.html" . }}
+            {{ partial "Features.html" . }}
           {{ end }}
 
           {{ if .Site.Params.Download }}
@@ -39,10 +39,6 @@
 
           {{ if .Site.Params.contact }}
               {{ partial "contact.html" . }}
-          {{ end }}
-
-          {{ range where .Site.Pages.ByWeight.Reverse "Section" "blog"}}
-              {{ partial "modals.html" . }}
           {{ end }}
         </div>
 

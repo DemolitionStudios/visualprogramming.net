@@ -68,24 +68,24 @@ a:focus {
   background-color: #555;
 }
 
-#LiveVisualProgramming .nav-link.active
+#Features .nav-link.active
 {
   background-color: #ffa800;
   color: #fff;
 }
 
-#LiveVisualProgramming .modal-dialog a
+#Features .modal-dialog a
 {
   border: none;
   color: #000;
 }
 
-#LiveVisualProgramming .modal-dialog .tab-content a
+#Features .modal-dialog .tab-content a
 {
   color: #ffa800;
 }
 
-#LiveVisualProgramming .modal-dialog .tab-content .gray
+#Features .modal-dialog .tab-content .gray
 {
   color: #888;
 }
@@ -95,29 +95,32 @@ a:focus {
   color: #888;
 }
 
-#LiveVisualProgramming .modal-dialog
+#Features .modal-dialog
 {
   max-width: inherit;
 }
 
-#LiveVisualProgramming .modal-content
+#Features .modal-content
 {
   min-height: 550px;
+  width: 80%;
+  top: 5%;
+  left: 10%;
 }
 
-#LiveVisualProgramming .modal-dialog hr {
+#Features .modal-dialog hr {
   margin: 1rem 0rem;
   max-width: none;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#LiveVisualProgramming
+#Features
 {
   background-color: #333;
 }
 
-#LiveVisualProgramming h2
+#Features h2
 {
   color: #fff;
 }
@@ -139,13 +142,12 @@ a:focus {
 
 #liveCarousel .feature .description
 {
-  margin: 0.8rem 0rem;
-  min-height: 120px;
+  margin: 0;
 }
 
 #liveCarousel .feature p
 {
-  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  /* font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif; */
   font-size: 1rem;
   margin: 0;
 }
@@ -349,7 +351,7 @@ aside {
 }
 
 .navbar-default {
-    border-bottom: 1px rgba(34,34,34,.05) solid;
+    border-bottom: 1px #eee solid;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     transition: all .35s;
     min-height: 60px;
@@ -409,11 +411,6 @@ aside {
 
 
 @media(min-width:768px) {
-    .navbar-default {
-        border-color: rgba(255,255,255,.3);
-        background-color: #fff;
-    }
-
     .navbar-default .navbar-header .navbar-brand {
         color: #666;
     }
@@ -470,6 +467,8 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    overflow: hidden;
+    top: 50px;
 }
 
 header .header-quad{

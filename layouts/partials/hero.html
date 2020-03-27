@@ -2,18 +2,17 @@
 <header>
   <div class="header-content">
         <div class="header-quad">
-          <img src="/img/vvvv.svg" alt="vvvv" class="vvvv">
+          <img src="/img/vvvv.svg" alt="slogan" class="vvvv">
             <p>
-              A visual live-programming environment<br/>that takes you from rapid prototyping<br/>to final production.
+              {{.Site.Params.Hero.subtitle | markdownify}}
             </p>
-            <a href="#{{ .Site.Params.Hero.buttonLink }}" class="btn btn-primary btn-xl page-scroll">{{ .Site.Params.Hero.buttonText }}</a>
+            <a href="#{{ .Site.Params.Hero.learnmoreButtonLink }}" class="btn btn-primary btn-xl js-scroll-trigger">{{ .Site.Params.Hero.learnmoreButton }}</a>
+            <a href="#{{ .Site.Params.Hero.tryitButtonLink }}" class="btn btn-secondary btn-xl js-scroll-trigger">{{ .Site.Params.Hero.tryitButton }}</a>
             <div class="tags">
-              <p>It claims to be popular among the following:</p>
-              <div class="tag">#creativecoding</div>
-              <div class="tag">#interactiondesign</div>
-              <div class="tag">#physicalcomputing</div>
-              <div class="tag">#datavisualization</div>
-              <div class="tag">#computervision</div>
+              <p>{{ .Site.Params.Hero.tagsHeadline }}</p>
+              {{ range (split .Site.Params.Hero.tags ",")}}
+                <div class="tag">{{ . }}</div>
+              {{ end }}
             </div>
         </div>
     </div>

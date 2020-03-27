@@ -1,0 +1,20 @@
+{{ "<!-- BLOG -->" | safeHTML }}
+<div class="row">
+  <div class="col-lg-6">
+    <h3><strong>{{ .Title }}</strong></h3>
+    <p>{{- .Content -}}</p>
+  </div>
+  <div class="col-lg-5 offset-1">
+    {{ with .Params.img}}
+      <img src="{{ . }}" class="img-fluid">
+    {{ end }}
+    {{ with .Params.video}}
+    <div align="center" class="embed-responsive embed-responsive-16by9 video">
+        <video class="embed-responsive-item" controls>
+            <source src="{{ . }}" type="video/mp4">
+        </video>
+    </div>
+    {{ end }}
+  </div>
+</div>
+<hr/>

@@ -30,6 +30,7 @@ home = [ "HTML", "RSS", "JSON"]
 		brand 		= "visualprogramming.net"
 
 		[params.navigation.links]
+		features  = "Features"
 		download  = "Download"
 		gallery		= "Showcase"
 		Learn		  = "Learn"
@@ -38,23 +39,29 @@ home = [ "HTML", "RSS", "JSON"]
 		contact   = "Contact"
 
 		# Ribbon
-		[params.Ribbon]
-		text 			= "PRELIMINARY"
-		tooltip 	= "A unified website for both vvvv beta and vvvv gamma is still to come. For now find everything about vvvv gamma on this page and go to vvvv.org to learn about vvvv beta."
+		# [params.Ribbon]
+		# text 			= "PRELIMINARY"
+		# tooltip 	= "A unified website for both vvvv beta and vvvv gamma is still to come. For now find everything about vvvv gamma on this page and go to vvvv.org to learn about vvvv beta."
 
 		# Hero section
 		[params.Hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
 		slogan     = "vvvv"
-		subtitle   = "vvvv is a visual live-programming environment. It takes you from rapid prototyping to final production with a focus on creative coding, interaction design, physical computing, data visualization, computer vision and related fields.<p>For your coding convenience, vvvv combines aspects of dataflow and object-oriented programming. It can easily be extended with any .NET library or by writing C# code."
-		buttonText = "Try it!"
-		buttonLink = "Download"
+		subtitle   = "A visual live-programming environment<br/>that takes you from rapid prototyping<br/>to final production."
+		tryitButton = "Try it!"
+		tryitButtonLink = "Download"
+		learnmoreButton = "Learn More"
+		learnmoreButtonLink = "Features"
+		tagsHeadline = "It claims to be popular for:"
+		tags = "#creativecoding, #interactiondesign, #physicalcomputing, #datavisualization, #computervision"
 
 		# Overview Section
 		[params.Overview]
 		headline = "Visual Live Programming with vvvv"
 		modalWindowTitle = "Overview"
 		modalFeaturesTitle = "Features"
+		button = "More Details"
+		buttonLink = "Modal"
 
 		# Download section
 
