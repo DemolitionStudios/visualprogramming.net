@@ -1,5 +1,8 @@
-[markup.goldmark.renderer]
-unsafe= true
+[markup]
+	[markup.goldmark.renderer]
+	      hardWraps = false
+	      unsafe = true
+	      xhtml = false
 
 baseURL = "https://visualprogramming.net/"
 languageCode = "en-us"
