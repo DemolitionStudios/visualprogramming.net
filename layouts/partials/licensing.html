@@ -15,7 +15,7 @@
           <div class="col-md-4 topMargin paddingRight">
             <h3 class="section-heading bold">{{ .Params.headline }}</h3>
             {{ with .Content }}
-                <p>{{ . }}</p>
+                <p>{{ . | markdownify}}</p>
             {{ end }}
           </div>
           {{ end }}
@@ -24,7 +24,7 @@
             <div class="col-md-4 topMargin paddingRight">
                 <h3 class="section-heading bold">{{ .Params.headline }}</h3>
                 {{ with .Content }}
-                    <p>{{ . }}</p>
+                    <p>{{ . | markdownify}}</p>
                 {{ end }}
 
             {{ with .Site.GetPage "/Licensing/Buy.md" }}
@@ -38,7 +38,7 @@
             <div class="col-md-4 topMargin paddingRight">
                 <h3 class="section-heading bold">{{ .Params.headline }}</h3>
                 {{ with .Content }}
-                    <p>{{ . }}</p>
+                    <p>{{ . | markdownify }}</p>
                 {{ end }}
             </div>
           {{ end }}
