@@ -1,3 +1,6 @@
+[markup.goldmark.renderer]
+unsafe= true
+
 baseURL = "https://visualprogramming.net/"
 languageCode = "en-us"
 title = "Visualprogramming.net"
