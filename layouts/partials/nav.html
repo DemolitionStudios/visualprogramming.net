@@ -1,21 +1,21 @@
 {{ "<!-- NAVIGATION -->" | safeHTML }}
-<nav id="mainNav" class="navbar navbar-default fixed-top navbar-expand-md">
+<nav id="mainNav" class="navbar navbar-default fixed-top navbar-expand-lg">
     <div class="container-fluid">
         {{ "<!-- Brand and toggle get grouped for better mobile display -->" | safeHTML }}
-        <div class="navbar-header">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <div class="navbar navbar-light navbar-header">
             {{ with .Site.Params.navigation.brand }}
                 <a class="navbar-brand js-scroll-trigger noUnderline" href="#page-top">{{ . | markdownify }}</a>
             {{ end }}
             {{ with .Site.Params.Ribbon }}
               {{ partial "temporary.html" . }}
             {{ end }}
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
         {{ "<!-- Collect the nav links, forms, and other content for toggling -->" | safeHTML }}
         <div class="collapse navbar-collapse" id="navbar-links">
-            <ul class="nav justify-content-end ml-auto">
+            <ul class="navbar-nav nav ml-auto mr-2 pl-5">
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger noUnderline" href="#{{ .Site.Params.navigation.links.download }}">{{ .Site.Params.navigation.links.download }}</a>
                 </li>

@@ -1,17 +1,20 @@
 {{ "<!-- HEADER -->" | safeHTML }}
 <header>
   <div class="header-content">
-        <div class="header-content-inner">
-            {{ partial "vvvv.svg" }}
-            {{ if and .Site.Params.Hero.slogan .Site.Params.Hero.subtitle }}
-                <hr>
-            {{ end }}
-            {{ with .Site.Params.Hero.subtitle }}
-                <p>{{ . | markdownify }}</p>
-            {{ end }}
-
+        <div class="header-quad">
+          <img src="/img/vvvv.svg" alt="vvvv" class="vvvv">
+            <p>
+              A visual live-programming environment<br/>that takes you from rapid prototyping<br/>to final production.
+            </p>
             <a href="#{{ .Site.Params.Hero.buttonLink }}" class="btn btn-primary btn-xl page-scroll">{{ .Site.Params.Hero.buttonText }}</a>
-
+            <div class="tags">
+              <p>It claims to be popular among the following:</p>
+              <div class="tag">#creativecoding</div>
+              <div class="tag">#interactiondesign</div>
+              <div class="tag">#physicalcomputing</div>
+              <div class="tag">#datavisualization</div>
+              <div class="tag">#computervision</div>
+            </div>
         </div>
     </div>
 </header>
