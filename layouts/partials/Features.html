@@ -23,7 +23,7 @@
                         <div class="feature">
                           <div class="container-fluid">
                             <div class="row justify-content-center">
-                              <div class="col-9 col-lg-5">
+                              <div class="col-9 col-xl-5">
                                 {{ with .Params.img}}
                                   <img src="{{ . }}" class="img-fluid">
                                 {{ end }}
@@ -35,10 +35,10 @@
                                 </div>
                                 {{ end }}
                               </div>
-                              <div class="col-9 col-lg-2 mt-3 mt-lg-0">
+                              <div class="col-9 col-xl-3 mt-3 mt-xl-0">
                                 <div class="row description">
                                   <h4>{{ .Title }}</h4>
-                                  <p>{{- .Content -}}</p>
+                                  <p>{{ .Content  | markdownify }}</p>
                                 </div>
                               </div>
                             </div>
