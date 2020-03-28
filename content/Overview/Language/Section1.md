@@ -8,4 +8,4 @@ img:
 * Strictly evaluated
 * Regions {{< gray "aka visual code blocks (loops, if, delegates, ...)" >}}
 * Process nodes {{< gray "aka simple lifetime management" >}}
-* First class support for both mutable and immutable datatypes
+* Adaptive nodes {{< gray "aka adhoc polymorphism" >}}
