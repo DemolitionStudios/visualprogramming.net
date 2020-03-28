@@ -54,7 +54,7 @@ home = [ "HTML", "RSS", "JSON"]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
 		slogan     = "vvvv"
 		subtitle   = "A visual live-programming environment<br/>that takes you from rapid prototyping<br/>to final production."
-		tryitButton = "Try it!"
+		tryitButton = "Get it!"
 		tryitButtonLink = "Download"
 		learnmoreButton = "Learn More"
 		learnmoreButtonLink = "Features"
