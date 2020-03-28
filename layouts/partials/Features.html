@@ -106,7 +106,7 @@
                  <!-- Overview Tabs -->
                  {{ range $index, $sections}}
                    <div class="tab-pane fade" id="v-pills-{{ .Params.id }}" role="tabpanel" aria-labelledby="v-pills-{{ .Params.id }}-tab">
-                     {{ range .RegularPages}}
+                     {{ range (.RegularPages).ByParam "id"}}
                         {{ partial "featureTab" .}}
                      {{ end }}
                   </div>
