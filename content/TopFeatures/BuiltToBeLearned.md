@@ -1,7 +1,7 @@
 ---
 title: Built To Be Learned
 id: 6
-video: videos/FastToIterate.mp4
+video: videos/BuiltToBeLearned.mp4
 ---
 
 vvvv comes with a built-in HelpBrowser that gives you direct access to examples and explanations. A series of video tutorials provides you with the fundamentals in no time.

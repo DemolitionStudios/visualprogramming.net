@@ -1,7 +1,7 @@
 ---
 title: Open To Extend
 id: 4
-video: videos/FastToIterate.mp4
+img: img/OpenToExtend.png
 ---
 
 vvvv can be extended with custom nodes written in pure C#. No proprietary plugin-wrapping boilierplate code is needed.

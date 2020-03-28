@@ -1,7 +1,7 @@
 ---
 title: Ready To Connect
 id: 3
-video: videos/FastToIterate.mp4
+img: img/ReadyToConnect.png
 ---
 
 vvvv comes with support for many hardware devices, like the Serial Port, color and depth cameras,...
