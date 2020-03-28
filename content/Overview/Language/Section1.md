@@ -8,4 +8,4 @@ img: img/Lang_MultiParadigm.png
 * Strictly evaluated
 * Regions {{< gray "aka visual code blocks (loops, if, delegates, ...)" >}}
 * Process nodes {{< gray "aka simple lifetime management" >}}
-* Adaptive nodes {{< gray "aka ad-hoc polymorphism" >}}
+* Adaptive nodes {{< gray "aka adhoc polymorphism" >}}
