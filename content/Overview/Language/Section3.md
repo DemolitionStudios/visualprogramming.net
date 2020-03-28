@@ -1,7 +1,7 @@
 ---
-title: Supportive Runtime
+title: Supportive IDE
 id: 2
-img:
+img: img/Lang_SupportiveIDE.png
 ---
 
 * Runtime value inspection
