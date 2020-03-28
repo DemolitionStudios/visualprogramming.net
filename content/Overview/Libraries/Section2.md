@@ -1,8 +1,13 @@
 ---
-title: Section2
+title: Devices and IO Protocols
 id: 1
 img:
 ---
 
-* Computer vision based on [OpenCVSharp](https://github.com/shimat/opencvsharp/)
-* IO protocols: OSC, MIDI, DMX, ArtNet, Firmata, UDP, RCP, WebSocket, HTTP, ZMQ, MQTT, ...
+* SerialPort
+* Leap Motion
+* TheEyeTribe Eyetracker
+* Kinect v1, v2, Azure
+* Intel RealSense, Orbbec Astra, Nuitrack,
+* IDS-Imaging uEye cameras
+* OSC, MIDI, DMX, ArtNet, Firmata, UDP, RCP, WebSocket, HTTP, ZMQ, MQTT, ...

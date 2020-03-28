@@ -1,8 +1,11 @@
 ---
-title: Section1
+title: Core Libraries
 id: 0
 img:
 ---
 
-* Core library with support for serialization, File IO, XML, JSON, ...
-* GPU accelerated 2d drawing based on [SkiaSharp](https://github.com/mono/SkiaSharp) with SVG and PDF export
+* 2d and 3d math library with collision detection operations
+* Matrix Transformations
+* RGBA color operations
+* Serialization, async File IO, XML and JSON parsing and generation
+* 2d drawing (GPU accelerated) with SVG and PDF export based on [SkiaSharp](https://github.com/mono/SkiaSharp)

@@ -1,9 +1,10 @@
 ---
-title: Section3
+title: Supportive Runtime
 id: 2
 img:
 ---
 
+* Runtime value inspection
 * Reactive/Async programming
 * Easy multithreading
 * Compiles to C# using Roslyn
