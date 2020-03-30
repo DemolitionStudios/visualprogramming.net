@@ -1,7 +1,7 @@
 ---
 title: Upcoming
 id: 0
-img:
+img: img/Road_LiveCSharp.gif
 ---
 
-* ... other fancy stuff
+* C# Live Coding
