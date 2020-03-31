@@ -1,7 +1,7 @@
 ---
 title: Core Libraries
 id: 0
-img:
+img: img/Lib_CoreLib.png
 ---
 
 * 2d and 3d math library with collision detection operations

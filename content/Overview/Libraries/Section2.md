@@ -1,7 +1,7 @@
 ---
 title: Devices and IO Protocols
 id: 1
-img:
+img: img/ReadyToConnect.png
 ---
 
 * SerialPort
