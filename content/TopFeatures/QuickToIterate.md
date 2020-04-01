@@ -1,7 +1,7 @@
 ---
 title: Quick To Iterate
 id: 2
-video: videos/FastToIterate.mp4
+video: videos/QuickToIterate.mp4
 ---
 
 vvvv has one mode: Runtime. Modify your program while it is running, compilation happens in the background.
