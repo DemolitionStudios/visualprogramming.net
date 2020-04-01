@@ -5,47 +5,41 @@
     </head>
     <body id="page-top">
         {{ partial "nav" . }}
+          {{ if .Site.Params.hero }}
+              {{ partial "hero.html" . }}
+          {{ end }}
 
-        {{ if .Site.Params.hero }}
-            {{ partial "hero.html" . }}
-        {{ end }}
+          {{ if .Site.Params.Overview }}
+            {{ partial "Features.html" . }}
+          {{ end }}
 
-        {{ if .Site.Params.Download }}
-            {{ partial "download.html" . }}
-        {{ end }}
+          {{ if .Site.Params.Download }}
+              {{ partial "download.html" . }}
+          {{ end }}
 
-        {{ if .Site.Params.Showreel }}
-          {{ partial "showreel.html" . }}
-        {{ end }}
+          {{ if .Site.Params.Showreel }}
+            {{ partial "showreel.html" . }}
+          {{ end }}
 
-        {{ if .Site.Params.Learn.list }}
-            {{ partial "learn.html" . }}
-        {{ end }}
+          {{ if .Site.Params.Learn.list }}
+              {{ partial "learn.html" . }}
+          {{ end }}
 
-        {{ if .Site.Params.Community }}
-            {{ partial "community.html" . }}
-        {{ end }}
+          {{ if .Site.Params.Community }}
+              {{ partial "community.html" . }}
+          {{ end }}
 
-        {{ if .Site.Params.Blog }}
-          {{ partial "blog.html" . }}
-        {{ end }}  
+          {{ if .Site.Params.Blog }}
+            {{ partial "blog.html" . }}
+          {{ end }}
 
-        {{ if .Site.GetPage "/Licensing.md"}}
-            {{ partial "licensing.html" . }}
-        {{ end }}
+          {{ if (.Site.GetPage "Licensing")}}
+              {{ partial "licensing.html" .}}
+          {{ end }}
 
-        {{ if .Site.Params.contact }}
-            {{ partial "contact.html" . }}
-        {{ end }}
-
-        {{ range where .Site.Pages.ByWeight.Reverse "Section" "blog"}}
-            {{ partial "modals.html" . }}
-        {{ end }}
-
-        <br><br>
-
+          {{ if .Site.Params.contact }}
+              {{ partial "contact.html" . }}
+          {{ end }}
+        </div>
         {{ partial "js.html" . }}
-
-        {{ template "_internal/google_analytics.html" . }}
-    </body>
 </html>

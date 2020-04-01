@@ -1,8 +1,8 @@
 {{ "<!-- CONTACT -->" | safeHTML }}
-<section id="Contact" class="no-padding">
+<section id="Contact">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
+        <div class="row row justify-content-center">
+            <div class="col-lg-8 text-center">
                 {{ with .Site.Params.contact.headline }}
                     <h2 class="section-heading">{{ . }}</h2>
                 {{ end }}
@@ -18,34 +18,33 @@
 
         <div class="row">
           <div class="col-sm-4">
+            <h3><strong>{{ .Site.Params.Contact.Imprint.Headline | markdownify}}</strong></h3>
+            {{ .Site.Params.Contact.Imprint.Text | markdownify}}
+          </div>
+          <div class="col-sm-3 offset-sm-1">
+            <h3><strong>Follow us</strong></h3>
+            <div class="row">
+                <div class="col-sm-2">
+                  <a href="https://mastodon.xyz/@vvvv" target="_blank" class="noUnderline">
+                    <img src="img/icons/mastodon32x32.png" alt ="Mastodon.social">
+                  </a>
+                </div>
+                <div class="col-sm-2">
+                      <a href="https://vimeo.com/groups/vvvv/sort:date/format:thumbnail" target="_blank" class="noUnderline">
+                        <img src="img/icons/vimeo-32x32.png" alt ="Vimeo">
+                      </a>
+                  </div>
+                  <div class="col-sm-2">
+                      <a href="https://www.youtube.com/channel/UCu-xqv-TLwv6L0An7MJJA5A" target="_blank" class="noUnderline">
+                        <img src="img/icons/youtube-32x32.png" alt ="Youtube">
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-4">
             <h3><strong>Sign up for our Newsletter</strong></h3>
             {{ partial "newsletterForm"}}
           </div>
-              <div class="col-sm-3 col-sm-offset-1">
-                <h3><strong>Follow us</strong></h3>
-                <div class="row">
-                    <div class="col-sm-2">
-                      <a href="https://mastodon.xyz/@vvvv" target="_blank" class="noUnderline">
-                        <img src="img/icons/mastodon32x32.png" alt ="Mastodon.social">
-                      </a>
-                    </div>
-                    <div class="col-sm-2">
-                          <a href="https://vimeo.com/groups/vvvv/sort:date/format:thumbnail" target="_blank" class="noUnderline">
-                            <img src="img/icons/vimeo-32x32.png" alt ="Vimeo">
-                          </a>
-                      </div>
-                      <div class="col-sm-2">
-                          <a href="https://www.youtube.com/channel/UCu-xqv-TLwv6L0An7MJJA5A" target="_blank" class="noUnderline">
-                            <img src="img/icons/youtube-32x32.png" alt ="Youtube">
-                          </a>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-sm-4">
-                <h3><strong>{{ .Site.Params.Contact.Imprint.Headline | markdownify}}</strong></h3>
-                {{ .Site.Params.Contact.Imprint.Text | markdownify}}
-              </div>
         </div>
     </div>
 </section>

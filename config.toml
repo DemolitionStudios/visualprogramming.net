@@ -1,3 +1,9 @@
+[markup]
+	[markup.goldmark.renderer]
+	      hardWraps = false
+	      unsafe = true
+	      xhtml = false
+
 baseURL = "https://visualprogramming.net/"
 languageCode = "en-us"
 title = "Visualprogramming.net"
@@ -18,13 +24,6 @@ home = [ "HTML", "RSS", "JSON"]
 	# for more icons. The icons are represented by their corresponding
 	# CSS class.
 
-	# All projects of the portfolio are defined in their own files.
-	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
-	# folder into the 'data' directory at the root of this Hugo site.
-	# For more information take a look at the README.
-
-	# To provide some metadata for search engines feel free to add some
-	# information about you and your website.
 	name = "visualprogramming.net - vvvv gamma"
 	description = "vvvv is a visual programming environment for .NET"
 
@@ -37,6 +36,7 @@ home = [ "HTML", "RSS", "JSON"]
 		brand 		= "visualprogramming.net"
 
 		[params.navigation.links]
+		features  = "Features"
 		download  = "Download"
 		gallery		= "Showcase"
 		Learn		  = "Learn"
@@ -45,17 +45,29 @@ home = [ "HTML", "RSS", "JSON"]
 		contact   = "Contact"
 
 		# Ribbon
-		[params.Ribbon]
-		text 			= "PRELIMINARY"
-		tooltip 	= "A unified website for both vvvv beta and vvvv gamma is still to come. For now find everything about vvvv gamma on this page and go to vvvv.org to learn about vvvv beta."
+		# [params.Ribbon]
+		# text 			= "PRELIMINARY"
+		# tooltip 	= "A unified website for both vvvv beta and vvvv gamma is still to come. For now find everything about vvvv gamma on this page and go to vvvv.org to learn about vvvv beta."
 
 		# Hero section
 		[params.Hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
 		slogan     = "vvvv"
-		subtitle   = "vvvv is a visual live-programming environment. It takes you from rapid prototyping to final production with a focus on creative coding, interaction design, physical computing, data visualization, computer vision and related fields.<p>For your coding convenience, vvvv combines aspects of dataflow and object-oriented programming. It can easily be extended with any .NET library or by writing C# code."
-		buttonText = "Try it!"
-		buttonLink = "Download"
+		subtitle   = "A visual live-programming environment<br/>that takes you from rapid prototyping<br/>to final production."
+		tryitButton = "Get it!"
+		tryitButtonLink = "Download"
+		learnmoreButton = "Learn More"
+		learnmoreButtonLink = "Features"
+		tagsHeadline = "It claims to be popular for:"
+		tags = "#creativecoding, #generativedesign, #interactiondesign, #datavisualization, #computervision, #showcontrol, #physicalcomputing, #dotnet"
+
+		# Overview Section
+		[params.Overview]
+		headline = "Visual Live Programming with vvvv"
+		modalWindowTitle = "Visual Live Programming with vvvv"
+		modalFeaturesTitle = "Features"
+		button = "More Details"
+		buttonLink = "Modal"
 
 		# Download section
 
@@ -77,8 +89,8 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.Download.gamma.button]
 		text  = "Download"
-		link = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:31809/artifacts/content/vvvv_gamma_2020.1.0-0032-g1abd3594e5_setup.exe"
-		version = "(Version: 2020.1 preview 0032)"
+		link = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:31856/artifacts/content/vvvv_gamma_2020.1.0_setup.exe"
+		version = "(Version: 2020.1)"
 		target = "_self"
 
 		#Blog section
