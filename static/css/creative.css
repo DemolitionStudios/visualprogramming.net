@@ -640,18 +640,18 @@ header .header-content .header-content-inner p {
 
 #Contact
 {
-  background-color: #ddd;
+  background-color: #eee;
 }
 
 
 #sib-container
 {
-  background-color: #ddd !important;
+  background-color: #eee !important;
 }
 
 #sib-container input
 {
-  background-color: #ddd;
+  background-color: #eee;
   color: #000;
   outline: none !important;
 }
