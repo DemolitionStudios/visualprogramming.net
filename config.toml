@@ -25,7 +25,7 @@ home = [ "HTML", "RSS", "JSON"]
 	# CSS class.
 
 	name = "visualprogramming.net - vvvv gamma"
-	description = "vvvv is a visual programming environment for .NET"
+	description = "vvvv is a visual live-programming environment for .NET"
 
 	# The path must be relative to the static folder
 	favicon = "favicon.ico"
@@ -59,11 +59,11 @@ home = [ "HTML", "RSS", "JSON"]
 		learnmoreButton = "Learn More"
 		learnmoreButtonLink = "Features"
 		tagsHeadline = "It claims to be popular for:"
-		tags = "#creativecoding, #generativedesign, #interactiondesign, #datavisualization, #computervision, #showcontrol, #physicalcomputing, #dotnet"
+		tags = "#creativecoding, #generativedesign, #interactiondesign, #datavisualization, #computervision, #showcontrol, #physicalcomputing, #datascience, #dotnet"
 
 		# Overview Section
 		[params.Overview]
-		headline = "Visual Live Programming with vvvv"
+		headline = "Visual Live-Programming with vvvv"
 		modalWindowTitle = "Visual Live Programming with vvvv"
 		modalFeaturesTitle = "Features"
 		button = "More Details"
