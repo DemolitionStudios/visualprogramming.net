@@ -4,4 +4,4 @@ id: 3
 img: img/Lib_Stride.png
 ---
 
-* 3d rendering library based on [Xenko 3d Engine](https://xenko.com)
+* 3d rendering library based on <a href="https://stride3d.net" target="_blank">Xenko 3d Engine</a>
