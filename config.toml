@@ -89,8 +89,8 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.Download.gamma.button]
 		text  = "Download"
-		link = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:31855/artifacts/content/vvvv_gamma_2020.1.0_setup.exe"
-		version = "(Version: 2019.2 preview 0321)"
+		link = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:31856/artifacts/content/vvvv_gamma_2020.1.0_setup.exe"
+		version = "(Version: 2020.1)"
 		target = "_self"
 
 		#Blog section
