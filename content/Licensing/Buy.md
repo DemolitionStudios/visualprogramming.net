@@ -1,5 +1,5 @@
 ---
-buttonGammaText: Buy licenses for vvvv gamma
-buttonGammaLink:
-buttonGammaComment: (still to come)
+buttonGammaText: Buy licenses
+buttonGammaLink: https://store.vvvv.org/
+buttonGammaComment:
 ---
