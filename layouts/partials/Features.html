@@ -10,6 +10,9 @@
     </div>
     <div class="container-fluid">
         <div class="row">
+          <<div class="col">
+
+
             <div id="liveCarousel">
               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="60000">
                 <ol class="carousel-indicators">
@@ -28,17 +31,17 @@
                                   <img src="{{ . }}" class="img-fluid">
                                 {{ end }}
                                 {{ with .Params.video}}
-                                <div align="center" class="embed-responsive embed-responsive-16by9 video">
-                                    <video class="embed-responsive-item" autoplay loop muted>
+                                <div class="embed-responsive embed-responsive-16by9 video">
+                                    <video class="embed-responsive-item" autoplay loop controls>
                                         <source src="{{ . }}" type="video/mp4">
                                     </video>
                                 </div>
                                 {{ end }}
                               </div>
                               <div class="col-9 col-xl-3 mt-3 mt-xl-0">
-                                <div class="row description">
-                                  <h4>{{ .Title }}</h4>
-                                  <p>{{ .Content  | markdownify }}</p>
+                                <div class="description">
+                                    <h4>{{ .Title }}</h4>
+                                    <p>{{ .Content  | markdownify }}</p>
                                 </div>
                               </div>
                             </div>
@@ -57,13 +60,14 @@
               </div>
             </div>
         </div>
-      </div>
-      <br>
-      <div class="row justify-content-md-center">
-        <div class="col col-lg-3 text-center">
-          <a href="#{{ .Site.Params.Hero.learnmoreButtonLink }}" class="btn btn-primary btn-xl" data-toggle="modal" data-target="#{{ .Site.Params.Overview.buttonLink }}">{{ .Site.Params.Overview.button }}</a>
+        <br>
+        <div class="row justify-content-md-center">
+          <div class="col col-lg-3 text-center">
+            <a href="#{{ .Site.Params.Hero.learnmoreButtonLink }}" class="btn btn-primary btn-xl" data-toggle="modal" data-target="#{{ .Site.Params.Overview.buttonLink }}">{{ .Site.Params.Overview.button }}</a>
+          </div>
         </div>
       </div>
+    </div>
     </div>
 
 <!-- MODAL WINDOW -->
