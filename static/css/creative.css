@@ -638,6 +638,29 @@ header .header-content .header-content-inner p {
   color: #333;
 }
 
+#Contact
+{
+  background-color: #ddd;
+}
+
+
+#sib-container
+{
+  background-color: #ddd !important;
+}
+
+#sib-container input
+{
+  background-color: #ddd;
+  color: #000;
+  outline: none !important;
+}
+
+#sib-container input::placeholder
+{
+  color: #777 !important;
+}
+
 #Community
 {
   background-color: #eee;
