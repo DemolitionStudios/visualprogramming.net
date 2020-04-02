@@ -363,7 +363,7 @@ aside {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
     color: #999;
-    /* float: left; */
+    float: left;
     height: 50px;
     padding: 15px 0px 15px 15px;
     font-size: 18px;
@@ -475,7 +475,7 @@ header .header-quad{
   margin: 0px 0px 0px 0px;
   color: #000;
   font-size: 0.9rem;
-  font-family: Arial;
+  font-family: Sans-Serif;
   text-align: left;
   padding: 30px;
   position: relative;
@@ -489,7 +489,7 @@ header .header-quad p
 
 header .header-quad .vvvv
 {
-  height: 50px;
+  height: 45px;
   padding: 0;
   margin-bottom: 1.4rem;
 }
