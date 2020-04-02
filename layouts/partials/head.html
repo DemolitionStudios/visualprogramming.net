@@ -1,10 +1,10 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
+{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ .Hugo.Generator }}
-<title>{{ .Site.Title }}</title>
+<title>{{ .Site.Params.title }}</title>
 
 {{ "<!-- Favicon -->" | safeHTML }}
 <link rel="shortcut icon" href="{{ .Site.Params.favicon | absURL }}">
@@ -19,7 +19,6 @@
 {{ "<!-- Custom CSS -->" | safeHTML }}
 <link rel="stylesheet" href="{{ "css/creative.css" | absURL }}" type="text/css">
 <link rel="stylesheet" href="{{ "css/modals.css" | absURL }}" type="text/css">
-<link rel="stylesheet" href="{{ "css/ribbon.css" | absURL }}" type="text/css">
 
 {{ "<!-- Newsletter CSS -->" | safeHTML }}
 <link rel="stylesheet" href="https://assets.sendinblue.com/component/form/2ef8d8058c0694a305b0.css">

@@ -6,7 +6,7 @@
 
 baseURL = "https://visualprogramming.net/"
 languageCode = "en-us"
-title = "Visualprogramming.net"
+
 
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-creative-theme-master"
@@ -17,19 +17,12 @@ home = [ "HTML", "RSS", "JSON"]
 
 [params]
 
-	# You can use Markdown syntax for urls [text](//url.to/source) for
-	# most longer texts.
+		title = "Visualprogramming.net"
+		author = "vvvv group"
+		description = "vvvv is a visual live-programming environment for .NET"
 
-	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
-	# for more icons. The icons are represented by their corresponding
-	# CSS class.
-
-	name = "visualprogramming.net - vvvv gamma"
-	description = "vvvv is a visual live-programming environment for .NET"
-
-	# The path must be relative to the static folder
-	favicon = "favicon.ico"
-
+		# The path must be relative to the static folder
+		favicon = "favicon.ico"
 
 		# Navigation
 		[params.navigation]
