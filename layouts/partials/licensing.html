@@ -12,7 +12,7 @@
 
         <div class="row">
           {{ with .Site.GetPage "/Licensing/TRUST.md" }}
-          <div class="col-md-4 topMargin paddingRight">
+          <div class="col-md-4 mt-5 paddingRight">
             <h3 class="section-heading bold">{{ .Params.headline }}</h3>
             {{ with .Content }}
                 <p>{{ . | markdownify}}</p>
@@ -21,7 +21,7 @@
           {{ end }}
 
           {{ with .Site.GetPage "/Licensing/Commercial.md" }}
-            <div class="col-md-4 topMargin paddingRight">
+            <div class="col-md-4 mt-5 paddingRight">
                 <h3 class="section-heading bold">{{ .Params.headline }}</h3>
                 {{ with .Content }}
                     <p>{{ . | markdownify}}</p>
@@ -35,7 +35,7 @@
           {{ end }}
 
           {{ with .Site.GetPage "/Licensing/Free.md" }}
-            <div class="col-md-4 topMargin paddingRight">
+            <div class="col-md-4 mt-5 paddingRight">
                 <h3 class="section-heading bold">{{ .Params.headline }}</h3>
                 {{ with .Content }}
                     <p>{{ . | markdownify }}</p>
