@@ -475,7 +475,7 @@ header .header-quad{
   margin: 0px 0px 0px 0px;
   color: #000;
   font-size: 0.9rem;
-  font-family: Sans-Serif;
+  font-family: 'FreeSans', Sans-Serif;
   text-align: left;
   padding: 30px;
   position: relative;
@@ -556,7 +556,7 @@ header .header-content .header-content-inner p {
     header .header-quad{
       width: 600px;
       height: 600px;
-      font-size: 1.8rem;
+      font-size: 1.7rem;
       text-align: left;
       padding: 50px;
     }
