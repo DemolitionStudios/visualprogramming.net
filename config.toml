@@ -17,7 +17,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 [params]
 
-		title = "Visualprogramming.net"
+		title = "vvvv - visual live-progamming for .NET"
 		author = "vvvv group"
 		description = "vvvv is a visual live-programming environment for .NET"
 
