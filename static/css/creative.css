@@ -638,9 +638,28 @@ header .header-content .header-content-inner p {
   color: #333;
 }
 
-#Contact
+.grayLight
 {
   background-color: #eee;
+}
+
+#footer
+{
+  margin: 0;
+  padding: 0 0 0.7rem 0;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+
+#footer a
+{
+  text-decoration: underline;
+  border-bottom: none;
+}
+
+#footer a:hover
+{
+  color: #ffa800;
 }
 
 
