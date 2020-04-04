@@ -470,15 +470,15 @@ header {
 
 header .header-quad{
   width: 340px;
-  height: 340px;
+  /* height: 340px; */
   background-color: #fff;
   margin: 0px 0px 0px 0px;
   color: #000;
-  font-size: 0.9rem;
-  font-family: 'FreeSans', Sans-Serif;
+  font-size: 1rem;
+  font-family: 'Open Sans','Helvetica Neue','FreeSans', Arial, Sans-Serif;
   text-align: left;
-  padding: 30px;
-  position: relative;
+  padding: 20px; */
+  /* position: relative; */
 }
 
 header .header-quad p
@@ -489,16 +489,16 @@ header .header-quad p
 
 header .header-quad .vvvv
 {
-  height: 45px;
+  height: 40px;
   padding: 0;
-  margin-bottom: 1.4rem;
+  margin-bottom: 0.7rem;
 }
 
 header .header-quad .tags
 {
-    position: absolute;
-    bottom: 0;
-    padding: 0px 20px 20px 0px;
+    /* position: absolute; */
+    /* bottom: 0; */
+    padding: 0px 20px 0px 0px;
 }
 
 header .header-quad .tags p
@@ -555,10 +555,9 @@ header .header-content .header-content-inner p {
 
     header .header-quad{
       width: 600px;
-      height: 600px;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       text-align: left;
-      padding: 50px;
+      padding: 45px;
     }
 
     header .header-quad p
@@ -569,8 +568,8 @@ header .header-content .header-content-inner p {
 
     header .header-quad .tags
     {
-        position: absolute;
-        bottom: 0;
+        /* position: absolute;
+        bottom: 0; */
         padding: 0px 50px 40px 0px;
     }
 
