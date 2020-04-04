@@ -494,13 +494,6 @@ header .header-quad .vvvv
   margin-bottom: 0.7rem;
 }
 
-header .header-quad .tags
-{
-    /* position: absolute; */
-    /* bottom: 0; */
-    padding: 0px 20px 0px 0px;
-}
-
 header .header-quad .tags p
 {
     padding-bottom: 0;
@@ -557,25 +550,18 @@ header .header-content .header-content-inner p {
       width: 600px;
       font-size: 1.6rem;
       text-align: left;
-      padding: 45px;
+      padding: 40px;
     }
 
     header .header-quad p
     {
       line-height: inherit;
-      margin-bottom: 2rem;
-    }
-
-    header .header-quad .tags
-    {
-        /* position: absolute;
-        bottom: 0; */
-        padding: 0px 50px 40px 0px;
+      margin-bottom: 1.5rem;
     }
 
     header .header-quad .tag
     {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       padding-bottom: 0.3rem;
       line-height: 1.5rem;
     }
