@@ -17,7 +17,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 [params]
 
-		title = "Visualprogramming.net"
+		title = "vvvv - visual live-progamming for .NET"
 		author = "vvvv group"
 		description = "vvvv is a visual live-programming environment for .NET"
 
@@ -167,4 +167,4 @@ home = [ "HTML", "RSS", "JSON"]
 		text ="vvvv - Dießl & Gregor GbR<br>Oranienstrasse 10 <br> 10997 Berlin/Germany<br>VAT: DE275566955<br><br>groupӘvvvv.org"
 
 		[params.footer]
-		hugoText = "We are using <a href=\"https://gohugo.io\" target=\"_blank\">hugo</a> to generate this website."
+		hugoText = "Thanks to <a href=\"https://gohugo.io\" target=\"_blank\">Hugo</a> for building this website."
