@@ -147,14 +147,14 @@ home = [ "HTML", "RSS", "JSON"]
       icon = "fa-book"
       title = "Reference"
       description = "The manual: Technical descriptions of vvvv in detail."
-			link = "https://vvvv.gitbooks.io/the-gray-book/content/en/reference.html"
+			link = "https://thegraybook.vvvv.org/reference/hde/gui.html"
 			text = "Open Reference"
 
 			[[params.Learn.list]]
 			icon = "fa fa-bolt"
 			title = "Explanations"
 			description = "The bigger picture: Providing background and context."
-			link = "https://vvvv.gitbooks.io/the-gray-book/content/en/"
+			link = "https://thegraybook.vvvv.org/introduction/language.html"
 			text = "Open Explanation"
 
 	# Contact section
