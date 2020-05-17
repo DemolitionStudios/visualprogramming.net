@@ -26,7 +26,7 @@ jobs:
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
-          username: joreg
+          username: root
           server: 78.47.109.137
           #port: # default is 22
           # you can copy private_key from your *.pem file, keep format
