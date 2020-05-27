@@ -21,8 +21,10 @@
                 {{ with .Site.Params.download.gamma }}
                     <h3><strong>{{ .headline | markdownify }}</strong></h3>
                     <p class="text-faded">{{ .description | markdownify }}</p>
-                    <a href="{{ .button.link }}" class="btn btn-primary btn-xl" target="{{ .button.target }}" >{{ .button.text }}</a>
-                    <span class="version text">&nbsp;&nbsp;{{ .button.version | markdownify }}</span>
+                    <a href="{{ .Download.link }}" class="btn btn-primary btn-xl" target="{{ .button.target }}" >{{ .Download.text }}</a>
+                    <span class="version text">&nbsp;&nbsp;{{ .Download.version | markdownify }}</span>
+                    <br>
+                    <a href="#{{ .additionalDownloads.link }}" class="btn btn-dark mt-3 px-3 py-2 btn-sm" data-toggle="modal" data-target="#{{ .additionalDownloads.link }}">{{ .additionalDownloads.text }}</a>
                 {{ end }}
             </div>
         </div>

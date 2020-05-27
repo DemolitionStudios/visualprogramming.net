@@ -15,6 +15,7 @@
 
           {{ if .Site.Params.Download }}
               {{ partial "download.html" . }}
+              {{ partial "AdditionalDownloads.html" . }}
           {{ end }}
 
           {{ if .Site.Params.Showreel }}

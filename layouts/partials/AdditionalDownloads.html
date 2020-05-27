@@ -1,0 +1,26 @@
+{{ "<!-- Additional Downloads -->" | safeHTML }}
+
+<!-- Additional Downloads Modal Window -->
+  <div class="modal" id="AdditionalDownloads" tabindex="-1" role="dialog" aria-labelledby="AdditionalDownloads" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">{{ .Site.Params.Download.gamma.additionalDownloads.windowTitle }}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12 mt-4 ml-3 mt-sm-0 ml-sm-0">
+                {{ range ((where .Site.RegularPages "Section" "AdditionalDownloads").ByParam "id") }}
+                  {{ partial "AdditionalDownloadsPartial" .}}
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -85,22 +85,23 @@ a:focus {
   color: #ffa800;
 }
 
-#Features .modal-dialog .tab-content .gray
-{
-  color: #888;
-}
 
 #liveCarousel .gray
 {
   color: #888;
 }
 
-#Features .modal-dialog
+#Features .modal-dialog .tab-content .gray
+{
+  color: #888;
+}
+
+.modal-dialog
 {
   max-width: inherit;
 }
 
-#Features .modal-content
+.modal-content
 {
   min-height: 550px;
   width: 80%;
@@ -108,11 +109,23 @@ a:focus {
   left: 10%;
 }
 
-#Features .modal-dialog hr {
+.modal-dialog hr {
   margin: 1rem 0rem;
   max-width: none;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#AdditionalDownloads .modal-dialog a
+{
+  color: #000;
+  text-decoration: underline;
+  border: none;
+}
+
+#AdditionalDownloads ul
+{
+  margin-bottom: 1.5em;
 }
 
 #Features

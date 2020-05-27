@@ -63,7 +63,6 @@ home = [ "HTML", "RSS", "JSON"]
 		buttonLink = "Modal"
 
 		# Download section
-
 		[params.Download]
 		headline = "Download"
 
@@ -80,11 +79,17 @@ home = [ "HTML", "RSS", "JSON"]
 		headline    = "vvvv gamma"
 		description = "In preview since April 2019, vvvv gamma is the next generation of vvvv, entirely rewritten from scratch.<p>Recommended for:<p><tr><li>2d Graphics</li><li>Computer Vision</li><li>Devices and Protocols</li><li>Multithreading</li><li>Integration of .NET libraries</li><li>Creating Executables</li></tr>"
 
-		[params.Download.gamma.button]
+		[params.Download.gamma.Download]
 		text  = "Download"
 		link = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:32418/artifacts/content/vvvv_gamma_2020.1.2_setup.exe"
 		version = "(Version: 2020.1.2)"
 		target = "_self"
+
+		[params.Download.gamma.additionalDownloads]
+		link = "AdditionalDownloads"
+		text  = "Additional Downloads"
+		windowTitle = "Additional Downloads"
+
 
 		#Blog section
 		# [params.Blog]
