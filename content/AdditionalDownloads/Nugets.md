@@ -5,7 +5,8 @@ vvvv can be extended with functionality using [.NET nugets](http://nuget.org/). 
 
 To learn how to use nugets in vvvv please refer to the documentation on [Managing Nugets](https://thegraybook.vvvv.org/reference/libraries/dependencies.html#manage-nugets) or watch the [HowTo Use Nugets](https://youtu.be/-U_kUQ3VDog) video.
 
-##### Depth Cameras
+#### Depth Cameras
+{{< table "table table-light table-striped table-bordered table-fixed" >}}
 nuget.org link | Prerelease | Description
 ---|:---:|---
 <a href="https://www.nuget.org/packages/VL.Devices.Kinect" target="_blank">VL.Devices.Kinect</a>|x|For using the Microsoft Kinect v1/XBOX360
@@ -16,36 +17,45 @@ nuget.org link | Prerelease | Description
 <a href="https://www.nuget.org/packages/VL.Devices.RealSense" target="_blank">VL.Devices.RealSense</a>|x|For using the [Intel RealSense](https://www.intelrealsense.com/)
 <a href="https://www.nuget.org/packages/VL.Devices.Nuitrack" target="_blank">VL.Devices.Nuitrack</a>|x|For using the [Nuitrack API](http://nuitrack.com/) with different depth cameras
 <a href="https://www.nuget.org/packages/VL.Devices.LeapOrion" target="_blank">VL.Devices.LeapOrion</a>|x|For using the [Ultraleap Motion Controller](https://www.ultraleap.com/product/leap-motion-controller/) for handtracking
+{{< /table >}}
 
-##### Cameras
+#### Cameras
+{{< table "table table-light table-striped table-bordered" >}}
 nuget.org link | Prerelease | Description
 ---|:---:|---
 <a href="https://www.nuget.org/packages/VL.Devices.uEye" target="_blank">VL.Devices.uEye</a>|x|For using [uEye cameras by IDS Imaging](https://de.ids-imaging.com/store/products/cameras/sort-by/position/sort-direction/desc.html)
+{{< /table >}}
 
-##### Other Devices
+#### Other Devices
+{{< table "table table-light table-striped table-bordered" >}}
 nuget.org link | Prerelease | Description
 ---|:---:|---
 <a href="https://www.nuget.org/packages/VL.Devices.SICK" target="_blank">VL.Devices.SICK</a>|x|For using [Lidar devices by SICK](https://www.sick.com/de/de/mess-und-detektionsloesungen/3d-lidar-sensoren/c/g282752)
 <a href="https://www.nuget.org/packages/VL.IO.Xbox360Controller/" target="_blank">VL.IO.Xbox360Controller</a>| |For using the XBOX360 Controller
 <a href="https://www.nuget.org/packages/VL.PJLink/" target="_blank">VL.PJLink</a>| |For using the PJLink protocol
+{{< /table >}}
 
-
-##### Audio & Video
+#### Audio & Video
+{{< table "table table-light table-striped table-bordered" >}}
 nuget.org link | Prerelease | Description
 ---|:---:|---
 <a href="https://www.nuget.org/packages/VL.Audio" target="_blank">VL.Audio</a>|x|For audio playback and analysis
 <a href="https://www.nuget.org/packages/VL.GStreamer" target="_blank">VL.GStreamer</a>|x|Video playback
 <a href="https://www.nuget.org/packages/VL.MediaFoundation" target="_blank">VL.MediaFoundation</a>|x|Video playback
+{{< /table >}}
 
-##### Networking
+#### Networking
+{{< table "table table-light table-striped table-bordered" >}}
 nuget.org link | Prerelease | Description
 ---|:---:|---
 <a href="https://www.nuget.org/packages/VL.IO.M2MQTT" target="_blank">VL.O.M2MQTT</a>|x|MQTT
 <a href="https://www.nuget.org/packages/VL.IO.NETMQ" target="_blank">VL.NETMQ</a>|x|ZMQ
 <a href="https://www.nuget.org/packages/VL.RCP" target="_blank">VL.RCP</a>|x|RCP
 <a href="https://www.nuget.org/packages/VL.IO.NDI" target="_blank">VL.IO.NDI</a>|x|NDI
+{{< /table >}}
 
-##### Misc
+#### Misc
+{{< table "table table-light table-striped table-bordered" >}}
 nuget.org link | Prerelease | Description
 ---|:---:|---
 <a href="https://www.nuget.org/packages/VL.Elementa" target="_blank">VL.Elementa</a>| |A UI widget library
@@ -63,3 +73,4 @@ nuget.org link | Prerelease | Description
 <a href="https://www.nuget.org/packages/VL.StringExtensions" target="_blank">VL.StringExtensions</a>| |Provides some useful string manipulation nodes
 <a href="https://www.nuget.org/packages/VL.InfluxDB" target="_blank">VL.InfluxDB</a>| |For InfluxDB databases
 <a href="https://www.nuget.org/packages/VL.FastNoise" target="_blank">VL.FastNoise</a>| |Noise Generator in many flavours
+{{< /table >}}
