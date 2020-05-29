@@ -48,10 +48,10 @@ nuget.org link | Prerelease | Description
 {{< table "table table-light table-striped table-bordered" >}}
 nuget.org link | Prerelease | Description
 ---|:---:|---
-<a href="https://www.nuget.org/packages/VL.IO.M2MQTT" target="_blank">VL.O.M2MQTT</a>|x|MQTT
-<a href="https://www.nuget.org/packages/VL.IO.NETMQ" target="_blank">VL.NETMQ</a>|x|ZMQ
-<a href="https://www.nuget.org/packages/VL.RCP" target="_blank">VL.RCP</a>|x|RCP
+<a href="https://www.nuget.org/packages/VL.IO.M2MQTT" target="_blank">VL.IO.M2MQTT</a>|x|MQTT
+<a href="https://www.nuget.org/packages/VL.IO.NETMQ" target="_blank">VL.IO.NETMQ</a>|x|ZMQ
 <a href="https://www.nuget.org/packages/VL.IO.NDI" target="_blank">VL.IO.NDI</a>|x|NDI
+<a href="https://www.nuget.org/packages/VL.RCP" target="_blank">VL.RCP</a>|x|RCP
 {{< /table >}}
 
 #### Misc
@@ -66,9 +66,9 @@ nuget.org link | Prerelease | Description
 <a href="https://www.nuget.org/packages/VL.2D.Voronoi" target="_blank">VL.2D.Voronoi</a>|x|Voronoi
 <a href="https://www.nuget.org/packages/VL.Animation.ParticleSystem" target="_blank">VL.Animation.ParticleSystem</a>|x|CPU based particle system library
 <a href="https://www.nuget.org/packages/VL.DBSCAN" target="_blank">VL.DBSCAN</a>|x|Implementation of viceroypenguin's DBSCAN .net library
-<a href="https://www.nuget.org/packages/VL.Skia3d" target="_blank">VL.Skia3d</a>|x|A primitive 3d renderer
+<a href="https://www.nuget.org/packages/VL.Skia3d" target="_blank">VL.Skia3d</a>|x|A primitive wireframe 3d renderer
 <a href="https://www.nuget.org/packages/VL.Markov" target="_blank">VL.Markov</a>| |A Markov chain generator
-<a href="https://www.nuget.org/packages/VLML" target="_blank">VLML</a>| |A UI widget library
+<a href="https://www.nuget.org/packages/VLML" target="_blank">VLML</a>| |A machine learning library
 <a href="https://www.nuget.org/packages/VL.WinFormsUtils" target="_blank">VL.WinFormsUtils</a>| |To set useful properties on Form windows.
 <a href="https://www.nuget.org/packages/VL.StringExtensions" target="_blank">VL.StringExtensions</a>| |Provides some useful string manipulation nodes
 <a href="https://www.nuget.org/packages/VL.InfluxDB" target="_blank">VL.InfluxDB</a>| |For InfluxDB databases
