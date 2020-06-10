@@ -30,6 +30,7 @@ nuget.org link | Prerelease | Description
 {{< table "table table-light table-striped table-bordered" >}}
 nuget.org link | Prerelease | Description
 ---|:---:|---
+<a href="https://www.nuget.org/packages/VL.Devices.WinTab" target="_blank">VL.Devices.WinTab</a>|x|For using WinTab Tablets (e.g. Wacom)
 <a href="https://www.nuget.org/packages/VL.Devices.SICK" target="_blank">VL.Devices.SICK</a>|x|For using [Lidar devices by SICK](https://www.sick.com/de/de/mess-und-detektionsloesungen/3d-lidar-sensoren/c/g282752)
 <a href="https://www.nuget.org/packages/VL.IO.Xbox360Controller/" target="_blank">VL.IO.Xbox360Controller</a>| |For using the XBOX360 Controller
 <a href="https://www.nuget.org/packages/VL.PJLink/" target="_blank">VL.PJLink</a>| |For using the PJLink protocol
