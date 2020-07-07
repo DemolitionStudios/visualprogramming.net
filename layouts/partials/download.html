@@ -23,7 +23,7 @@
                     <p class="text-faded">{{ .description | markdownify }}</p>
                     <div class="row">
                       <div class="col-4">
-                        <a href="{{ .Download.link }}" class="btn btn-primary btn-xl mb-2" target="{{ .button.target }}" >{{ .Download.text }}</a>
+                        <a href="{{ .Download.link }}" class="btn btn-primary btn-xl mb-2" target="{{ .button.target }}" onclick="plausible('download')">{{ .Download.text }}</a>
                         <br>
                         <span class="version text">&nbsp;&nbsp;{{ .Download.version | markdownify }}</span>
                       </div>
