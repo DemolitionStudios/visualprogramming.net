@@ -6,6 +6,7 @@
 
 (function($) {
     "use strict"; // Start of use strict
+    var topOffset = 70;
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -14,7 +15,7 @@
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
           $('html, body').animate({
-            scrollTop: (target.offset().top)
+            scrollTop: (target.offset().top - topOffset) 
           }, 1000, "easeInOutExpo");
           return false;
         }
@@ -24,7 +25,7 @@
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '#mainNav',
-        offset: 51
+        offset: topOffset
     })
 
     // Closes the Responsive Menu on Menu Item Click
@@ -53,13 +54,6 @@
         $("nav").removeClass("affix");
       }
     }
-
-    // Offset for Main Navigation
-    $('#mainNav').affix({
-        offset: {
-            top: 100
-        }
-    })
 
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
