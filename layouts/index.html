@@ -4,7 +4,8 @@
         {{ partial "head.html" . }}
     </head>
     <body id="page-top">
-        {{ partial "nav" . }}
+      <div class="main">
+          {{ partial "nav" . }}
           {{ if .Site.Params.hero }}
               {{ partial "hero.html" . }}
           {{ end }}
@@ -20,6 +21,10 @@
 
           {{ if .Site.Params.Showreel }}
             {{ partial "showreel.html" . }}
+          {{ end }}
+
+          {{ if .Site.Params.MadeWithGamma }}
+            {{ partial "madeWithGamma.html" . }}
           {{ end }}
 
           {{ if .Site.Params.Learn.list }}

@@ -31,9 +31,9 @@ home = [ "HTML", "RSS", "JSON"]
 		[params.navigation.links]
 		features  = "Features"
 		download  = "Download"
-		gallery		= "Showcase"
-		Learn		  = "Learn"
-		community	= "Community"
+		gallery	= "Showcase"
+		Learn = "Learn"
+		community = "Community"
 		licensing = "Licensing"
 		contact   = "Contact"
 
@@ -99,6 +99,9 @@ home = [ "HTML", "RSS", "JSON"]
 		headline = "Showcase"
 		subline = "Projects in this showreel were realized mostly with vvvv beta within the past few years."
 		vimeo = 371511910
+
+		[params.MadeWithGamma]
+		headline = "Made with vvvv gamma"
 
 	#Community section
 	  [params.Community]
@@ -173,3 +176,4 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.footer]
 		hugoText = "Thanks to <a href=\"https://gohugo.io\" target=\"_blank\">Hugo</a> for building this website."
+		plausibleText = "Analytics by <a href=\"https://plausible.io\" target=\"_blank\">Plausible</a>."

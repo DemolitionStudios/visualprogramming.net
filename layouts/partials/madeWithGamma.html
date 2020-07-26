@@ -1,0 +1,19 @@
+{{ "<!-- MADE WITH GAMMA -->" | safeHTML }}
+<section id="MadeWithGamma">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2>{{ .Site.Params.MadeWithGamma.headline }}</h2>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4 mb-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4">
+                {{ range ((where .Site.RegularPages "Section" "MadeWithGamma").ByParam "id") }}
+                  {{ partial "MadeWithGammaPartial" .}}
+                {{ end }}
+        </div>
+    </div>
+</section>
