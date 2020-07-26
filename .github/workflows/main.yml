@@ -21,7 +21,7 @@ jobs:
           # extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo
 
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.0
