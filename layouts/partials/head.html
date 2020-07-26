@@ -1,8 +1,14 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+
+<meta property="og:title" content="{{ .Site.Params.ogTitle }}" />
+<meta property="og:description" content="{{ .Site.Params.ogDescription }}" />
+<meta property="og:url"content="https://visualprogramming.net/" />
+<meta property="og:image" content="{{ "img/ogVVVV.jpg" | absURL }}" />
+
+<meta name="author" content="{{ .Site.Params.author }}">
+<meta name="description" content="{{ .Site.Params.description }}">
 {{ .Hugo.Generator }}
 <title>{{ .Site.Params.title }}</title>
 

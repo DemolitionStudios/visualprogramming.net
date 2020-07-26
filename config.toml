@@ -20,6 +20,9 @@ home = [ "HTML", "RSS", "JSON"]
 		title = "vvvv - visual live-progamming for .NET"
 		author = "vvvv group"
 		description = "vvvv is a visual live-programming environment for .NET"
+		
+		ogTitle = "vvvv"
+		ogDescription = "A visual live-programming environment that takes you from rapid prototyping to final production."
 
 		# The path must be relative to the static folder
 		favicon = "favicon.ico"
