@@ -53,7 +53,6 @@ nuget.org link | Prerelease | Description
 <a href="https://www.nuget.org/packages/VL.IO.WebSocket" target="_blank">VL.IO.WebSocket</a>|x|WebSocket Server and Client
 <a href="https://www.nuget.org/packages/VL.IO.HTTP.WebServer" target="_blank">VL.IO.HTTP.WebServer</a>|x|WebServer
 <a href="https://www.nuget.org/packages/VL.IO.M2MQTT" target="_blank">VL.IO.M2MQTT</a>|x|MQTT
-<a href="https://www.nuget.org/packages/VL.IO.M2MQTT" target="_blank">VL.IO.M2MQTT</a>|x|MQTT
 <a href="https://www.nuget.org/packages/VL.IO.NETMQ" target="_blank">VL.IO.NETMQ</a>|x|ZMQ
 <a href="https://www.nuget.org/packages/VL.IO.NDI" target="_blank">VL.IO.NDI</a>|x|NDI
 <a href="https://www.nuget.org/packages/VL.RCP" target="_blank">VL.RCP</a>|x|RCP
