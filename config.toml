@@ -38,7 +38,7 @@ home = [ "HTML", "RSS", "JSON"]
 		Learn = "Learn"
 		community = "Community"
 		licensing = "Licensing"
-		contact   = "Contact"
+		contact   = "contact"
 
 		# Ribbon
 		# [params.Ribbon]
