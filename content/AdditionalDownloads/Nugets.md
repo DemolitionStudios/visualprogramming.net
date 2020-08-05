@@ -9,14 +9,14 @@ To learn how to use nugets in vvvv please refer to the documentation on [Managin
 {{< table "table table-light table-striped table-bordered table-fixed" >}}
 nuget.org link | Prerelease | Description
 ---|:---:|---
-<a href="https://www.nuget.org/packages/VL.Devices.Kinect" target="_blank">VL.Devices.Kinect</a>|x|For using the Microsoft Kinect v1/XBOX360
-<a href="https://www.nuget.org/packages/VL.Devices.Kinect2" target="_blank">VL.Devices.Kinect2</a>|x|For using the Microsoft Kinect2
-<a href="https://www.nuget.org/packages/VL.Devices.AzureKinect" target="_blank">VL.Devices.AzureKinect</a>|x|For using the [Microsoft Azure Kinect](https://azure.microsoft.com/de-de/services/kinect-dk/)
-<a href="https://www.nuget.org/packages/VL.Devices.AzureKinect.Body" target="_blank">VL.Devices.AzureKinect.Body</a>|x|For using Azure Kinect body tracking
-<a href="https://www.nuget.org/packages/VL.Devices.Astra" target="_blank">VL.Devices.Astra</a>|x|For using the [Orbbec Astra](https://orbbec3d.com/product-astra-pro/)
-<a href="https://www.nuget.org/packages/VL.Devices.RealSense" target="_blank">VL.Devices.RealSense</a>|x|For using the [Intel RealSense](https://www.intelrealsense.com/)
-<a href="https://www.nuget.org/packages/VL.Devices.Nuitrack" target="_blank">VL.Devices.Nuitrack</a>|x|For using the [Nuitrack API](http://nuitrack.com/) with different depth cameras
-<a href="https://www.nuget.org/packages/VL.Devices.LeapOrion" target="_blank">VL.Devices.LeapOrion</a>|x|For using the [Ultraleap Motion Controller](https://www.ultraleap.com/product/leap-motion-controller/) for handtracking
+<a href="https://www.nuget.org/packages/VL.Devices.Kinect" target="_blank">VL.Devices.Kinect</a>| |For using the Microsoft Kinect v1/XBOX360
+<a href="https://www.nuget.org/packages/VL.Devices.Kinect2" target="_blank">VL.Devices.Kinect2</a>| |For using the Microsoft Kinect2
+<a href="https://www.nuget.org/packages/VL.Devices.AzureKinect" target="_blank">VL.Devices.AzureKinect</a>| |For using the [Microsoft Azure Kinect](https://azure.microsoft.com/de-de/services/kinect-dk/)
+<a href="https://www.nuget.org/packages/VL.Devices.AzureKinect.Body" target="_blank">VL.Devices.AzureKinect.Body</a>| |For using Azure Kinect body tracking
+<a href="https://www.nuget.org/packages/VL.Devices.Astra" target="_blank">VL.Devices.Astra</a>| |For using the [Orbbec Astra](https://orbbec3d.com/product-astra-pro/)
+<a href="https://www.nuget.org/packages/VL.Devices.RealSense" target="_blank">VL.Devices.RealSense</a>| |For using the [Intel RealSense](https://www.intelrealsense.com/)
+<a href="https://www.nuget.org/packages/VL.Devices.Nuitrack" target="_blank">VL.Devices.Nuitrack</a>| |For using the [Nuitrack API](http://nuitrack.com/) with different depth cameras
+<a href="https://www.nuget.org/packages/VL.Devices.LeapOrion" target="_blank">VL.Devices.LeapOrion</a>| |For using the [Ultraleap Motion Controller](https://www.ultraleap.com/product/leap-motion-controller/) for handtracking
 {{< /table >}}
 
 #### Cameras
@@ -70,7 +70,7 @@ nuget.org link | Prerelease | Description
 <a href="https://www.nuget.org/packages/VL.2D.Voronoi" target="_blank">VL.2D.Voronoi</a>|x|Voronoi
 <a href="https://www.nuget.org/packages/VL.Animation.ParticleSystem" target="_blank">VL.Animation.ParticleSystem</a>|x|CPU based particle system library
 <a href="https://www.nuget.org/packages/VL.DBSCAN" target="_blank">VL.DBSCAN</a>|x|Implementation of viceroypenguin's DBSCAN .net library
-<a href="https://www.nuget.org/packages/VL.Skia3d" target="_blank">VL.Skia3d</a>|x|A primitive wireframe 3d renderer
+<a href="https://www.nuget.org/packages/VL.Skia3d" target="_blank">VL.Skia3d</a>| |A primitive wireframe 3d renderer
 <a href="https://www.nuget.org/packages/VL.Markov" target="_blank">VL.Markov</a>| |A Markov chain generator
 <a href="https://www.nuget.org/packages/VLML" target="_blank">VLML</a>| |A machine learning library
 <a href="https://www.nuget.org/packages/VL.WinFormsUtils" target="_blank">VL.WinFormsUtils</a>| |To set useful properties on Form windows.
