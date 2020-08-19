@@ -80,7 +80,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.Download.gamma]
 		headline    = "vvvv gamma"
-		description = "In preview since April 2019, vvvv gamma is the next generation of vvvv, entirely rewritten from scratch.<p>Recommended for:<p><tr><li>2d Graphics</li><li>Computer Vision</li><li>Devices and Protocols</li><li>Multithreading</li><li>Integration of .NET libraries</li><li>Creating Executables</li></tr>"
+		description = "First released in April 2020, vvvv gamma is the next generation of vvvv, entirely rewritten from scratch.<p>Recommended for:<p><tr><li>2d Graphics</li><li>Computer Vision</li><li>Devices and Protocols</li><li>Multithreading</li><li>Integration of .NET libraries</li><li>Creating Executables</li></tr>"
 
 		[params.Download.gamma.Download]
 		text  = "Download"
