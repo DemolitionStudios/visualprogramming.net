@@ -43,6 +43,7 @@ nuget.org link | Prerelease | Description
 <a href="https://www.nuget.org/packages/VL.Audio" target="_blank">VL.Audio</a>|x|For audio playback and analysis
 <a href="https://www.nuget.org/packages/VL.GStreamer" target="_blank">VL.GStreamer</a>|x|Video playback
 <a href="https://www.nuget.org/packages/VL.MediaFoundation" target="_blank">VL.MediaFoundation</a>|x|Video playback
+<a href="https://www.nuget.org/packages/VL.Devices.DeckLink" target="_blank">VL.Devices.DeckLink</a>|x|For capturing from [Blackmagic DecklLink](https://www.blackmagicdesign.com/products/decklink) cards
 {{< /table >}}
 
 #### Networking
