@@ -6,7 +6,7 @@
 
 (function($) {
     "use strict"; // Start of use strict
-    var topOffset = 70;
+    var topOffset = 120;
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
