@@ -3,8 +3,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                {{ with .Site.Params.download.headline }}
-                    <h2 class="section-heading">{{ . }}</h2>
+                {{ with .Site.Params.download }}
+                    <h2 class="section-heading">{{ .Headline }}</h2>
                     <hr>
                 {{ end }}
             </div>
@@ -12,21 +12,21 @@
         <div class="row mb-4">
             {{ with .Site.Params.download }}
             <div class="col-lg-8 offset-lg-2 mt-4 text-center">
-                <p class="text-faded">{{ .copy | markdownify }}</p>
+                <p class="text-faded">{{ .Copy | markdownify }}</p>
             </div>
             {{ end }}
         </div>
         <div class="row">
-            <div class="col-lg-7 md-5">
+            <div class="col-lg-7 mb-5">
                 {{ with .Site.Params.download.gamma }}
                 <h4 class="mb-4 underlined"><strong>{{ .Headline }}</strong></h4>
                 <p>{{ .Copy }}</p>
                 <div class="row">
                     <div class="col">
-                        <a href="{{ .StableLink }}" class="btn btn-primary btn-xl mb-2" target="{{ .button.target }}" onclick="plausible('download')">{{ .StableText }}</a>
+                        <a href="{{ .StableLink }}" class="btn btn-primary btn-xl mb-2" target="{{ .Target }}" onclick="plausible('download')">{{ .StableText }}</a>
                         <div class="version text">&nbsp;&nbsp;{{ .StableVersion | markdownify }}</div>
                         <br>
-                        <a href="{{ .PreviewLink }}" class="btn btn-secondary btn-xl mb-2" target="{{ .button.target }}" onclick="plausible('downloadPreview')">{{ .PreviewText }}</a>
+                        <a href="{{ .PreviewLink }}" class="btn btn-secondary btn-xl mb-2" target="{{ .Target }}" onclick="plausible('downloadPreview')">{{ .PreviewText }}</a>
                         <div class="version text">&nbsp;&nbsp;{{ .PreviewVersion | markdownify }}</div>
                     </div>
                     <div class="col">
@@ -36,11 +36,11 @@
                {{ end }}
             </div>
 
-            <div class="col-lg-4 offset-lg-1">
+            <div class="col-lg-4 offset-lg-1 mt-5 mt-sm-0">
                 {{ with .Site.Params.download.beta }}
                 <h4 class="mb-4 underlined"><strong>{{ .Headline }}</strong></h4> 
                 <p>{{ .Copy }}</p>
-                <a href="{{ .link }}" class="btn btn-secondary btn-xl font-weight-normal mb-2" target="{{ .target }}" onclick="plausible('gotobeta')">{{ .text }}</a>
+                <a href="{{ .Link }}" class="btn btn-secondary btn-xl font-weight-normal mb-2" target="{{ .Target }}" onclick="plausible('gotobeta')">{{ .Text }}</a>
                 {{ end }}
             </div>
         </div>
