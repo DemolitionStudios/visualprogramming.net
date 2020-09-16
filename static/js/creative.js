@@ -25,7 +25,7 @@
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '#mainNav',
-        offset: topOffset
+        offset: topOffset+40
     })
 
     // Closes the Responsive Menu on Menu Item Click
