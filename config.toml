@@ -68,31 +68,28 @@ home = [ "HTML", "RSS", "JSON"]
 		# Download section
 		[params.Download]
 		headline = "Download"
-
-		[params.Download.beta]
-		headline    = "vvvv beta"
-		description = "In development since 2001, vvvv beta has been used by many companies worldwide to create large media environments.<p>Recommended for:<p><tr><li>3d Graphics</li><li>Physics</li><li>Audio/Video Playback</li><li>Multiscreen Setups</li><li>Projection Mapping</li><li>Client-Server Setups</li></tr>"
-
-		[params.Download.beta.button]
-		text  = "Go to vvvv.org"
-		link = "https://vvvv.org/downloads"
-		target = "_blank"
+		copy = 'vvvv is free without any restrictions for non-commercial use.<br/>Commercial use requires a <a href="https://store.vvvv.org/" target="_blank">License</a>.'
 
 		[params.Download.gamma]
-		headline    = "vvvv gamma"
-		description = "First released in April 2020, vvvv gamma is the next generation of vvvv, entirely rewritten from scratch.<p>Recommended for:<p><tr><li>2d Graphics</li><li>Computer Vision</li><li>Devices and Protocols</li><li>Multithreading</li><li>Integration of .NET libraries</li><li>Creating Executables</li></tr>"
-
-		[params.Download.gamma.Download]
-		text  = "Download"
-		link = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:32629/artifacts/content/vvvv_gamma_2020.1.7_setup.exe"
-		version = "(Version: 2020.1.7)"
+		Headline = "vvvv gamma"
+		Copy = "First released in April 2020, vvvv gamma is the next generation of vvvv, entirely rewritten from scratch."
+		StableText  = "Download: Stable"
+		StableLink = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:32629/artifacts/content/vvvv_gamma_2020.1.7_setup.exe"
+		StableVersion = "Version: 2020.2"
+		PreviewText = "Download: Preview"
+		PreviewLink = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:32629/artifacts/content/vvvv_gamma_2020.1.7_setup.exe"
+		PreviewVersion = "Version: 2020.3 (with 3d rendering)"
 		target = "_self"
+		PacksLink = "AdditionalDownloads"
+		PacksText  = "Additional Packs"
+		PacksWindowTitle = "Additional Packs"
 
-		[params.Download.gamma.additionalDownloads]
-		link = "AdditionalDownloads"
-		text  = "Additional Downloads"
-		windowTitle = "Additional Downloads"
-
+		[params.Download.beta]
+		Headline = "vvvv beta"
+		Copy = "In development since 2001, vvvv beta has been used by many companies worldwide to create large media environments."
+		Text  = "Go to vvvv.org"
+		Link = "https://vvvv.org/downloads"
+		Target = "_blank"
 
 		#Blog section
 		# [params.Blog]
