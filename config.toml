@@ -123,7 +123,7 @@ home = [ "HTML", "RSS", "JSON"]
 		imgAlt = "vvvv on Matrix"
 		title = "Chat"
 		description = "Join us for a chat: Get help 24/7 or just hang out with your fellow patchers."
-		link = "https://riot.im/app/#/room/#vvvv:matrix.org"
+		link = "https://app.element.io/#/room/#vvvv:matrix.org"
 		text = "Open Element"
 
 		[[params.Community.list]]
