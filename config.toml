@@ -119,12 +119,12 @@ home = [ "HTML", "RSS", "JSON"]
 		text = "Open Forum"
 
 		[[params.Community.list]]
-		img = "img/icons/riot-32x32-black.png"
+		img = "img/icons/element-32x32-black.png"
 		imgAlt = "vvvv on Matrix"
 		title = "Chat"
 		description = "Join us for a chat: Get help 24/7 or just hang out with your fellow patchers."
 		link = "https://riot.im/app/#/room/#vvvv:matrix.org"
-		text = "Open Riot"
+		text = "Open Element"
 
 		[[params.Community.list]]
 		img = "img/icons/gettogether_logo_w_32x32_gray.png"
