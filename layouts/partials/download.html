@@ -3,35 +3,48 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                {{ with .Site.Params.download.headline }}
-                    <h2 class="section-heading">{{ . }}</h2>
+                {{ with .Site.Params.download }}
+                    <h2 class="section-heading">{{ .Headline }}</h2>
                     <hr>
                 {{ end }}
             </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 mt-5">
-                {{ with .Site.Params.download.beta }}
-                    <h3><strong>{{ .headline | markdownify }}</strong></h3>
-                    <p class="text-faded">{{ .description | markdownify }}</p>
-                    <a href="{{ .button.link }}" class="btn btn-primary btn-xl" target="{{ .button.target }}" >{{ .button.text }}</a>
-                {{ end }}
+        <div class="row mb-4">
+            {{ with .Site.Params.download }}
+            <div class="col-lg-8 offset-lg-2 mt-4 text-center">
+                <p class="text-faded">{{ .Copy | markdownify }}</p>
             </div>
-          <div class="col-md-6 mt-5">
+            {{ end }}
+        </div>
+        <div class="row">
+            <div class="col-lg-7 mb-5">
                 {{ with .Site.Params.download.gamma }}
-                    <h3><strong>{{ .headline | markdownify }}</strong></h3>
-                    <p class="text-faded">{{ .description | markdownify }}</p>
-                    <div class="row">
-                      <div class="col-lg-5 mb-3">
-                        <a href="{{ .Download.link }}" class="btn btn-primary btn-xl mb-2" target="{{ .button.target }}" onclick="plausible('download')">{{ .Download.text }}</a>
+                <h4 class="mb-4 underlined"><strong>{{ .Headline }}</strong></h4>
+                <p>{{ .Copy }}</p>
+                <div class="row">
+                    <div class="col">
+                        <a href="{{ .StableLink }}" class="btn btn-primary btn-xl mb-2" target="{{ .Target }}" onclick="plausible('download')">{{ .StableText }}</a>
+                        <div class="version text">&nbsp;&nbsp;{{ .StableVersion | markdownify }}</div>
                         <br>
-                        <span class="version text">&nbsp;&nbsp;{{ .Download.version | markdownify }}</span>
-                      </div>
-                      <div class="col-lg-7">
-                        <a href="#{{ .additionalDownloads.link }}" class="btn btn-secondary btn-xl font-weight-normal" data-toggle="modal" data-target="#{{ .additionalDownloads.link }}">{{ .additionalDownloads.text }}</a>
-                      </div>
+                        <a href="{{ .PreviewLink }}" class="btn btn-secondary btn-xl mb-2" target="{{ .Target }}" onclick="plausible('downloadPreview')">{{ .PreviewText }}</a>
+                        <div class="version text">&nbsp;&nbsp;{{ .PreviewVersion | markdownify }}</div>
+                    </div>
+                    <div class="col">
+                        <a href="#{{ .PacksLink }}" class="btn btn-secondary btn-xl font-weight-normal" data-toggle="modal" data-target="#{{ .PacksLink }}" onclick="plausible('additionalpacks')">{{ .PacksText }}</a>
+                    </div>
+                </div>
+               {{ end }}
+            </div>
+
+            <div class="col-lg-4 offset-lg-1 mt-5 mt-sm-0">
+                {{ with .Site.Params.download.beta }}
+                <h4 class="mb-4 underlined"><strong>{{ .Headline }}</strong></h4> 
+                <p>{{ .Copy }}</p>
+                <a href="{{ .Link }}" class="btn btn-secondary btn-xl font-weight-normal mb-2" target="{{ .Target }}" onclick="plausible('gotobeta')">{{ .Text }}</a>
                 {{ end }}
             </div>
         </div>
     </div>
 </section>
+
+
