@@ -26,19 +26,37 @@
       </div>
     </div>
     <div></div>
-    <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px;">
-      <form id="sib-form" method="POST" action="https://bd669279.sibforms.com/serve/MUIEADKss_mwvhHf27yUKpwDRTqu05A8QxCDfIPt0xBL9H5aN6aujB3COjK_0-lgx_1YGRlOBV2keFOd07AVzZnFWjZlGHS72B-skZwoGLaWH1KTsNNe8yQxqhrSav2ZvD7-x514dTbngAxQR6k2JE9_5NnqCNb6c3vDlkMUazJJO-t8PRJq094kZzoChbe5DYNprrXIKnc43WLS"
-        data-type="subscription">
-        <div>
+    <div id="sib-container" class="sib-container--large sib-container--vertical">
+      <form id="sib-form" method="POST" action="https://bd669279.sibforms.com/serve/MUIEAIPzz8XhmAPM7x5tRfUeb0TBQv3GJ5BUx0jIDUqL-Wa2BLaEAm4wBPBUIZEef7xFo_EN73g7O_ttDaFd-T2rxI4EAIpspLyQHa37_5aQVzndB-_3THuYzU0wqtSflGi1_2V4Xa7R_7NKqX1w1DwwfX0Sur96GXikaeVhyyHl_kf-NJ7WRQRMpIe42L-soc2sjUGUWi3FU07R"
+      data-type="subscription">
+        <div style="padding: 16px 0;">
           <div class="sib-input sib-form-block">
             <div class="form__entry entry_block">
               <div class="form__label-row ">
                 <div class="entry__field">
-                  <input class="input" maxlength="200" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="E-Mail" data-required="true" required />
+                  <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
                 </div>
               </div>
-
+              
               <label class="entry__error entry__error--primary" style="font-size:14px; text-align:left; color:#661d1d; background-color:#ffeded; border-radius:3px; border-width:px; border-color:#ff4949;">
+              </label>
+
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="sib-captcha sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
+                <script>
+                  function handleCaptchaResponse() {
+                    var event = new Event('captchaChange');
+                    document.getElementById('sib-captcha').dispatchEvent(event);
+                  }
+                </script>
+                <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha" data-sitekey="6LdGhNEZAAAAAE14OVO4AWAtbjL46I5EbRfpy5ZX" data-callback="handleCaptchaResponse"></div>
+              </div>
+              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
               </label>
             </div>
           </div>
@@ -88,6 +106,8 @@
 </script>
 <script src="https://sibforms.com/forms/end-form/build/main.js">
 </script>
+
 <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+
 <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
 <!-- End Sendinblue Form -->
