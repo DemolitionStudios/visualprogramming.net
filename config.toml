@@ -75,12 +75,12 @@ home = [ "HTML", "RSS", "JSON"]
 		Copy = "First released in April 2020, vvvv gamma is the next generation of vvvv, entirely rewritten from scratch."
 
 		StableText  = "Download: Stable"
-		StableLink = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:32629/artifacts/content/vvvv_gamma_2020.1.7_setup.exe"
+		StableLink = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:33045/artifacts/content/vvvv_gamma_2020.2.0_setup.exe"
 		StableVersion = "Version: 2020.2"
 
 		PreviewText = "Download: Preview"
-		PreviewLink = "http://teamcity.vvvv.org/guestAuth/app/rest/builds/id:32629/artifacts/content/vvvv_gamma_2020.1.7_setup.exe"
-		PreviewVersion = "Version: 2020.3 (with 3d rendering)"
+		PreviewLink = "https://teamcity.vvvv.org/guestAuth/app/rest/builds/id:33135/artifacts/content/vvvv_gamma_2020.3.0-0036-gfa6d44f6e5_setup.exe"
+		PreviewVersion = "Version: 2020.3 (incl. VL.Stride 3d rendering)"
 		
 		PacksLink = "AdditionalDownloads"
 		PacksText  = "Additional Packs"
