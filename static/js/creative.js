@@ -6,7 +6,7 @@
 
 (function($) {
     "use strict"; // Start of use strict
-    var topOffset = 120;
+    var topOffset = 60;
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -25,7 +25,7 @@
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '#mainNav',
-        offset: topOffset+40
+        offset: topOffset
     })
 
     // Closes the Responsive Menu on Menu Item Click
