@@ -6,9 +6,6 @@
                 {{ with .Site.Params.navigation.brand }}
                     <a class="navbar-brand js-scroll-trigger noUnderline" href="#page-top">{{ . | markdownify }}</a>
                 {{ end }}
-                {{ with .Site.Params.Ribbon }}
-                {{ partial "temporary.html" . }}
-                {{ end }}
                 <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -42,5 +39,4 @@
             </div>
         </div>
     </nav>
-    {{ partial "node" . }}
 </div>
