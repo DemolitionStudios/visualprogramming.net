@@ -956,51 +956,6 @@ img::-moz-selection {
     background: 0 0;
 }
 
-.nodebanner
-{
-  position: relative;
-  height: 100px;
-  background-color: #1b2c4a;
-  box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.4);
-}
-
-.nodebanner .content
-{
-  height: 100px;
-}
-
-.nodebanner .content .front
-{
-  position: relative;
-  text-align: center;
-  color: #fff;
-  background-image: url(../img/NodeWillHappen_transparent_100h.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  max-height: 100px;
-  max-width: 1200px;
-}
-
-.nodebanner .content .back
-{
-  position: relative;
-  text-align: center;
-  color: #fff;
-  background-image: url(../img/node20Banner-back.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
 #MadeWithGamma
 {
   background-color: #333;
@@ -1049,4 +1004,11 @@ img::-moz-selection {
 .main
 {
   min-height: 80%;
+}
+
+.WindowsIcon
+{
+  background: url(../img/windows_20px.png) no-repeat center;
+  margin-left: 1.2em;
+  padding: 20px 20px 20px 0px;
 }
