@@ -1,7 +1,7 @@
 ---
 title: Inherently Fast
 id: 1
-video: videos/InherentlyFast.mp4
+VimeoVideo: 478105550
 ---
 
 vvvv programs are compiled and run on the .NET virtual machine. As such they are as fast as if you'd write them in C#.
