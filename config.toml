@@ -80,7 +80,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 		PreviewText = "Download: Preview"
 		PreviewLink = "https://teamcity.vvvv.org/guestAuth/app/rest/builds/id:33209/artifacts/content/vvvv_gamma_2020.3.0-0068-gbfc5bf7649_setup.exe"
-		PreviewVersion = "Version: 2020.3 (incl. VL.Stride 3d rendering)"
+		PreviewVersion = "Version (incl. VL.Stride 3d rendering):"
 		
 		PacksLink = "AdditionalDownloads"
 		PacksText  = "Additional Packs"
