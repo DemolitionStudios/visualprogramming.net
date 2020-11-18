@@ -2,12 +2,11 @@ getLatestBuild();
 
 function getLatestBuild()
 {
-    let proxy = "https://api.codetabs.com/v1/proxy?quest="
     let teamcity = "https://teamcity.vvvv.org"
     let builds = "/guestAuth/app/rest/builds/buildType:vvvv_gamma_stride_Build,branch:default:any,status:success/artifacts/children"
     let versionPattern = /vvvv_gamma_(\d{4}\.\d)/;
 
-    fetch(proxy+teamcity+builds)
+    fetch(teamcity+builds)
         .then(response => response.text())
         .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
         .then(data => {
