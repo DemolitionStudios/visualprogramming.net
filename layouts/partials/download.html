@@ -21,7 +21,7 @@
                 {{ with .Site.Params.download.gamma }}
                 <h4 class="mb-4 underlined"><strong>{{ .Headline }}</strong></h4>
                 <p>{{ .Copy }}</p>
-                <div class="row" id="gammaDownloads" style="visibility: hidden;">
+                <div class="row">
                     <div class="col">
                         <a href="{{ .StableLink }}" class="btn btn-primary btn-xl mb-2" target="{{ .Target }}" onclick="plausible('download')">{{ .StableText }}<span class="WindowsIcon"></span></a>
                         <div class="version text">&nbsp;&nbsp;{{ .StableVersion | markdownify }}</div>
