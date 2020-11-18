@@ -17,11 +17,9 @@ function getLatestBuild()
                 var href = file.getAttribute('href');
                 var version=href.match(versionPattern)[1];
 
-                console.log (href);
-                console.log (version);
-                //document.getElementById('previewButton').href = teamcity+href;
-                //document.getElementById('previewVersion').innerHTML += " " + version;
-                //document.getElementById('gammaDownloads').style = "visibility: visible";
+                document.getElementById('previewButton').href = teamcity+href;
+                document.getElementById('previewVersion').innerHTML += " " + version;
+                document.getElementById('gammaDownloads').style = "visibility: visible";
             }   
         })
 }
