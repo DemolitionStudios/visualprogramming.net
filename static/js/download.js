@@ -1,49 +1,71 @@
-//getLatestBuild();
+let teamcity = "https://teamcity.vvvv.org";
+let proxy = "https://api.codetabs.com/v1/proxy?quest=";
+let builds = "/guestAuth/app/rest/builds/?status=success&buildType=vvvv_gamma_stride_Build&state=finished&count=3"
 
-function getLatestBuild()
+
+async function getLatestBuild()
 {
-    let teamcity = "https://teamcity.vvvv.org";
-    let proxy = "https://api.codetabs.com/v1/proxy?quest=";
-    let builds = "/guestAuth/app/rest/builds/?status=success&buildType=vvvv_gamma_stride_Build&state=finished&count=3"
+    var previews = [];
+
+    //let link = proxy+teamcity+builds;
+    let link = teamcity+builds
+
+    var loading = document.getElementById('loading');
+
+    if (loading !=null )
+    {
+        var previews = await fetchData(link);
+
+        console.log (previews)
+
+        for (var preview of previews)
+        {
+            document.getElementById('previews').innerHTML += 
+            `<a href="${teamcity}${preview.link}" class="btn btn-secondary previewButton">Preview ${preview.buildNumber}</a><br/>`;
+        }
+
+        document.getElementById('loading').remove();   
+    }
+}
+
+async function fetchData(link)
+{
+    var previews = []
     let versionPattern = /(.*?)\+/;
-    let link = proxy+teamcity+builds;
-    //let link = teamcity+builds
 
-    fetch(link)
-        .then(response => response.text())
-        .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
-        .then(data => {
-            var builds = data.getElementsByTagName("build");
-            
+    var builds = await fetch(link)
+    .then(response => response.text())
+    .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+    .then(data => {
+        return data.getElementsByTagName("build");      
+    })
 
-            for (let build of builds) {
-                let buildNumber = build.getAttribute("number");
-                let href = build.getAttribute ("href");
-                let link = "";
+    for (let build of builds) {
+        
+        let buildNumber = build.getAttribute("number");
+        let href = build.getAttribute ("href");
 
-                if (href != null)
+        if (href != null)
+        {
+            await fetch(proxy + teamcity + href + "/artifacts/children")
+            .then(response => response.text())
+            .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+            .then(data => {
+                var file = data.querySelector('file content[href$=".exe"]');
+
+                if (file != null)
                 {
-                    fetch(proxy + teamcity + href + "/artifacts/children")
-                    .then(response => response.text())
-                    .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
-                    .then(data => {
-                        var file = data.querySelector('file content[href$=".exe"]');
-                        
-                        if (file != null)
-                        {
-                            link = file.getAttribute('href');
-                        }   
-                    })
-                }
+                    var exeLink = file.getAttribute('href');
 
-                if (link != null)
-                {
-                   let shortNumber = buildNumber.match(versionPattern)[1];
-                   document.getElementById('gammaDownloads').innerHTML += 
-                   `<a href="${teamcity+link}" class="btn btn-secondary previewButton">Preview ${shortNumber}</a>`;  
-                }
-            }
+                    if (exeLink != null)
+                    {
+                        let shortNumber = buildNumber.match(versionPattern)[1];
+                        previews.push ({link: exeLink, buildNumber: shortNumber});
+                    }
+                }   
+            })
+        }
+    }
 
-            document.getElementById('gammaDownloads').style = "visibility: visible"; 
-        })
+    return previews;
 }

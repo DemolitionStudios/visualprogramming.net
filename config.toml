@@ -79,14 +79,20 @@ home = [ "HTML", "RSS", "JSON"]
 		StableVersion = "Version: 2020.2"
 
 		PreviewText = "Download: Preview"
-		PreviewLink = "https://teamcity.vvvv.org/guestAuth/app/rest/builds/id:33209/artifacts/content/vvvv_gamma_2020.3.0-0068-gbfc5bf7649_setup.exe"
-		PreviewVersion = "Version (incl. VL.Stride 3d rendering):"
+		PreviewLink = "PreviewDownloads"
+		PreviewVersion = "Includes VL.Stride 3d rendering"
 		
 		PacksLink = "AdditionalDownloads"
 		PacksText  = "Additional Packs"
 		PacksWindowTitle = "Additional Packs"
 
 		Target = "_self"
+
+		[params.Download.gamma.previewWindow]
+		Title = "Latest Previews"
+		Subtitle ="For the brave."
+		Text = "Below you find vvvvs latest bits built just in time for your testing pleasures.<br/><br/><strong>Don't use for production! Patches you save with a preview version may not open anymore with the current version!</strong>"
+		
 
 		[params.Download.beta]
 		Headline = "vvvv beta"
