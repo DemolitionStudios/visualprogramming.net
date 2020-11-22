@@ -80,7 +80,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 		PreviewText = "Download: Preview"
 		PreviewLink = "PreviewDownloads"
-		PreviewVersion = "Includes VL.Stride 3d rendering"
+		PreviewVersion = "Includes the VL.Stride 3d rendering engine"
 		
 		PacksLink = "AdditionalDownloads"
 		PacksText  = "Additional Packs"
@@ -90,10 +90,10 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.Download.gamma.previewWindow]
 		Title = "Latest Previews"
-		Subtitle ="For the brave."
-		Text = "Below you find vvvvs latest bits built just in time for your testing pleasures.<br/><br/><strong>Don't use for production! Patches you save with a preview version may not open anymore with the current version!</strong>"
-		
+		Subtitle ="Don't use for production!"
+		Text = 'These are daily development builds. If you find one to be broken, try an earlier one. Please mark problems you report in the forum with the *preview* tag or visit us in the <a href="https://app.element.io/#/room/#vvvv:matrix.org" target="_blank">chat</a> to talk about issues you encounter.'
 
+		
 		[params.Download.beta]
 		Headline = "vvvv beta"
 		Copy = "In development since 2001, vvvv beta has been used by many companies worldwide to create large media environments."
