@@ -22,7 +22,7 @@ async function getLatestBuild()
         {
             document.getElementById('previews').innerHTML += 
             `<a href="${teamcity}${preview.link}" class="btn btn-secondary previewButton">Preview ${preview.buildNumber}</a>`+
-            `&nbsp; &nbsp; <a href="${preview.changesLink}" target="_blank">Changes</a><br/>`;
+            `&nbsp; &nbsp; <a href="${preview.changesLink}" target="_blank" class="changes">Changes</a><br/>`;
         }
 
         document.getElementById('loading').remove();   
