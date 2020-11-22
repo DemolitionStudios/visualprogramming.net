@@ -1,3 +1,33 @@
+let teamcity = "https://teamcity.vvvv.org";
+let proxy = "https://api.codetabs.com/v1/proxy?quest=";
+let builds = "/guestAuth/app/rest/builds/?status=success&buildType=vvvv_gamma_stride_Build&state=finished&count=3"
+
+
+async function getLatestBuild()
+{
+    var previews = [];
+
+    //let link = proxy+teamcity+builds;
+    let link = teamcity+builds
+
+    var loading = document.getElementById('loading');
+
+    if (loading !=null )
+    {
+        var previews = await fetchData(link);
+
+        console.log (previews)
+
+        for (var preview of previews)
+        {
+            document.getElementById('previews').innerHTML += 
+            `<a href="${teamcity}${preview.link}" class="btn btn-secondary previewButton">Preview ${preview.buildNumber}</a>`+
+            `&nbsp; &nbsp; <a href="${preview.changesLink}" target="_blank">Changes</a><br/>`;
+        }
+
+        document.getElementById('loading').remove();   
+    }
+}
 
 async function fetchData(link)
 {
