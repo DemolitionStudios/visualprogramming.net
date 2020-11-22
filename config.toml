@@ -79,7 +79,8 @@ home = [ "HTML", "RSS", "JSON"]
 		StableVersion = "Version: 2020.2"
 
 		PreviewText = "Download: Preview"
-		PreviewVersion = "Version (incl. VL.Stride 3d rendering):"
+		PreviewLink = "PreviewDownloads"
+		PreviewVersion = "Includes the VL.Stride 3d rendering engine"
 		
 		PacksLink = "AdditionalDownloads"
 		PacksText  = "Additional Packs"
@@ -87,16 +88,18 @@ home = [ "HTML", "RSS", "JSON"]
 
 		Target = "_self"
 
+		[params.Download.gamma.previewWindow]
+		Title = "Latest Previews"
+		Subtitle ="Don't use for production!"
+		Text = 'These are daily development builds. If you find one to be broken, try an earlier one.<p>Please mark problems you report in the forum with the *preview* tag or visit us in the <a href="https://app.element.io/#/room/#vvvv:matrix.org" target="_blank">chat</a> to talk about issues you encounter.</p>'
+
+		
 		[params.Download.beta]
 		Headline = "vvvv beta"
 		Copy = "In development since 2001, vvvv beta has been used by many companies worldwide to create large media environments."
 		Text  = "Go to vvvv.org"
 		Link = "https://vvvv.org/downloads"
 		Target = "_blank"
-
-		#Blog section
-		# [params.Blog]
-		# headline    = "Showcase"
 
 		[params.Showreel]
 		headline = "Showcase"

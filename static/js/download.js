@@ -1,25 +1,44 @@
-getLatestBuild();
 
-function getLatestBuild()
+async function fetchData(link)
 {
-    let teamcity = "https://teamcity.vvvv.org"
-    let builds = "/guestAuth/app/rest/builds/buildType:vvvv_gamma_stride_Build,branch:default:any,status:success/artifacts/children"
-    let versionPattern = /vvvv_gamma_(\d{4}\.\d)/;
+    var previews = []
+    let versionPattern = /(.*?)\+/;
 
-    fetch(teamcity+builds)
-        .then(response => response.text())
-        .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
-        .then(data => {
-            var file = data.querySelector('file content[href$=".exe"]');
-            
-            if (file != null)
-            {
-                var href = file.getAttribute('href');
-                var version=href.match(versionPattern)[1];
+    var builds = await fetch(link)
+    .then(response => response.text())
+    .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+    .then(data => {
+        return data.getElementsByTagName("build");      
+    })
 
-                document.getElementById('previewButton').href = teamcity+href;
-                document.getElementById('previewVersion').innerHTML += " " + version;
-                document.getElementById('gammaDownloads').style = "visibility: visible";
-            }   
-        })
+    for (let build of builds) {
+        
+        let buildNumber = build.getAttribute("number");
+        let id = build.getAttribute ("id");
+        let href = build.getAttribute ("href");
+
+        if (href != null)
+        {
+            await fetch(proxy + teamcity + href + "/artifacts/children")
+            .then(response => response.text())
+            .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+            .then(data => {
+                var file = data.querySelector('file content[href$=".exe"]');
+
+                if (file != null)
+                {
+                    var exeLink = file.getAttribute('href');
+
+                    if (exeLink != null)
+                    {
+                        let shortNumber = buildNumber.match(versionPattern)[1];
+                        let changes = `https://teamcity.vvvv.org/viewLog.html?buildId=${id}&tab=buildChangesDiv`;
+                        previews.push ({link: exeLink, buildNumber: shortNumber, changesLink: changes});
+                    }
+                }   
+            })
+        }
+    }
+
+    return previews;
 }

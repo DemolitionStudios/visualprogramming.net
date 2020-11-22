@@ -121,6 +121,34 @@ a:focus {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+#PreviewDownloads .modal-content
+{
+  min-height: 60%;
+  max-height: 70%;
+  width: 30%;
+  min-width: 300px;
+  left: 0;
+}
+
+#PreviewDownloads .previewButton
+{
+  border-radius: 0.3em;
+  border-bottom: 0;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+  padding: 0.3em 1em;
+}
+
+#PreviewDownloads .changes
+{
+    font-family: sans-serif;
+    font-size: 0.8em;
+    border-bottom: 1px solid #bbb;
+}
+
+
 #AdditionalDownloads .modal-dialog a
 {
   color: #000;
@@ -1012,3 +1040,6 @@ img::-moz-selection {
   margin-left: 1.2em;
   padding: 20px 20px 20px 0px;
 }
+
+
+
