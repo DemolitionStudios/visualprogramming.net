@@ -125,7 +125,7 @@ a:focus {
 {
   min-height: 60%;
   max-height: 70%;
-  width: 50%;
+  width: 30%;
   min-width: 300px;
   left: 0;
 }
@@ -141,8 +141,11 @@ a:focus {
   padding: 0.3em 1em;
 }
 
-#PreviewDownloads .previewButton:hover
+#PreviewDownloads .changes
 {
+    font-family: sans-serif;
+    font-size: 0.8em;
+    border-bottom: 1px solid #bbb;
 }
 
 
