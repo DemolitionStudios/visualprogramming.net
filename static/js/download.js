@@ -1,6 +1,6 @@
 let teamcity = "https://teamcity.vvvv.org";
 let proxy = "https://api.codetabs.com/v1/proxy?quest=";
-let builds = "/guestAuth/app/rest/builds/?status=success&buildType=vvvv_gamma_stride_Build&state=finished&count=3"
+let builds = "/guestAuth/app/rest/builds?locator=branch:name:preview%2Fgamma-2020.3&status=success&state=finished&count=3"
 
 
 var tip = tippy('#previewButton', {
