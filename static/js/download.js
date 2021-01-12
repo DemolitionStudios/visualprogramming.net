@@ -81,7 +81,7 @@ async function fetchData(link)
 
         if (href != null)
         {
-            await fetch(proxy + teamcity + href + "/artifacts/children")
+            await fetch(teamcity + href + "/artifacts/children")
             .then(response => response.text())
             .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
             .then(data => {
