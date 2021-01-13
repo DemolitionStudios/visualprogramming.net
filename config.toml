@@ -55,7 +55,7 @@ home = [ "HTML", "RSS", "JSON"]
 		learnmoreButton = "Learn More"
 		learnmoreButtonLink = "Features"
 		tagsHeadline = "It claims to be popular for:"
-		tags = "#creativecoding, #generativedesign, #interactiondesign, #datavisualization, #computervision, #showcontrol, #physicalcomputing, #datascience, #machinelearning, #dotnet"
+		tags = "#creativecoding, #generativedesign, #interactiondesign, #datavisualization, #computervision, #vr, #showcontrol, #physicalcomputing, #datascience, #machinelearning, #dotnet"
 
 		# Overview Section
 		[params.Overview]
