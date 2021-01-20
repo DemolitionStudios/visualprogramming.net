@@ -82,9 +82,8 @@ home = [ "HTML", "RSS", "JSON"]
 		PreviewLink = "PreviewDownloads"
 		PreviewVersion = "Includes the VL.Stride 3d rendering engine"
 		
-		PacksLink = "AdditionalDownloads"
-		PacksText  = "Additional Packs"
-		PacksWindowTitle = "Additional Packs"
+		LibrariesLink = "https://thegraybook.vvvv.org/reference/libraries/overview.html"
+		LibrariesText  = "Additional Libraries"
 
 		Target = "_self"
 
