@@ -82,8 +82,9 @@ home = [ "HTML", "RSS", "JSON"]
 		PreviewLink = "PreviewDownloads"
 		PreviewVersion = "Includes the VL.Stride 3d rendering engine"
 		
-		LibrariesLink = "https://thegraybook.vvvv.org/reference/libraries/overview.html"
 		LibrariesText  = "Additional Libraries"
+		LibrariesLink = "https://thegraybook.vvvv.org/reference/libraries/overview.html"
+		LibrariesTarget = "_self"
 
 		Target = "_self"
 
