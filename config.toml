@@ -47,7 +47,6 @@ home = [ "HTML", "RSS", "JSON"]
 
 		# Hero section
 		[params.Hero]
-		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
 		slogan     = "vvvv"
 		subtitle   = "A visual live-programming environment that takes you from rapid prototyping to final production."
 		tryitButton = "Get it!"
@@ -81,10 +80,12 @@ home = [ "HTML", "RSS", "JSON"]
 		PreviewText = "Download: Preview"
 		PreviewLink = "PreviewDownloads"
 		PreviewVersion = "Includes the VL.Stride 3d rendering engine"
-		
+		# Preview Branch, note %2F instead of '/'
+		PreviewBranch = "preview%2Fgamma-2021.3"
+
 		LibrariesText  = "Additional Libraries"
 		LibrariesLink = "https://thegraybook.vvvv.org/reference/libraries/overview.html"
-		LibrariesTarget = "_self"
+		LibrariesTarget = "_blank"
 
 		Target = "_self"
 

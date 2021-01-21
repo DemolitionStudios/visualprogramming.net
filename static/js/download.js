@@ -1,7 +1,16 @@
-let teamcity = "https://teamcity.vvvv.org";
-let proxy = "https://api.codetabs.com/v1/proxy?quest=";
-let builds = "/guestAuth/app/rest/builds?locator=branch:name:preview%2Fgamma-2020.3&status=success&state=finished&count=3"
+function getTeamcity()
+{
+    var teamcity = "https://teamcity.vvvv.org";
+    var proxy = "https://api.codetabs.com/v1/proxy?quest=";
+    
+    //return proxy + teamcity;
+    return teamcity;
+}
 
+function getBuildsLink(branch)
+{
+    return getTeamcity() + `/guestAuth/app/rest/builds?locator=branch:name:${branch}&status=success&state=finished&count=3`;
+}
 
 var tip = tippy('#previewButton', {
     content: 'Loading...',
@@ -21,7 +30,7 @@ var tip = tippy('#previewButton', {
     onShow(instance) {
         if (!instance._isLoaded)
         {
-            getLatestBuild()
+            getLatestBuild(instance.reference.getAttribute('branch'))
             .then (content => {
                 instance.setContent(content);
                 instance._isLoaded = true;
@@ -34,20 +43,18 @@ var tip = tippy('#previewButton', {
       },
   });
 
-async function getLatestBuild()
+async function getLatestBuild(branch)
 {
     var previews = [];
 
-    let link = teamcity+builds;
-
-    var previews = await fetchData(link);
+    var previews = await fetchData(getBuildsLink(branch));
 
     var div="<table>";
 
     for (var preview of previews)
     {
         div +=`<tr>  
-            <td><a href="${teamcity}${preview.link}" class="btn btn-secondary previewButton" onclick="plausible('downloadPreview')">Preview ${preview.buildNumber}</a></td>
+            <td><a href="${getTeamcity()}${preview.link}" class="btn btn-secondary previewButton" onclick="plausible('downloadPreview')">Preview ${preview.buildNumber}</a></td>
             <td class="date">${preview.date}</td>
             <td><a href="${preview.changesLink}" target="_blank" class="changes">Changes</a></td>
         </tr>`; 
@@ -64,7 +71,7 @@ async function getLatestBuild()
 async function fetchData(link)
 {
     var previews = []
-    let versionPattern = /(.*?)\+/;
+    var versionPattern = /(.*?)\+/;
 
     var builds = await fetch(link)
     .then(response => response.text())
@@ -73,20 +80,20 @@ async function fetchData(link)
         return data.getElementsByTagName("build");      
     })
 
-    for (let build of builds) {
+    for (var build of builds) {
         
-        let buildNumber = build.getAttribute("number");
-        let id = build.getAttribute ("id");
-        let href = build.getAttribute ("href");
+        var buildNumber = build.getAttribute("number");
+        var id = build.getAttribute ("id");
+        var href = build.getAttribute ("href");
 
         if (href != null)
         {
-            await fetch(teamcity + href + "/artifacts/children")
+            await fetch(getTeamcity() + href + "/artifacts/children")
             .then(response => response.text())
             .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
             .then(data => {
                 var file = data.querySelector('file content[href$=".exe"]');
-                let stamp = data.querySelector('file[modificationTime]').getAttribute('modificationTime');           
+                var stamp = data.querySelector('file[modificationTime]').getAttribute('modificationTime');           
 
                 if (file != null)
                 {
@@ -94,8 +101,8 @@ async function fetchData(link)
 
                     if (exeLink != null)
                     {
-                        let shortNumber = buildNumber.match(versionPattern)[1];
-                        let changes = teamcity+`/viewLog.html?buildId=${id}&tab=buildChangesDiv`;
+                        var shortNumber = buildNumber.match(versionPattern)[1];
+                        var changes = getTeamcity()+`/viewLog.html?buildId=${id}&tab=buildChangesDiv`;
                         previews.push ({link: exeLink, buildNumber: shortNumber, changesLink: changes, date: getDate(stamp)});
                     }
                 }   
@@ -116,3 +123,5 @@ function getDate(stamp)
                 
     return `${dd}.${mm}.${yyyy} ${H}:${M}`;
 }
+
+

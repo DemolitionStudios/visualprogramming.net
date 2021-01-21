@@ -26,7 +26,7 @@
                         <a href="{{ .StableLink }}" class="btn btn-primary btn-xl mb-2" target="{{ .Target }}" onclick="plausible('download')">{{ .StableText }}<span class="WindowsIcon"></span></a>
                         <div class="version text">&nbsp;&nbsp;{{ .StableVersion | markdownify }}</div>
                         
-                        <button href="{{ .PreviewLink }}" id="previewButton" class="btn btn-secondary btn-xl mb-2 mt-4">{{ .PreviewText }}<span class="WindowsIcon"></button></a>
+                        <button href="{{ .PreviewLink }}" branch="{{ .PreviewBranch }}" id="previewButton" class="btn btn-secondary btn-xl mb-2 mt-4">{{ .PreviewText }}<span class="WindowsIcon"></button></a>
                         <div class="version text">&nbsp;&nbsp;{{ .PreviewVersion | markdownify }}</div>
 
                     </div>
