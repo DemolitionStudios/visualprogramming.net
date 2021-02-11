@@ -9,7 +9,7 @@ function getTeamcity()
 
 function getBuildsLink(branch)
 {
-    return getTeamcity() + `/guestAuth/app/rest/builds?locator=branch:name:${branch}&status=success&state=finished&count=3`;
+    return getTeamcity() + `/guestAuth/app/rest/builds?locator=branch:name:${branch},status:SUCCESS,state:finished&count=3`;
 }
 
 var tip = tippy('#previewButton', {
