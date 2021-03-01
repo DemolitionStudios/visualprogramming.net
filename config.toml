@@ -87,6 +87,10 @@ home = [ "HTML", "RSS", "JSON"]
 		LibrariesLink = "https://thegraybook.vvvv.org/reference/libraries/overview.html"
 		LibrariesTarget = "_blank"
 
+		ChangeLogText = "Change Log & Previous Releases"
+		ChangeLogLink = "https://thegraybook.vvvv.org/changelog/"
+		ChangeLogTarget = "_blank"
+
 		Target = "_self"
 
 		[params.Download.gamma.previewWindow]

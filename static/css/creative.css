@@ -187,6 +187,17 @@ a:focus {
   margin-bottom: 1.5em;
 }
 
+#PreviousReleases
+{
+  color: #ccc;
+}
+
+#PreviousReleases a
+{
+  border-bottom: 1px solid #888;
+  text-decoration: none;
+}
+
 #Features
 {
   position: relative;
