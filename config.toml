@@ -38,6 +38,7 @@ home = [ "HTML", "RSS", "JSON"]
 		Learn = "Learn"
 		community = "Community"
 		licensing = "Licensing"
+		support = "Support"
 		contact   = "contact"
 
 		# Ribbon
@@ -51,6 +52,8 @@ home = [ "HTML", "RSS", "JSON"]
 		subtitle   = "A visual live-programming environment that takes you from rapid prototyping to final production."
 		tryitButton = "Get it!"
 		tryitButtonLink = "Download"
+		requestADemoButton = "Request a demo"
+		requestADemoLink = "Download"
 		learnmoreButton = "Learn More"
 		learnmoreButtonLink = "Features"
 		tagsHeadline = "It claims to be popular for:"
@@ -176,6 +179,9 @@ home = [ "HTML", "RSS", "JSON"]
 			link = "https://thegraybook.vvvv.org/introduction/language.html"
 			text = "Open Explanation"
 
+	# Support Section
+		[params.support]
+		headline = "Support"
 	# Contact section
 		[params.contact]
 		headline = "Contact"

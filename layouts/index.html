@@ -43,6 +43,10 @@
               {{ partial "licensing.html" .}}
           {{ end }}
 
+          {{ if (.Site.GetPage "Support")}}
+              {{ partial "support.html" .}}
+          {{ end }}
+
           {{ if .Site.Params.contact }}
               {{ partial "contact.html" . }}
           {{ end }}
@@ -50,6 +54,8 @@
           {{ if .Site.Params.footer}}
             {{ partial "footer.html" . }}
           {{ end }}
+
+          {{ partial "requestADemo.html"}}
         </div>
         {{ partial "js.html" . }}
 </html>
