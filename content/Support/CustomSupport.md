@@ -4,9 +4,9 @@ id: 2
 img: img/vvvv-CustomSupport.jpg
 button: Contact Us
 ---
-<p class="font-weight-bold">Using vvvv in a commercial project and need a hand? Our engineering team is here to help!</p>
+<p>Using vvvv in a commercial project and need a hand?</p>
 
-<h5 class="text-light">We offer</h5>
+<p class="text-light mb-4">Our engineering team is here to help!</p>
 
 - Project Consulting
 - Project Support
