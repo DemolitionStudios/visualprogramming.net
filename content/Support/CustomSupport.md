@@ -8,6 +8,6 @@ button: Contact Us
 
 <h5 class="text-light">We offer</h5>
 
-- Project Consulting
-- Project Support
-- Custom Development
+- Guiding you in planning the structure of your application
+- Sharing responsibility for the success of your project
+- Custom feature development
