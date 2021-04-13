@@ -1,7 +1,7 @@
 ---
 title: Custom Training
 id: 3
-img: img/vvvv-Training.jpg
+img: img/vvvv-CustomTraining.jpg
 button: Contact Us
 ---
 <p>Want to jump-start your vvvv expertise?</p>

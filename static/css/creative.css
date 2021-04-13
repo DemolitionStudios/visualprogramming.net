@@ -1063,6 +1063,11 @@ img::-moz-selection {
   background-color: #333;
 }
 
+#Support p, #Support ul
+{
+  font-size: 0.9rem;
+}
+
 #Support .smaller
 {
   font-size: smaller;
