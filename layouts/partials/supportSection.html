@@ -1,10 +1,10 @@
-<div class="col mb-lg-4 text-light">
+<div class="col text-light">
     {{ with .Params.img}}
         <img src="{{ . }}" class="img-fluid">
     {{ end }}
     <h3 class="font-weight-bold mt-3">{{ .Params.title }}</h3>
    
-    <div class="text-faded">
+    <div class="text-faded align-self-stretch">
         <p>{{ .Content }}</p>
         <a href="{{ .Params.link }}" class="btn btn-primary btn-xl blueColor" target="_blank">{{ .Params.button }}</a>
     </div>
