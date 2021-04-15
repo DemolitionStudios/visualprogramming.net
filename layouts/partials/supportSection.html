@@ -10,7 +10,7 @@
             </div>
         </div>
         
-        {{ $button := .Params.title}}
+        {{ $button := .Params.button}}
 
         <div class="card-footer">
             {{ range where (where .Site.RegularPages "Section" "SupportMailTemplates") ".Params.id" "==" .Params.id }}
