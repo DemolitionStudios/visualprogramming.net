@@ -1,7 +1,7 @@
 ---
 title: Custom Support
 id: 3
-img: img/vvvv-CustomSupport.jpg
+img: img/vvvv-CustomSupport2.jpg
 button: Contact Us
 ---
 <p>Using vvvv in a commercial project and need a hand?</p>
