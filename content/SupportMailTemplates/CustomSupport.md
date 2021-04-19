@@ -4,12 +4,8 @@ id: 3
 email: devvvvs@vvvv.org
 subject: Custom Support
 ---
-Using vvvv in a commercial project and need a hand?
+Please tell us briefly:
 
-Our engineering team is here to help!
+* Who you are
 
-Guiding you in planning the structure of your application
-
-Sharing responsibility for the success of your project
-
-Custom feature development
+* What kind of support or development you are interested in

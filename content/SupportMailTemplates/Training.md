@@ -4,12 +4,8 @@ id: 2
 email: devvvvs@vvvv.org
 subject: Custom Training
 ---
-Looking to give your vvvv expertise a jump start?  
+Please tell us briefly:
 
-We get you up to speed!
+* Who you are
 
-Basic training for teams
-
-Specialized training for teams and individuals
-
-A Custom learning experience in accordance with your requirements
+* What kind of training you are interested in
