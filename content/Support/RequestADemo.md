@@ -3,6 +3,7 @@ title: Request a Demo
 id: 1
 img: img/vvvv-RequestADemo2.jpg
 button: Request a demo
+plausible: requestDemo
 ---
 <p>Curious to learn how vvvv can help you get things done?</p>
 

@@ -3,6 +3,7 @@ title: Custom Support
 id: 3
 img: img/vvvv-CustomSupport2.jpg
 button: Get support
+plausible: support
 ---
 <p>Using vvvv in a commercial project and need a hand?</p>
 

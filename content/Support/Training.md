@@ -3,6 +3,7 @@ title: Custom Training
 id: 2
 img: img/vvvv-CustomTraining.jpg
 button: Get Training
+plausible: training
 ---
 <p>Looking to give your vvvv expertise a jump start?</p>
 
