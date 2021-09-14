@@ -1,6 +1,6 @@
 ---
 id: 5
-title: FUES
+title: FUSE
 subtitle:
 link: https://www.thefuselab.io/
 ---
