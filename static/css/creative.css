@@ -73,33 +73,12 @@ a:focus {
   background-color: #555;
 }
 
-#Features .nav-link.active
-{
-  background-color: #ffa800;
-  color: #fff;
-}
-
-#Features .modal-dialog a
-{
-  border: none;
-  color: #000;
-}
-
-#Features .modal-dialog .tab-content a
-{
-  color: #ffa800;
-}
-
 
 #liveCarousel .gray
 {
   color: #888;
 }
 
-#Features .modal-dialog .tab-content .gray
-{
-  color: #888;
-}
 
 .modal-dialog
 {
@@ -198,44 +177,7 @@ a:focus {
   text-decoration: none;
 }
 
-#Features
-{
-  position: relative;
-  background-color: #333;
-}
 
-#Features h2
-{
-  color: #fff;
-}
-
-
-.feature
-{
-  /* padding: 2rem 0rem; */
-  margin: 2rem 0rem 4rem;
-  color: #fff;
-}
-
-.shadow
-{
-  
-}
-
-@media (min-width: 992px) {
-  .col-md-border:not(:last-child) {
-      border-right: 1px solid #d7d7d7;
-  }
-  .col-md-border + .col-md-border {
-      border-left: 1px solid #d7d7d7;
-      margin-left: -1px;
-  }
-}
-
-.feature .description
-{
-  margin: 0;
-}
 
 h4
 {
