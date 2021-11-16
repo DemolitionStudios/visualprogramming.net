@@ -84,7 +84,7 @@ home = [ "HTML", "RSS", "JSON"]
 		PreviewLink = "PreviewDownloads"
 		PreviewVersion = "Unstable, daily preview builds"
 		# Preview Branch, note %2F instead of '/'
-		PreviewBranch = "preview%2Fgamma-2021.4"
+		PreviewBranch = "preview%2F2021.4"
 
 		LibrariesText  = "Additional Libraries"
 		LibrariesLink = "https://thegraybook.vvvv.org/reference/libraries/overview.html"

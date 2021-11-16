@@ -51,13 +51,20 @@ async function getLatestBuild(branch)
 
     var div="<table>";
 
-    for (var preview of previews)
+    if (previews.length > 0)
     {
-        div +=`<tr>  
-            <td><a href="${getTeamcity()}${preview.link}" class="btn btn-secondary previewButton" onclick="plausible('downloadPreview')">Preview ${preview.buildNumber}</a></td>
-            <td class="date">${preview.date}</td>
-            <td><a href="${preview.changesLink}" target="_blank" class="changes">Changes</a></td>
-        </tr>`; 
+        for (var preview of previews)
+        {
+            div +=`<tr>  
+                <td><a href="${getTeamcity()}${preview.link}" class="btn btn-secondary previewButton" onclick="plausible('downloadPreview')">Preview ${preview.buildNumber}</a></td>
+                <td class="date">${preview.date}</td>
+                <td><a href="${preview.changesLink}" target="_blank" class="changes">Changes</a></td>
+            </tr>`; 
+        }
+    }
+    else
+    {
+        div += "<p>No builds available.</p>";
     }
 
     div+="</table>";
@@ -102,7 +109,7 @@ async function fetchData(link)
                     if (exeLink != null)
                     {
                         var shortNumber = buildNumber.match(versionPattern)[1];
-                        var changes = getTeamcity()+`/viewLog.html?buildId=${id}&tab=buildChangesDiv`;
+                        var changes = getTeamcity()+`/viewLog.html?buildId=${id}&tab=buildChangesDiv&user=guest`;
                         previews.push ({link: exeLink, buildNumber: shortNumber, changesLink: changes, date: getDate(stamp)});
                     }
                 }   
