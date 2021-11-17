@@ -1,12 +1,39 @@
+$orange: #ffa800;
+
 #Features
 {
   position: relative;
   background-color: #333;
 
-  .nav-link.active
+  .stickyRow
   {
-    background-color: #ffa800;
-    color: #fff;
+    top: 69px; 
+    position: sticky; 
+    z-index: 999;
+  }
+
+  .featuresMenu
+  {
+    border-radius: 7px;
+    box-shadow: 0px 5px 20px 5px rgba(0,0,0,0.50);
+    background-color: #000000;
+
+    padding: 0.5em;
+
+    li {
+      margin: 0;
+    }
+
+    .nav-link
+    {
+      color: #fff;
+
+      &.active
+      {
+        background-color:$orange;
+        color: #fff;
+      }
+    }
   }
 
   .modal-dialog
@@ -44,11 +71,6 @@
     {
       margin: 0;
     }
-  }
-
-  .shadow
-  {
-    
   }
 
 }

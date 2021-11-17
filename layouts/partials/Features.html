@@ -1,35 +1,44 @@
 {{ "<!-- Live Visual Programming -->" | safeHTML }}
 <section id="Features">
     <div class="container">
-        <div class="row mb-5">
+        <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">{{ .Site.Params.Overview.headline }}</h2>
                 <hr class="primary">
             </div>
         </div>
-        <div class="row">
-          {{ range ((where .Site.RegularPages "Section" "TopFeatures").ByParam "id") }}
-            <div class="col-md-5 mr-auto col-md-border">
-              <div class="row g-0 flex-md-row mb-5 h-md-250 position-relative">
-                <div class="col-6" style="color: #fff">
-                  {{ with .Params.img}}
-                    <img src="{{ . }}" class="img-fluid">
-                  {{ end }}
-                  {{ with .Params.VimeoVideo}}
-                    <div class="vimeoVideo" style="padding:56.25% 0 0 0;position:relative;">
-                      <iframe src="https://player.vimeo.com/video/{{ . }}?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
-                      </iframe>
-                    </div>
-                    <script src="https://player.vimeo.com/api/player.js"></script>
-                  {{ end }}
-                </div>
-                <div class="col-6">
-                  <h5 class="mb-0 mb-3" style="color: #fff; font-weight: bold;">{{ .Title }}</h5>
-                  <div style="font-size: 0.8em; color: #ddd;">{{ .Content  | markdownify }}</div>
-                </div>
-              </div>
-            </div>
-          {{ end }}  
+        <!-- Pills -->
+        <div class="row stickyRow mb-4">
+        <div class="col-12 d-flex justify-content-center">
+          <ul class="nav nav-pills featuresMenu mt-3" id="pills-tab" role="tablist">
+            <!-- Overview Menu -->
+            {{ $sections := ((.Site.GetPage "Overview").Sections).ByParam "id" }}
+            {{ range $index, $value := $sections }}
+            <li class="nav-item" role="presentation">
+              <a class="nav-link {{ if (eq $index 0) }} active {{end}}" id="v-pills-{{ .Params.id }}-tab" data-toggle="pill" href="#v-pills-{{ .Params.id }}" role="tab" aria-controls="v-pills-{{ .Params.id }}" aria-selected="false">{{ .Title }}</a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+        <div class="tab-content" id="pills-tabContent">
+          {{ .Scratch.Set "sections" (.Site.GetPage "Overview")}}
+          <div class="tab-pane fade show active" id="v-pills-0" role="tabpanel" aria-labelledby="pills-topfeatures-tab">
+            {{ .Scratch.Set "sectionTitle" "Top Features"}}
+            {{ partial "Features_Partial" .}}
+          </div>
+          <div class="tab-pane fade" id="v-pills-1" role="tabpanel" aria-labelledby="pills-languages-tab">
+            {{ .Scratch.Set "sectionTitle" "Language"}}
+            {{ partial "Features_Partial" .}}
+          </div>
+          <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="pills-libraries-tab">
+            {{ .Scratch.Set "sectionTitle" "Libraries"}}
+            {{ partial "Features_Partial" .}}
+          </div>
+          <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="pills-libraries-tab">
+            {{ .Scratch.Set "sectionTitle" "Roadmap"}}
+            {{ partial "Features_Partial" .}}
+          </div>
         </div>
         <br>
         <div class="row justify-content-md-center">

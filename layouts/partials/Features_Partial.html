@@ -1,0 +1,29 @@
+{{ "<!-- TopFeatures -->" | safeHTML }}
+<div class="row">
+    {{ range (index (where (.Site.GetPage "Overview").Sections "Title" (.Scratch.Get "sectionTitle")) 0).RegularPages }}
+    <div class="col-md-5 mb-4 mr-auto col-md-border">
+        <div class="row g-0 d-flex">
+          <h3 style="color: #fff; font-weight: bold; margin-left: 12px">{{ .Title }}</h3>
+        </div>
+        <div class="row g-0 d-flex align-items-start position-relative">
+          <div class="col-6" style="color: #fff">
+            {{ with .Params.img}}
+              <img src="{{ . }}" class="img-fluid mediaShadow">
+            {{ end }}
+            {{ with .Params.VimeoVideo}}
+              <div class="mediaShadow">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe src="https://player.vimeo.com/video/{{ . }}?autoplay=0&loop=1&title=0&byline=0&portrait=0" class="embed-responsive-item mediaShadow" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                  </iframe>
+                </div>    
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+            {{ end }}
+          </div>
+          <div class="col-6">
+            <div style="color: #ddd;">{{ .Content  | markdownify }}</div>
+          </div>
+        </div>
+      </div>
+    {{ end }}  
+  </div>
