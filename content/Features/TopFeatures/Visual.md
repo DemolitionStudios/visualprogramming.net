@@ -1,5 +1,5 @@
 ---
-title: Visual
+title: Very Visual
 id: 0
 VimeoVideo: 478019070
 ---

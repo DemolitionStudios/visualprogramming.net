@@ -1,5 +1,5 @@
 ---
-title: Future
+title: The Road Ahead
 id: 7
 img: img/Road_LiveCSharp.gif
 button:
@@ -7,4 +7,4 @@ button:
     buttonLink: https://thegraybook.vvvv.org/roadmap/planned.html
 ---
 
-Further on our agenda, incomplete and in no particular order
+Want to know what we are currently working on and what to expect in upcoming versions?

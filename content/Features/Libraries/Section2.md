@@ -4,10 +4,9 @@ id: 2
 img: img/ReadyToConnect.png
 ---
 
-* SerialPort
 * Kinect v1, v2, Azure
-* Intel RealSense, Orbbec Astra, Nuitrack,
+* Intel RealSense, Orbbec Astra, Nuitrack
 * IDS-Imaging uEye cameras
 * Leap Motion
-* TheEyeTribe Eyetracker
-* OSC, MIDI, DMX, ArtNet, Firmata, UDP, RCP, WebSocket, HTTP, ZMQ, MQTT, ...
+* SerialPort
+* OSC, MIDI, DMX, ArtNet, Firmata, UDP, TCP, RCP, WebSocket, HTTP, ZMQ, MQTT, ...
