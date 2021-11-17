@@ -1,12 +1,12 @@
 {{ "<!-- TopFeatures -->" | safeHTML }}
 <div class="row">
-    {{ range (index (where (.Site.GetPage "Overview").Sections "Title" (.Scratch.Get "sectionTitle")) 0).RegularPages }}
-    <div class="col-md-5 mb-4 mr-auto col-md-border">
+    {{ range (index (where (.Site.GetPage "Overview").Sections "Title" (.Scratch.Get "sectionTitle")) 0).RegularPages.ByParam "id" }}
+    <div class="col-md-5 mb-5 mr-auto col-md-border">
         <div class="row g-0 d-flex">
           <h3 style="color: #fff; font-weight: bold; margin-left: 12px">{{ .Title }}</h3>
         </div>
         <div class="row g-0 d-flex align-items-start position-relative">
-          <div class="col-6" style="color: #fff">
+          <div class="col-12 mb-4" style="color: #fff">
             {{ with .Params.img}}
               <img src="{{ . }}" class="img-fluid mediaShadow">
             {{ end }}
@@ -20,7 +20,7 @@
               <script src="https://player.vimeo.com/api/player.js"></script>
             {{ end }}
           </div>
-          <div class="col-6">
+          <div class="col-12">
             <div style="color: #ddd;">{{ .Content  | markdownify }}</div>
           </div>
         </div>

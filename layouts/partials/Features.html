@@ -8,19 +8,19 @@
             </div>
         </div>
         <!-- Pills -->
-        <div class="row stickyRow mb-4">
-        <div class="col-12 d-flex justify-content-center">
-          <ul class="nav nav-pills featuresMenu mt-3" id="pills-tab" role="tablist">
-            <!-- Overview Menu -->
-            {{ $sections := ((.Site.GetPage "Overview").Sections).ByParam "id" }}
-            {{ range $index, $value := $sections }}
-            <li class="nav-item" role="presentation">
-              <a class="nav-link {{ if (eq $index 0) }} active {{end}}" id="v-pills-{{ .Params.id }}-tab" data-toggle="pill" href="#v-pills-{{ .Params.id }}" role="tab" aria-controls="v-pills-{{ .Params.id }}" aria-selected="false">{{ .Title }}</a>
-            </li>
-            {{ end }}
-          </ul>
+        <div class="row stickyRow mb-5">
+          <div class="col-12 d-flex justify-content-center">
+            <ul class="nav nav-pills featuresMenu mt-3" id="pills-tab" role="tablist">
+              <!-- Overview Menu -->
+              {{ $sections := ((.Site.GetPage "Overview").Sections).ByParam "id" }}
+              {{ range $index, $value := $sections }}
+              <li class="nav-item" role="presentation">
+                <a class="nav-link {{ if (eq $index 0) }} active {{end}}" id="v-pills-{{ .Params.id }}-tab" data-toggle="pill" href="#v-pills-{{ .Params.id }}" role="tab" aria-controls="v-pills-{{ .Params.id }}" aria-selected="false">{{ .Title }}</a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
         </div>
-      </div>
         <div class="tab-content" id="pills-tabContent">
           {{ .Scratch.Set "sections" (.Site.GetPage "Overview")}}
           <div class="tab-pane fade show active" id="v-pills-0" role="tabpanel" aria-labelledby="pills-topfeatures-tab">
@@ -77,15 +77,8 @@
                 </div>
               </div>
 
-              <div class="col-9 mt-4 ml-3 mt-sm-0 ml-sm-0">
+              <div class="col-9 mt-5 ml-3 mt-sm-0 ml-sm-0">
                <div class="tab-content" id="v-pills-tabContent">
-                 <!-- Features Tab -->
-                 <div class="tab-pane fade show active" id="v-pills-features" role="tabpanel" aria-labelledby="v-pills-features-tab">
-                    {{ range ((where .Site.RegularPages "Section" "TopFeatures").ByParam "id") }}
-                      {{ partial "featureTab" .}}
-                    {{ end }}
-                 </div>
-
                  <!-- Overview Tabs -->
                  {{ range $index, $sections}}
                    <div class="tab-pane fade" id="v-pills-{{ .Params.id }}" role="tabpanel" aria-labelledby="v-pills-{{ .Params.id }}-tab">
