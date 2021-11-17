@@ -1,17 +1,18 @@
 {{ "<!-- jQuery -->" | safeHTML }}
-<script src="{{ "/js/jquery.js" | absURL }}"></script>
+<script src="{{ "/js/jquery-3.6.0.min.js" | absURL }}"></script>
 {{ "<!-- Bootstrap Core JavaScript -->" | safeHTML }}
 <script src="{{ "/js/bootstrap.min.js" | absURL }}"></script>
 {{ "<!-- Plugin JavaScript -->" | safeHTML }}
 <script src="{{ "/js/jquery.easing.min.js" | absURL }}"></script>
 <script src="{{ "/js/jquery.fittext.js" | absURL }}"></script>
-<script src="{{ "/js/wow.min.js" | absURL }}"></script>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
 
 {{ "<!-- Custom Theme JavaScript -->" | safeHTML }}
-<script src="{{ "/js/creative.js" | absURL }}"></script>
-<script src="{{ "/js/download.js" | absURL }}"></script>
+{{ $build := resources.Get "js/creative.js" | js.Build "js/creative.js" | minify}}
+<script type="text/javascript" src="{{ $build.RelPermalink }}" defer></script>
+{{ $build := resources.Get "js/download.js" | js.Build "js/download.js" | minify}}
+<script type="text/javascript" src="{{ $build.RelPermalink }}" defer></script>
 
 {{ "<!-- Plausible -->" | safeHTML }}
 <script async defer data-domain="visualprogramming.net" src="https://plausible.io/js/plausible.js"></script>

@@ -1,12 +1,9 @@
 {{ "<!-- TopFeatures -->" | safeHTML }}
-<div class="row">
-    {{ range (index (where (.Site.GetPage "Overview").Sections "Title" (.Scratch.Get "sectionTitle")) 0).RegularPages.ByParam "id" }}
-    <div class="col-md-5 mb-5 mr-auto col-md-border">
-        <div class="row g-0 d-flex">
-          <h3 style="color: #fff; font-weight: bold; margin-left: 12px">{{ .Title }}</h3>
-        </div>
+<div class="row justify-content-start">
+    {{ range (index (where (.Site.GetPage "Features").Sections "Title" (.Scratch.Get "sectionTitle")) 0).RegularPages.ByParam "id" }}
+    <div class="col-md-4 mb-5">
         <div class="row g-0 d-flex align-items-start position-relative">
-          <div class="col-12 mb-4" style="color: #fff">
+          <div class="col-12 mb-3" style="color: #fff">
             {{ with .Params.img}}
               <img src="{{ . }}" class="img-fluid mediaShadow">
             {{ end }}
@@ -21,7 +18,11 @@
             {{ end }}
           </div>
           <div class="col-12">
-            <div style="color: #ddd;">{{ .Content  | markdownify }}</div>
+            <h5 class="title mb-3">{{ .Title }}</h5>
+            <div class="description">{{ .Content  | markdownify }}</div>
+            {{ with .Params.button}}
+              <a href="{{ .buttonLink }}" class="btn btn-secondary btn-lg mt-4" target="_blank">{{ .buttonText }}</a>
+            {{end}}
           </div>
         </div>
       </div>

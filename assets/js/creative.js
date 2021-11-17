@@ -46,6 +46,17 @@
         setAffix();
     });
 
+    //Animate scroll to FeaturesMenu when switching sticky menu
+    $('a[data-toggle="pill"]').on('show.bs.tab', function (e) {
+      
+      const offset = -40;
+      const target = $("#Features").offset().top + offset;
+      
+      $('html, body').animate({
+        scrollTop: (target) 
+      }, 1000, "easeOutExpo");
+    })
+
     function setAffix()
     {
       if ($(document).scrollTop() > 100) {
@@ -54,8 +65,5 @@
         $("nav").removeClass("affix");
       }
     }
-
-    // Initialize WOW.js Scrolling Animations
-    new WOW().init();
 
 })(jQuery); // End of use strict

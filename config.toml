@@ -60,12 +60,8 @@ home = [ "HTML", "RSS", "JSON"]
 		tags = "#creativecoding, #generativedesign, #interactiondesign, #datavisualization, #computervision, #vr, #showcontrol, #physicalcomputing, #datascience, #machinelearning, #dotnet"
 
 		# Overview Section
-		[params.Overview]
+		[params.Features]
 		headline = "Visual Live-Programming with vvvv"
-		modalWindowTitle = "Visual Live Programming with vvvv"
-		modalFeaturesTitle = "Features"
-		button = "More Details"
-		buttonLink = "Modal"
 
 		# Download section
 		[params.Download]
