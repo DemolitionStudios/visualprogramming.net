@@ -79,6 +79,11 @@ $orange: #ffa800;
     color: #ddd;
     font-size: 1em;
     line-height: 1.6em;
+
+    a
+    {
+      color: $orange;
+    };
     
     ul{
       padding: 0 0 0 1em;
