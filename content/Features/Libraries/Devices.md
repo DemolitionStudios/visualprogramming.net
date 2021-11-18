@@ -1,7 +1,7 @@
 ---
 title: Devices and IO Protocols
 id: 5
-img: img/ReadyToConnect.png
+img: img/Lib_Devices.png
 ---
 
 * Kinect v1, v2, Azure
