@@ -1,7 +1,7 @@
 ---
 title: Machine Learning
 id: 4
-img: img/Lib_Nuget.png
+img: img/Lib_ML.png
 ---
 
 * Run any <a href="https://runwayml.com" target="_blank">RunwayML</a> model as a node
