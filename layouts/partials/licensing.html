@@ -1,8 +1,8 @@
 {{ "<!-- LICENSING -->" | safeHTML }}
 <section id="Licensing">
-        <div class="container">
+    <div class="container">
           {{ with .Site.GetPage "/Licensing/Licensing.md" }}
-              <div class="row">
+            <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">{{ .Params.headline }}</h2>
                     <hr class="primary">
@@ -10,9 +10,9 @@
               </div>
             {{ end }}
 
-        <div class="row">
+        <div class="row justify-content-between">
           {{ with .Site.GetPage "/Licensing/TRUST.md" }}
-          <div class="col-md-4 mt-5 paddingRight">
+          <div class="col-md-4 mt-5 pr-2">
             <h3 class="section-heading bold">{{ .Params.headline }}</h3>
             {{ with .Content }}
                 <p>{{ . | markdownify}}</p>
@@ -21,7 +21,7 @@
           {{ end }}
 
           {{ with .Site.GetPage "/Licensing/Commercial.md" }}
-            <div class="col-md-4 mt-5 paddingRight">
+            <div class="col-md-4 mt-5">
                 <h3 class="section-heading bold">{{ .Params.headline }}</h3>
                 {{ with .Content }}
                     <p>{{ . | markdownify}}</p>
@@ -35,7 +35,7 @@
           {{ end }}
 
           {{ with .Site.GetPage "/Licensing/Free.md" }}
-            <div class="col-md-4 mt-5 paddingRight">
+            <div class="col-md-4 mt-5">
                 <h3 class="section-heading bold">{{ .Params.headline }}</h3>
                 {{ with .Content }}
                     <p>{{ . | markdownify }}</p>
@@ -44,6 +44,6 @@
           {{ end }}
 
 
-          </div>
+        </div>
     </div>
 </section>
