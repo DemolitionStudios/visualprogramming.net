@@ -9,4 +9,4 @@ img: img/Lib_FUSE.png
 * Customizable particle systems 
 * Vector fields
 * Fluid simulation
-* Provided via <a href="https://www.thefuselab.io" target="_blank">the FUSE library</a>
+* Provided via the contributed <a href="https://www.thefuselab.io" target="_blank">FUSE</a> library
