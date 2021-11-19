@@ -7,4 +7,4 @@ button:
     buttonLink: https://thegraybook.vvvv.org/roadmap/planned.html
 ---
 
-Want to know what we are currently working on and what to expect in upcoming versions?
+Want to know what we are currently working on and what to expect in upcoming releases?
