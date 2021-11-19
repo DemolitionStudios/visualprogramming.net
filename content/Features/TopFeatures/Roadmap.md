@@ -1,7 +1,7 @@
 ---
 title: The Road Ahead
 id: 7
-img: img/Features_Roadmap2.png
+img: img/Features_Roadmap3.png
 button:
     buttonText: Check Our Roadmap
     buttonLink: https://thegraybook.vvvv.org/roadmap/planned.html
