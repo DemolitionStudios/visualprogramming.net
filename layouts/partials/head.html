@@ -23,8 +23,11 @@
 {{ "<!-- Plugin CSS -->" | safeHTML }}
 <link rel="stylesheet" href="{{ "css/animate.min.css" | absURL }}" type="text/css">
 {{ "<!-- Custom CSS -->" | safeHTML }}
-<link rel="stylesheet" href="{{ "css/creative.css" | absURL }}" type="text/css">
-<link rel="stylesheet" href="{{ "css/modals.css" | absURL }}" type="text/css">
+{{ $style := resources.Get "css/creative.css" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css">
+{{ "<!-- Custom SASS -->" | safeHTML }}
+{{ $style := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css">
 
 {{ "<!-- Newsletter CSS -->" | safeHTML }}
 <link rel="stylesheet" href="https://assets.sendinblue.com/component/form/2ef8d8058c0694a305b0.css">
