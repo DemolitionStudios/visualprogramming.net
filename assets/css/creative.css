@@ -572,11 +572,6 @@ header .header-content .header-content-inner p {
 
 @media (min-width: 576px) {
 
-    .nodebanner .content .front
-    {
-      background-image: url(../img/NodeWillHappen_transparent_100h.png) !important;
-    }
-
     header .header-quad .vvvv
     {
       height: 80px;
