@@ -73,7 +73,7 @@ home = [ "HTML", "RSS", "JSON"]
 		Copy = "First released in April 2020, vvvv gamma is the next generation of vvvv, entirely rewritten from scratch."
 
 		StableText  = "Download: Stable"
-		StableLink = "https://teamcity.vvvv.org/guestAuth/app/rest/builds/id:34371/artifacts/content/vvvv_gamma_2021.3.3_setup.exe"
+		StableLink = "https://teamcity.vvvv.org/guestAuth/app/rest/builds/id:34879/artifacts/content/vvvv_gamma_2021.4.0_setup.exe"
 		StableVersion = "Version: 2021.3.3"
 
 		PreviewText = "Download: Preview"
