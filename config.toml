@@ -74,7 +74,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 		StableText  = "Download: Stable"
 		StableLink = "https://teamcity.vvvv.org/guestAuth/app/rest/builds/id:34879/artifacts/content/vvvv_gamma_2021.4.0_setup.exe"
-		StableVersion = "Version: 2021.3.3"
+		StableVersion = "Version: 2021.4"
 
 		PreviewText = "Download: Preview"
 		PreviewLink = "PreviewDownloads"
