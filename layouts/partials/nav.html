@@ -18,9 +18,9 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger noUnderline" href="#{{ .Site.Params.navigation.links.download }}">{{ .Site.Params.navigation.links.download }}</a>
                     </li>
-                    {{ if or .Site.Params.Blog .Site.Params.Showreel}}
+                    {{ if or .Site.Params.Blog .Site.Params.showcase}}
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger noUnderline" href="#Gallery">{{ .Site.Params.navigation.links.gallery }}</a>
+                        <a class="nav-link js-scroll-trigger noUnderline" href="#showcase">{{ .Site.Params.navigation.links.showcase }}</a>
                     </li>
                     {{ end }}
                     <li class="nav-item">
