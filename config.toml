@@ -50,7 +50,7 @@ home = [ "HTML", "RSS", "JSON"]
 		[params.Hero]
 		slogan     = "vvvv"
 		subtitle   = "A visual live-programming environment that takes you from rapid prototyping to final production."
-		tryitButton = "Get it!"
+		tryitButton = "Download"
 		tryitButtonLink = "Download"
 		requestADemoButton = "Request a demo"
 		requestADemoLink = "Support"
