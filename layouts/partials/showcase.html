@@ -10,8 +10,18 @@
         </div>
     {{ end }}
 
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
+
+        <div class="row justify-content-center mb-3 mb-md-1">
+            <div class="col-11 col-lg-8">
+                <div class="row">
+                    <div class="col d-flex">
+                        <div class="label py-1 px-2 text-center">Recent</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-9 mx-3 mx-md-0">
 
                 <!-- Carousel for > SM: Two items visible -->
                 <div class="d-none d-md-block">
@@ -29,10 +39,10 @@
                                 <div class="row mx-5">
                                     {{ range $elem:= $seq }}
                                     <div class="carousel-item {{if eq $elem 0}}active{{end}}">
-                                        <div class="row justify-content-around my-3">
-                                            {{ partial "madeWithGammaCard" (dict "context" (index $pages $elem) "index" $elem) }}
+                                        <div class="row justify-content-between my-3 mx-0">
+                                            {{ partial "madeWithGammaCard" (dict "context" (index $pages $elem) "index" $elem "right" false) }}
                                             {{ with (add $elem 1)}}
-                                                {{ partial "madeWithGammaCard" (dict "context" (index $pages .) "index" .) }}
+                                                {{ partial "madeWithGammaCard" (dict "context" (index $pages .) "index" . "right" true) }}
                                             {{ end }}
                                         </div>
                                     </div>
@@ -86,18 +96,18 @@
                 </div>
             </div>
         </div>
-
-    {{ with .Site.Params.Showcase }}
-        <div class="row justify-content-center mt-3">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h3>{{ .ShowreelHeadline }}</h3>
+        <div class="row justify-content-center mb-3">
+            <div class="col-11 col-lg-8">
+                <div class="row">
+                    <div class="col d-flex">
+                        <div class="label py-1 px-2 text-center">Past</div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row no-gutter mt-2">
-            <div class="col-lg-8 offset-lg-2 text-center">
-                <p class="text-faded">{{ .ShowreelSubline }}</p>
-            </div>
-            <div class="col-lg-8 offset-lg-2 mt-2 text-center mediaShadow">
+    {{ with .Site.Params.Showcase }}
+        <div class="row mt-2 px-3 justify-content-center">
+            <div class="col-11 col-lg-8 mx-2 text-center px-0 mediaShadow">
                 {{ partial "vimeo" .vimeo }}
             </div>
         </div>

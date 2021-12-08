@@ -14,19 +14,8 @@
             {{ partial "Features.html" . }}
           {{ end }}
 
-          {{ if .Site.Params.Download }}
-              {{ partial "download.html" . }}
-              {{ partial "PreviewDownloads.html" . }}
-          {{ end }}
-
           {{ if .Site.Params.Showcase }}
             {{ partial "showcase.html" . }}
-          {{ if .Site.Params.Showreel }}
-            {{ partial "showreel.html" . }}
-          {{ end }}
-
-          {{ if .Site.Params.MadeWithGamma }}
-            {{ partial "madeWithGamma.html" . }}
           {{ end }}
 
           {{ if .Site.Params.Learn.list }}
@@ -63,4 +52,5 @@
           {{ end }}
         </div>
         {{ partial "js.html" . }}
+    </body>
 </html>
