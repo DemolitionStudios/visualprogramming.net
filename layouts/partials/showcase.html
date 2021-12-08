@@ -35,19 +35,17 @@
                             {{ end }}
                         </ol>
                         <div class="carousel-inner">
-                            <div class="wrapper">
-                                <div class="row mx-5">
-                                    {{ range $elem:= $seq }}
-                                    <div class="carousel-item {{if eq $elem 0}}active{{end}}">
-                                        <div class="row justify-content-between py-3 mx-0">
-                                            {{ partial "madeWithGammaCard" (dict "context" (index $pages $elem) "index" $elem "right" false) }}
-                                            {{ with (add $elem 1)}}
-                                                {{ partial "madeWithGammaCard" (dict "context" (index $pages .) "index" . "right" true) }}
-                                            {{ end }}
-                                        </div>
+                            <div class="row mx-5">
+                                {{ range $elem:= $seq }}
+                                <div class="carousel-item {{if eq $elem 0}}active{{end}}">
+                                    <div class="row justify-content-between py-3 mx-0">
+                                        {{ partial "madeWithGammaCard" (dict "context" (index $pages $elem) "index" $elem "right" false) }}
+                                        {{ with (add $elem 1)}}
+                                            {{ partial "madeWithGammaCard" (dict "context" (index $pages .) "index" . "right" true) }}
+                                        {{ end }}
                                     </div>
-                                    {{ end }}
                                 </div>
+                                {{ end }}
                             </div>
                         </div>
 
@@ -71,16 +69,14 @@
                             {{ end }}
                         </ol>
                         <div class="carousel-inner">
-                            <div class="wrapper">
-                                <div class="row mx-sm-5">
-                                    {{ range $index, $elem:= $pages }}
-                                    <div class="carousel-item {{if eq $index 0}}active{{end}}">
-                                        <div class="row justify-content-center py-3">
-                                            {{ partial "madeWithGammaCard" (dict "context" $elem "index" $index) }}
-                                        </div>
+                            <div class="row mx-sm-5">
+                                {{ range $index, $elem:= $pages }}
+                                <div class="carousel-item {{if eq $index 0}}active{{end}}">
+                                    <div class="row justify-content-center py-3">
+                                        {{ partial "madeWithGammaCard" (dict "context" $elem "index" $index) }}
                                     </div>
-                                    {{ end }}
                                 </div>
+                                {{ end }}
                             </div>
                         </div>
 
