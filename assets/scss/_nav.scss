@@ -1,0 +1,39 @@
+#mainNav
+{
+    .nav-item
+    {
+        margin: 0px;
+        line-height: 1em;
+
+        &.download-pill
+        {
+            padding: 0px;
+            border-radius: 6px;
+            background-color: $orange;
+            line-height: 1em;
+
+            -webkit-transition: all .35s;
+            -moz-transition: all .35s;
+            transition: all .35s;
+            
+            a {
+                text-transform: uppercase;
+                font-weight: 700;    
+                color: #ffffff;
+                margin: 0px;
+                font-size: 13px;
+
+                &.active
+                {
+                    color: #ffffff !important;
+                }
+            }
+
+            &:hover
+            {
+                background-color: $orange-hover;
+            }
+        }
+
+    }
+}

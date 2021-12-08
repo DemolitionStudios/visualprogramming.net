@@ -11,32 +11,29 @@
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="navbar-links">
-                <ul class="navbar-nav nav ml-auto mr-1 pl-5">
-                    <li class="nav-item">
+                <ul class="navbar-nav nav ml-auto mr-1">
+                    <li class="nav-item ml-4 mx-lg-0">
                         <a class="nav-link js-scroll-trigger noUnderline" href="#{{ .Site.Params.navigation.links.features }}">{{ .Site.Params.navigation.links.features }}</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger noUnderline" href="#{{ .Site.Params.navigation.links.download }}">{{ .Site.Params.navigation.links.download }}</a>
-                    </li>
                     {{ if or .Site.Params.Blog .Site.Params.Showreel}}
-                    <li class="nav-item">
+                    <li class="nav-item mx-4 mx-lg-0">
                         <a class="nav-link js-scroll-trigger noUnderline" href="#Gallery">{{ .Site.Params.navigation.links.gallery }}</a>
                     </li>
                     {{ end }}
-                    <li class="nav-item">
+                    <li class="nav-item mx-4 mx-lg-0">
                         <a class="nav-link js-scroll-trigger noUnderline" href="#{{ .Site.Params.navigation.links.learn }}">{{ .Site.Params.navigation.links.learn }}</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-4 mx-lg-0">
                         <a class="nav-link js-scroll-trigger noUnderline" href="#{{ .Site.Params.navigation.links.community }}">{{ .Site.Params.navigation.links.community }}</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-4 mx-lg-0">
                         <a class="nav-link js-scroll-trigger noUnderline" href="#{{ .Site.Params.navigation.links.licensing }}">{{ .Site.Params.navigation.links.licensing }}</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-4 mx-lg-0">
                         <a class="nav-link js-scroll-trigger noUnderline" href="#{{ .Site.Params.navigation.links.support }}">{{ .Site.Params.navigation.links.support }}</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger noUnderline" href="#{{ .Site.Params.navigation.links.contact }}">{{ .Site.Params.navigation.links.contact }}</a>
+                    <li class="nav-item download-pill mx-2 mx-sm-1 mx-lg-4 pl-3 pl-sm-0 mb-3 mb-sm-0">
+                        <a class="nav-link js-scroll-trigger noUnderline" href="#{{ .Site.Params.navigation.links.download }}">{{ .Site.Params.navigation.links.download }}</a>
                     </li>
                 </ul>
             </div>
