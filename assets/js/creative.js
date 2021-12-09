@@ -66,4 +66,9 @@
       }
     }
 
+    //Hide Hamburger when item clicked
+    // $('.navbar-collapse a').click(function(){
+    //   $(".navbar-collapse").addClass('no-transition').collapse('hide');
+    // });
+
 })(jQuery); // End of use strict

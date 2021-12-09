@@ -14,12 +14,8 @@
             {{ partial "Features.html" . }}
           {{ end }}
 
-          {{ if .Site.Params.Showreel }}
-            {{ partial "showreel.html" . }}
-          {{ end }}
-
-          {{ if .Site.Params.MadeWithGamma }}
-            {{ partial "madeWithGamma.html" . }}
+          {{ if .Site.Params.Showcase }}
+            {{ partial "showcase.html" . }}
           {{ end }}
 
           {{ if .Site.Params.Learn.list }}
@@ -56,4 +52,5 @@
           {{ end }}
         </div>
         {{ partial "js.html" . }}
+    </body>
 </html>

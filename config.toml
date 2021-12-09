@@ -34,7 +34,7 @@ home = [ "HTML", "RSS", "JSON"]
 		[params.navigation.links]
 		features  = "Features"
 		download  = "Download"
-		gallery	= "Showcase"
+		showcase = "Showcase"
 		Learn = "Learn"
 		community = "Community"
 		licensing = "Licensing"
@@ -105,13 +105,11 @@ home = [ "HTML", "RSS", "JSON"]
 		Link = "https://vvvv.org/downloads"
 		Target = "_blank"
 
-		[params.Showreel]
+		[params.Showcase]
 		headline = "Showcase"
-		subline = "Projects in this showreel were realized mostly with vvvv beta within the past few years."
+		showreelHeadline = "Showreel 2002 - 2019"
+		showreelSubline = "Projects in this showreel were realized mostly with vvvv beta within the past few years."
 		vimeo = 371511910
-
-		[params.MadeWithGamma]
-		headline = "Made with vvvv gamma"
 
 	#Community section
 	  [params.Community]

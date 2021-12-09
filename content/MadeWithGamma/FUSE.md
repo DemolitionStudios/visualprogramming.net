@@ -1,8 +1,10 @@
 ---
-id: 5
+id: 6
+author: fuselab
 title: FUSE
 subtitle:
 link: https://www.thefuselab.io/
+img: img/MadeWithGamma/Fuse.png
 ---
 
 An open source library for visually programming on the GPU.
