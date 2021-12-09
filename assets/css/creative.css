@@ -144,7 +144,7 @@ a:focus {
   border-bottom: 1px solid #fff;
 }
 
-#PreviewDownloads #previewButton
+#PreviewDownloads .previewButton
 {
   border-radius: 0.4em;
   border-bottom: 0;
