@@ -71,8 +71,11 @@
       loop: true,
       slidesPerView: 1,
       centeredSlides: false,
+      // Disable preloading of all images
+      preloadImages: false,
+      // Enable lazy loading
+      lazy: true,
 
-      // If we need pagination
       pagination: {
         el: '.swiper-pagination',
         clickable: true
@@ -85,7 +88,6 @@
         },
       },
     
-      // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
