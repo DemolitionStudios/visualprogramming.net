@@ -12,7 +12,7 @@
 
 
         <div class="row justify-content-center mb-3 mb-md-1">
-            <div class="col-11 col-lg-8">
+            <div class="col-11 col-xl-9">
                 <div class="row">
                     <div class="col d-flex">
                         <div class="label py-1 px-2 text-center">Recent</div>
@@ -21,79 +21,32 @@
             </div>
         </div>
         <div class="row justify-content-center mb-5">
-            <div class="col-lg-9 mx-3 mx-md-0">
+            <div class="col-11 col-xl-9">
+                {{ $pages := (where .Site.RegularPages "Section" "MadeWithGamma").ByParam "id" }}
+                {{ $len := len $pages }}
+                {{ $seq := seq 0 2 (sub $len 1) }}
 
-                <!-- Carousel for > SM: Two items visible -->
-                <div class="d-none d-md-block">
-                    <div id="MadeWithGammaCarousel2" class="carousel slide" data-ride="carousel" data-interval="false">
-                        {{ $pages := (where .Site.RegularPages "Section" "MadeWithGamma").ByParam "id" }}
-                        {{ $len := len $pages }}
-                        {{ $seq := seq 0 2 (sub $len 1) }}
-                        <ol class="carousel-indicators">
-                            {{ range $index, $elem:= $seq }}
-                                <li data-target="#MadeWithGammaCarousel2" data-slide-to="{{ $index }}" class="{{if eq $elem 0}}active{{end}}"></li>
-                            {{ end }}
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="row mx-5">
-                                {{ range $elem:= $seq }}
-                                <div class="carousel-item {{if eq $elem 0}}active{{end}}">
-                                    <div class="row justify-content-between py-3 mx-0">
-                                        {{ partial "madeWithGammaCard" (dict "context" (index $pages $elem) "index" $elem "right" false) }}
-                                        {{ with (add $elem 1)}}
-                                            {{ partial "madeWithGammaCard" (dict "context" (index $pages .) "index" . "right" true) }}
-                                        {{ end }}
-                                    </div>
-                                </div>
-                                {{ end }}
-                            </div>
-                        </div>
-
-                        <button class="carousel-control-prev" type="button" data-target="#MadeWithGammaCarousel2" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-target="#MadeWithGammaCarousel2" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </button>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        {{ range $index, $elem:= $pages }}
+                            {{ partial "madeWithGammaCard" (dict "context" $elem "index" $index) }}
+                        {{ end }}
                     </div>
-                </div>
+                </div>           
 
-                <!-- Carousel for < md: One visible -->
-                <div class="d-block d-md-none">
-                    <div id="MadeWithGammaCarousel1" class="carousel slide" data-ride="carousel" data-interval="false">
-                        <ol class="carousel-indicators">
-                            {{ range $index, $elem:= $pages }}
-                                <li data-target="#MadeWithGammaCarousel1" data-slide-to="{{ $index }}" class="{{if eq $index 0}}active{{end}}"></li>
-                            {{ end }}
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="row mx-sm-5">
-                                {{ range $index, $elem:= $pages }}
-                                <div class="carousel-item {{if eq $index 0}}active{{end}}">
-                                    <div class="row justify-content-center py-3">
-                                        {{ partial "madeWithGammaCard" (dict "context" $elem "index" $index) }}
-                                    </div>
-                                </div>
-                                {{ end }}
-                            </div>
-                        </div>
-
-                        <button class="carousel-control-prev" type="button" data-target="#MadeWithGammaCarousel1" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-target="#MadeWithGammaCarousel1" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </button>
-                    </div>
-                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
             </div>
         </div>
         <div class="row justify-content-center mb-3">
-            <div class="col-11 col-lg-8">
+            <div class="col-11 col-xl-9">
                 <div class="row">
                     <div class="col d-flex">
                         <div class="label py-1 px-2 text-center">Past</div>
@@ -103,7 +56,7 @@
         </div>
     {{ with .Site.Params.Showcase }}
         <div class="row mt-2 px-3 justify-content-center">
-            <div class="col-11 col-lg-8 mx-2 text-center px-0 mediaShadow">
+            <div class="col-11 col-xl-9 mx-2 text-center px-0 mediaShadow">
                 {{ partial "vimeo" .vimeo }}
             </div>
         </div>

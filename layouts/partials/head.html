@@ -29,6 +29,13 @@
 {{ $style := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css">
 
+{{ "<!-- Swiper -->" | safeHTML }}
+{{ $style := resources.Get "css/swiper-bundle.min.css" }}
+<link rel="stylesheet" href="{{ $style.Permalink }}"/>
+{{ $js := resources.Get "js/swiper-bundle.min.js" }}
+<script src="{{ $js.Permalink }}"></script>
+
+
 {{ "<!-- Newsletter CSS -->" | safeHTML }}
 <link rel="stylesheet" href="https://assets.sendinblue.com/component/form/2ef8d8058c0694a305b0.css">
 <link rel="stylesheet" href="https://assets.sendinblue.com/component/clickable/b056d6397f4ba3108595.css">

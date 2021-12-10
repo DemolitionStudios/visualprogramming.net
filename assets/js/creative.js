@@ -66,9 +66,31 @@
       }
     }
 
-    //Hide Hamburger when item clicked
-    // $('.navbar-collapse a').click(function(){
-    //   $(".navbar-collapse").addClass('no-transition').collapse('hide');
-    // });
+    //Swiper slider
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      slidesPerView: 1,
+      centeredSlides: false,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+      },
+    
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    
 
 })(jQuery); // End of use strict
