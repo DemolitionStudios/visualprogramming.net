@@ -6,4 +6,4 @@ subtitle:
 link: http://badaboom.berlin/portfolio/fantasticmobility/
 img: img/MadeWithGamma/BBB_FantasticMobility.png
 ---
-A playful hands-on media installation with an analog puzzle, pieces with parameters and crazy mobility prototypes.
+A playful hands-on media installation with an analog puzzle, pieces with parameters and crazy prototypes.
