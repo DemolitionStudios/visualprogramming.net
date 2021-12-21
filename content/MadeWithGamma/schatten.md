@@ -1,6 +1,6 @@
 ---
 id: 4
-author: badaboom
+author: BADABOOMBERLIN
 title: Schattenfänger
 subtitle:
 link: http://badaboom.berlin/portfolio/schattenfaenger/
