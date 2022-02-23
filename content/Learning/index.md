@@ -7,7 +7,7 @@ firstColumn:
       image: img/icons/brightness-alt-high-fill.svg
   - item:
       text: > 
-            Video <a href="https://www.youtube.com/playlist?list=PLBTgwgsWWcT_VMMrwsy3Ao7_ubazEGL4s" target="_blank">tutorials</a> and <a href="https://www.youtube.com/playlist?list=PLBTgwgsWWcT-G9lk-IlKLkGZJ9NnXcuBV" target="_blank">HowTo's</a>
+            Video <a href="https://www.youtube.com/playlist?list=PLBTgwgsWWcT_VMMrwsy3Ao7_ubazEGL4s" target="_blank">Tutorials</a> and <a href="https://www.youtube.com/playlist?list=PLBTgwgsWWcT-G9lk-IlKLkGZJ9NnXcuBV" target="_blank">HowTo's</a>
       image: img/icons/collection-play-fill.svg
   - item:
       text: > 
