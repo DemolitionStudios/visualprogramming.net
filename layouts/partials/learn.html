@@ -10,19 +10,30 @@
             </div>
         </div>
     {{ end }}
-    <div class="container">
+    <div class="container mt-4">
+
         <div class="row">
-            {{ range .Site.Params.Learn.list }}
-            <div class="col-md-3 text-center mt-5">
-                <div>
-                    <a href="{{ .link }}" class="noUnderline">
-          					       <i class="fa fa-4x {{ .icon }}"></i>
-          					</a>
-                    <h3>{{ .title }}</h3>
-                        <p class="text-muted">{{ .description }}</p><br><a href="{{ .link }}" class="btn btn-default btn-xl noUnderline onWhite" target="_blank">{{ .text }}</a>
-                </div>
+            <div class="col-xs-12 col-md-6 col-xl-4">
+                <ul class="list-group list-group-flush mr-3">
+                {{ range (.Site.GetPage "Learning").Params.firstColumn}}
+                    <li class="list-group-item py-3">{{with .item.image }} <img src="{{ . }}" class="mr-3 icon"> {{ end }} {{ .item.text | safeHTML }}</li>
+                {{ end }}
+                </ul>
             </div>
-            {{ end }}
+
+            <div class="col-xs-12 col-md-6 col-xl-4">
+                <ul class="list-group list-group-flush mr-3">
+                {{ range (.Site.GetPage "Learning").Params.secondColumn}}
+                    <li class="list-group-item py-3">{{with .item.image }} <img src="{{ . }}" class="mr-3 icon"> {{ end }} {{ .item.text | safeHTML }}</li>
+                {{ end }}
+                </ul>
+            </div>
+
+            <div class="col-lg-4">
+                {{ $img := (.Site.GetPage "Learning").Params.image }}
+                <img src="{{ $img }}"/>
+            </div>
+        
         </div>
     </div>
 </section>

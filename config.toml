@@ -140,38 +140,8 @@ home = [ "HTML", "RSS", "JSON"]
 		text = "Open Gettogether"
 
 	# Learn section
-	[params.Learn]
-
-			headline = "Learn"
-
-			[[params.Learn.list]]
-			icon = "fa-eye"
-			title = "Tutorial Videos"
-			description = "Beginners start here: Get a feeling for working with vvvv."
-			link = "https://www.youtube.com/playlist?list=PLBTgwgsWWcT_VMMrwsy3Ao7_ubazEGL4s"
-			text = "Open Tutorials"
-
-			[[params.Learn.list]]
-			headline = "HowTos"
-      icon = "fa-lightbulb-o"
-      title = "HowTo Videos"
-      description = "Specific questions answered step-by-step."
-			link = "https://www.youtube.com/playlist?list=PLBTgwgsWWcT-G9lk-IlKLkGZJ9NnXcuBV"
-			text = "Open HowTos"
-
-      [[params.Learn.list]]
-      icon = "fa-book"
-      title = "Reference"
-      description = "The manual: Technical descriptions of vvvv in detail."
-			link = "https://thegraybook.vvvv.org/reference/hde/gui.html"
-			text = "Open Reference"
-
-			[[params.Learn.list]]
-			icon = "fa fa-bolt"
-			title = "Explanations"
-			description = "The bigger picture: Providing background and context."
-			link = "https://thegraybook.vvvv.org/introduction/language.html"
-			text = "Open Explanation"
+		[params.Learn]
+		headline = "Learn"
 
 	# Support Section
 		[params.support]
