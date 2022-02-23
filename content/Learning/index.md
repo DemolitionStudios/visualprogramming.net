@@ -20,6 +20,10 @@ secondColumn:
   - item: 
       text: > 
             <a href="https://thenodeinstitute.org/" target="_blank">Courses</a>
+      image: img/icons/mortarboard-fill.svg
+  - item:
+      text: >
+            Integrated <a href="https://thegraybook.vvvv.org/reference/hde/findinghelp.html" target="_blank">Help Browser</a>
       image: img/icons/stack.svg
   - item: 
       text: > 
