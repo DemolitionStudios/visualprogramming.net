@@ -13,7 +13,7 @@
     <div class="container-sm mt-4">
 
         <div class="row">
-            <div class="col-sm-12 col-md-7 col-xl-4">
+            <div class="col-sm-12 col-lg-6 col-xl-4">
                 <ul class="list-group list-group-flush mr-3">
                 {{ range (.Site.GetPage "Learning").Params.firstColumn}}
                     <li class="list-group-item py-3">{{with .item.image }} <img src="{{ . }}" class="mr-3 icon"> {{ end }} {{ .item.text | safeHTML }}</li>
@@ -21,7 +21,7 @@
                 </ul>
             </div>
 
-            <div class="col-sm-12 col-md-7 col-xl-4">
+            <div class="col-sm-12 col-lg-6 col-xl-4">
                 <ul class="list-group list-group-flush mr-3">
                 {{ range (.Site.GetPage "Learning").Params.secondColumn}}
                     <li class="list-group-item py-3">{{with .item.image }} <img src="{{ . }}" class="mr-3 icon"> {{ end }} {{ .item.text | safeHTML }}</li>
@@ -29,9 +29,9 @@
                 </ul>
             </div>
 
-            <div class="col-sm-12 col-md-7 col-xl-4">
+            <div class="col-sm-12 col-lg-6 col-xl-4">
                 {{ $img := (.Site.GetPage "Learning").Params.image }}
-                <img src="{{ $img }}"/>
+                <img src="{{ $img }}" alt="Integrated Help Browser"/>
             </div>
         
         </div>
