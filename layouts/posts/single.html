@@ -1,0 +1,46 @@
+{{ define "main" }}
+<main id="blog">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-8">
+                    <div class="post">
+                        <div class="header">
+                            <h2 class="display-1">{{ .Params.title}}</h2>
+                            {{ with .Params.author }}
+                                <span class="author mr-3"><a href="" class="author">{{ . }}</a></span>
+                            {{ end }}
+                            {{ with .Params.date }}
+                            <span class="date">{{ time.Format "Monday, Jan 2, 2006" .}}</span>
+                            {{ end }}
+                        </div>
+                        <div class="content">
+                            {{ .Content }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="sidebar sticky-top">
+                        <div class="list">
+                            <h4>Recent posts:</h4>
+                            <ul class="list-group list-group-flush mb-2">
+                                {{ range ( first 5 ( where .Site.RegularPages "Type" "posts").ByDate.Reverse ) }}
+                                <li class="list-group-item"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                                {{end}}
+                            </ul>
+                            <a href="{{ "/posts/" | relLangURL }}" class="link">All posts</a>
+                        </div>
+
+                        <div class="list mt-5">
+                            <h4>Categories:</h4>
+                            <ul class="list-group list-group-flush">
+                            {{ range .Site.Taxonomies.categories.ByCount }}
+                                <li class="list-group-item"><a href="{{ .Page.RelPermalink }}">{{ .Page.Title | title}}</a></li>
+                            {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    {{ end }}

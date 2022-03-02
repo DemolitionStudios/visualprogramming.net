@@ -1,12 +1,13 @@
+baseURL = "https://visualprogramming.net/"
+languageCode = "en-us"
+paginate = 10
+paginatePath = "page"
+
 [markup]
 	[markup.goldmark.renderer]
 	      hardWraps = false
 	      unsafe = true
 	      xhtml = false
-
-baseURL = "https://visualprogramming.net/"
-languageCode = "en-us"
-
 
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-creative-theme-master"

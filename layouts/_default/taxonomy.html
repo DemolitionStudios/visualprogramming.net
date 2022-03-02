@@ -1,0 +1,46 @@
+{{ define "main" }}
+<main id="blog">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-8">
+                <div class="post">
+                    <div class="header">
+                        <h2 class="display-1">{{ .Title }}</h2>
+                    </div>
+                    <div class="content">
+                          {{ range .Paginator.Pages }}
+                            {{ .Render "summary"}}
+                          {{ end }}
+                        
+                        {{ partial "pagination.html" . }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="sidebar sticky-top">
+                    <div class="list mt-5">
+                        <h4>Categories:</h4>
+                        <ul class="list-group list-group-flush">
+                            {{ range .Site.Taxonomies.categories.ByCount }}
+                              <li class="list-group-item"><a href="{{ .Page.RelPermalink }}">{{ .Page.Title | title}}</a></li>
+                            {{ end }}
+                        </ul>
+
+                        <a href="{{ "/posts/" | relLangURL }}" class="link">All posts</a>
+                    </div>
+                    <div class="list mt-5">
+                      <h4>Years:</h4>
+                      <ul class="list-group list-group-flush">
+                        {{ range (where .Site.Pages "Section" "posts").Reverse }}
+                          {{ range .Sections }}
+                            <li class="list-group-item"><a href="{{ .Page.RelPermalink }}">{{ .Title }}</a></li>
+                          {{ end  }}
+                        {{ end }}
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{{ end }}
+
