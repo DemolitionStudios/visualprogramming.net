@@ -57,14 +57,14 @@
       }, 1000, "easeOutExpo");
     })
 
-    function setAffix()
-    {
-      if ($(document).scrollTop() > 100) {
-        $("nav").addClass("affix");
-      } else {
-        $("nav").removeClass("affix");
-      }
-    }
+    // function setAffix()
+    // {
+    //   if ($(document).scrollTop() > 100) {
+    //     $("nav").addClass("affix");
+    //   } else {
+    //     $("nav").removeClass("affix");
+    //   }
+    // }
 
     //Swiper slider
     const swiper = new Swiper('.swiper', {

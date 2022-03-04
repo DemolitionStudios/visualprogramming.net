@@ -14,12 +14,12 @@
             {{ partial "Features.html" . }}
           {{ end }}
 
-          {{ if .Site.Params.Showcase }}
-            {{ partial "showcase.html" . }}
+          {{ if .Site.Params.Blog }}
+            {{ partial "blog" . }}
           {{ end }}
 
-          {{ if .Site.Params.Blog }}
-          {{ partial "blog" . }}
+          {{ if .Site.Params.Showcase }}
+            {{ partial "showcase.html" . }}
           {{ end }}
 
           {{ if .Site.Params.Learn }}

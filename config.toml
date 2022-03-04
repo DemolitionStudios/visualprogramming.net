@@ -6,7 +6,7 @@ summaryLength = 20
 
 
 [permalinks]
-  blog = '/blog/posts/:title/'
+  blog = '/blog/posts/:slug/'
 
 [markup]
 	[markup.goldmark.renderer]

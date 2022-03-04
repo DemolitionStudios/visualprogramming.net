@@ -24,21 +24,13 @@
                         <div class="list">
                             <h4>Recent posts:</h4>
                             <ul class="list-group list-group-flush mb-2">
-                                {{ range ( first 5 ( where .Site.RegularPages "Type" "posts").ByDate.Reverse ) }}
+                                {{ range ( first 5 ( where .Site.RegularPages "Type" "blog").ByDate.Reverse ) }}
                                 <li class="list-group-item"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
                                 {{end}}
                             </ul>
-                            <a href="{{ "/posts/" | relLangURL }}" class="link">All posts</a>
                         </div>
 
-                        <div class="list mt-5">
-                            <h4>Categories:</h4>
-                            <ul class="list-group list-group-flush">
-                            {{ range .Site.Taxonomies.categories.ByCount }}
-                                <li class="list-group-item"><a href="{{ .Page.RelPermalink }}">{{ .Page.Title | title}}</a></li>
-                            {{ end }}
-                            </ul>
-                        </div>
+                        {{ partial "blog/sidebar.html" . }}
                     </div>
                 </div>
             </div>

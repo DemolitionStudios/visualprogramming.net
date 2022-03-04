@@ -5,6 +5,8 @@ $serif: "Roboto Slab", serif;
 section#Blog
 {
     background-color: #f5f5f5;
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 
 #Blog
@@ -15,6 +17,23 @@ section#Blog
         color: #ccc;
         background-color: #ccc;
         max-width: none;    
+    }
+
+    .list
+    {
+        font-size: 1rel;
+        .post-meta
+        {
+            color: #777;
+            font-size: 0.8em;
+            font-family: $sans;
+            margin-bottom: 0.5em;
+        }
+
+        h2
+            {
+                font-size: 1.2em !important;
+            }
     }
 
     //Home
@@ -74,9 +93,13 @@ section#Blog
     margin-bottom: 5em;
 
     .post{
-        .header
+        .description
         {
-            h2
+            color: #777;
+            font-family: $sans;
+        }
+
+        h2
             {
                 font-family: $serif;
                 font-weight: 700;
@@ -84,6 +107,9 @@ section#Blog
                 line-height: 1.3em;
                 margin-bottom: 0.3em;
             }
+
+        .header
+        {
 
             .author
             {

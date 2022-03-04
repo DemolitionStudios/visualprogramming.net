@@ -1,6 +1,6 @@
 ---
 draft: false
-date: "2022-02-01"
+date: "2021-12-01"
 title: "Course: Mastering vvvv for teaching"
 description: "Course: Mastering vvvv for teaching"
 thumb: "../../img/blog/Features_Roadmap.png"
