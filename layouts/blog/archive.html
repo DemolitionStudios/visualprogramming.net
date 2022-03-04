@@ -8,17 +8,17 @@
                         <h2 class="display-1">{{ .Title }}</h2>
                     </div>
                     <div class="content">
-                          {{ range .Paginator.Pages }}
-                            {{ .Render "summary"}}
-                          {{ end }}
-                        
-                        {{ partial "pagination.html" . }}
+                            {{ range .Site.RegularPages }}
+                                {{ .Render "summary"}}
+                            {{ end }}
+                            
+                            {{ partial "pagination.html" . }}
                     </div>
                 </div>
             </div>
             <div class="col-3">
                 <div class="sidebar sticky-top">
-                  {{ partial "blog/sidebar" . }}
+                    {{ partial "blog/sidebar" . }}
                 </div>
             </div>
         </div>

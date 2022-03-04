@@ -1,8 +1,71 @@
 $sans: "Open-Sans", sans-serif;
 $serif: "Roboto Slab", serif;
 
-#blog
+//Single Pages + Lists
+section#Blog
 {
+    background-color: #f5f5f5;
+}
+
+#Blog
+{
+    hr.thin{
+        border: none;
+        height: 1px;
+        color: #ccc;
+        background-color: #ccc;
+        max-width: none;    
+    }
+
+    //Home
+    .home
+    {
+
+        h2.recent {
+            font-family: $serif;
+            font-weight: 700;
+            font-size: 1.3em;
+            line-height: 1.3em;
+            margin-bottom: 1em;
+        }
+
+        .columns
+        {
+            columns: 2 100px;
+        }
+
+        .post{
+
+            // font-family: $sans;
+            font-size: 0.95em;
+            line-height: 1.6em; 
+            color: #444;
+
+            .post-meta
+            {
+                color: #666;
+                font-family: $serif;
+                font-weight: 500;
+                font-size: 0.9em;
+            }
+
+            h2
+            {
+                font-family: $serif;
+                font-weight: 700;
+                font-size: 1.2em !important;
+                line-height: 1.3em;
+                color: #333;
+            }
+
+            .footer
+            {
+                margin-top: 1em;
+            }
+        }
+    }
+
+
     min-width: 0;
     max-width: 100%;
     flex-grow: 1;
@@ -77,6 +140,15 @@ $serif: "Roboto Slab", serif;
                 height: auto;
             }
 
+            figcaption
+            {
+                font-weight: 400;
+                font-size: 0.9em;
+                color: #888;
+                margin-top: 0.4em;
+                margin-bottom: 2em;
+            }
+
             .alert
             {
                 &.alert-secondary
@@ -96,6 +168,18 @@ $serif: "Roboto Slab", serif;
 
     .sidebar
     {
+        top: 120px;
+        z-index: 0;
+
+        
+        hr{
+            border: none;
+            height: 1px;
+            color: #ccc;
+            background-color: #ccc;
+            max-width: none;    
+        }
+
         .list
         {
 

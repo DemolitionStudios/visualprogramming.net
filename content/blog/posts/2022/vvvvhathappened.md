@@ -1,12 +1,10 @@
 ---
 draft: false
-date: "2022-01-30"
-title: "Breaking: VL.Audio approaching stable"
-description: "Breaking: VL.Audio approaching stable"
-image: 
-  src: "../../img/blog/Features_Roadmap.png"
-  caption: "Image caption!"
-categories: News
+date: "2022-02-06"
+title: "vvvvhat happened in January 2022"
+description: "vvvvhat happened in January 2022"
+thumb: "../../img/blog/Features_Roadmap.png"
+categories: VVVVhat happened
 author: joreg
 tags:
 - VL
@@ -24,9 +22,35 @@ The [Mastering vvvv for teaching]() course has started. We got a whopping 42 app
 
 Oh and in case you missed it, you can still [rewatch the 16th vvvv online meetup]().
 
-### Contributions
+## Contributions
 
 We got some new ones: 
 - [VL.OpenEXR]()
 - [VL.Boids-GPU]()
 - [VL.FuzzySearch]()
+
+and received updates to the following:
+
+- [MoscowLava]()
+- [VL.IO.Firmata]()
+- [VL.IO.WebSocket]()
+- [VL.RunwayML]()
+- [VL.IO.Mastonet]()
+- [VL.ColorThief]()
+- [VL.CEF]()
+
+## Gallery
+
+{{< vimeo 670777111 >}}
+
+- [Illuminarium 2021 - 360 Pinball]() by [colorsound]()
+- [Contact]() by Emanuel Gollob
+- [#madewithvvvv]() by various patchers
+
+## Jobs
+
+- Always keep an eye on the [vvvv job board]()
+- There are often some more on [The Interactive & Immersive Job Board]() and [dasauge.de]()
+- If you need a vvvv specialist or are one yourself, check out this listing of [vvvv specialists available for hire]()
+
+That was it for January. Anything to add? Please do so in the comments!

@@ -1,15 +1,30 @@
-{{ "<!-- BLOG -->" | safeHTML }}
-<section id="Showcase">
-    <div class="container">
+{{ "<!-- LEARN -->" | safeHTML }}
+<section id="Blog">
+    {{ with .Site.Params.Blog.Title }}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">{{ . }}</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+    {{ end }}
+    <div class="container-sm mt-4 home">
+        <h2 class="recent">Recent posts:</h2>
+        <div class="row justify-content-between">
+                {{ range (where .Site.Pages "Type" "blog") | first .Site.Params.Blog.NumberOfPosts }}
+                    {{ range .RegularPages }}
+                    <div class="col-4 pr-5">
+                        {{ .Render "summary"}}
+                    </div>
+                    {{ end }}
+                {{ end }}
+        </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">{{ .Site.Params.Blog.headline }}</h2>
-                <hr class="primary">
+                <a href="/posts/">Read Blog</a>
             </div>
         </div>
     </div>
-
-    {{ range where .Site.Pages.ByWeight.Reverse "Section" "blog" }}
-        {{ partial "blog-entry-frontpage.html" . }}
-    {{ end }}
 </section>

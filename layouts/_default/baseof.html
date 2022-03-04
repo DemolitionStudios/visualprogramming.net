@@ -4,14 +4,16 @@
         {{ partial "head.html" . }}
     </head>
 <body>
-    {{ partial "nav" . }}
+    <div class="main">
+        {{ partial "nav" . }}
+        
+        {{ block "main" . }}{{ end }}
 
-    {{ block "main" . }}{{ end }}
+        {{ partial "contact" . }}
+        
+        {{ partial "footer" . }}
 
-    {{ partial "contact" . }}
-    
-    {{ partial "footer" . }}
-
-    {{ partial "js.html" . }}
+        {{ partial "js.html" . }}
+    </div>
 </body>
 </html>

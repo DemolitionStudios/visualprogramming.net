@@ -1,12 +1,10 @@
 ---
 draft: false
 date: "2022-02-01"
-title: "vvvv gamma 2021.4 release"
-description: "vvvv gamma 2021.4 release"
-image: 
-  src: "../../img/blog/Features_Roadmap.png"
-  caption: "Image caption!"
-categories: Release
+title: "Course: Mastering vvvv for teaching"
+description: "Course: Mastering vvvv for teaching"
+thumb: "../../img/blog/Features_Roadmap.png"
+categories: Date
 author: joreg
 tags:
 - VL

@@ -2,6 +2,11 @@ baseURL = "https://visualprogramming.net/"
 languageCode = "en-us"
 paginate = 10
 paginatePath = "page"
+summaryLength = 20
+
+
+[permalinks]
+  blog = '/blog/posts/:title/'
 
 [markup]
 	[markup.goldmark.renderer]
@@ -34,6 +39,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.navigation.links]
 		features  = "Features"
+		blog = "Blog"
 		download  = "Download"
 		showcase = "Showcase"
 		Learn = "Learn"
@@ -111,6 +117,10 @@ home = [ "HTML", "RSS", "JSON"]
 		showreelHeadline = "Showreel 2002 - 2019"
 		showreelSubline = "Projects in this showreel were realized mostly with vvvv beta within the past few years."
 		vimeo = 371511910
+
+		[params.Blog]
+		Title = "Blog"
+		NumberOfPosts = "3"
 
 	#Community section
 	  [params.Community]

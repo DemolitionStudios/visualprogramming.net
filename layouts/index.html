@@ -18,16 +18,16 @@
             {{ partial "showcase.html" . }}
           {{ end }}
 
+          {{ if .Site.Params.Blog }}
+          {{ partial "blog" . }}
+          {{ end }}
+
           {{ if .Site.Params.Learn }}
               {{ partial "learn.html" . }}
           {{ end }}
 
           {{ if .Site.Params.Community }}
               {{ partial "community.html" . }}
-          {{ end }}
-
-          {{ if .Site.Params.Blog }}
-            {{ partial "blog.html" . }}
           {{ end }}
 
           {{ if (.Site.GetPage "Licensing")}}

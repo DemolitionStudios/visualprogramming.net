@@ -3,6 +3,7 @@ draft: false
 date: "2022-02-22"
 title: "17. vvvv woldwide meetup"
 description: "17. vvvv woldwide meetup"
+slug: "mypostslug" #so
 image: 
   src: "../../img/blog/Features_Roadmap.png"
   caption: "Image caption!"
@@ -14,11 +15,11 @@ tags:
 - UI
 ---
 
-![17. vvvv woldwide meetup](17.png)
+![17. vvvv woldwide meetup](17.png "Credits: Quadrature.co")
 
 We're meeting up on **Febraury 22nd, 8pm CET** to catch up and get insights into what everyone is patching on. How will this work? [as always](). So please fill up your bucket of popcorn and invite all your vvvvriends and vvvvamily to join us!
 
-### Want to share your work?
+## Want to share your work?
 
 Please do! Anything more or less related to vvvv, yourself and your projects. Share some thoughts, share your funny fails. Or just join and vibe with us...
 
