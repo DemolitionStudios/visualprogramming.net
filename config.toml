@@ -120,7 +120,8 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.Blog]
 		Title = "Blog"
-		NumberOfPosts = "3"
+		NumberOfPosts = 6
+		ReadMore = "All posts"
 
 	#Community section
 	  [params.Community]

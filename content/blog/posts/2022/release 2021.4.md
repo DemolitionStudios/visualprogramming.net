@@ -2,7 +2,8 @@
 draft: false
 date: "2022-02-01"
 title: "vvvv gamma 2021.4 release"
-description: "vvvv gamma 2021.4 release"
+description: >
+  We've released not one, not two, but 3 bugfix releases for vvvv gamma in January.
 thumb: "../../img/blog/Features_Roadmap.png"
 categories: Release
 author: joreg

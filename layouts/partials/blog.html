@@ -1,29 +1,38 @@
 {{ "<!-- LEARN -->" | safeHTML }}
 <section id="Blog">
-    {{ with .Site.Params.Blog.Title }}
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">{{ . }}</h2>
-                    <hr class="primary">
-                </div>
+    <div class="container-sm mt-4 home">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">{{ .Site.Params.Blog.Title }}</h2>
+                <hr class="primary">
             </div>
         </div>
-    {{ end }}
-    <div class="container-sm mt-4 home">
-        <h2 class="recent">Recent posts:</h2>
+        <h2 class="recent mb-5">Recent posts:</h2>
         <div class="row justify-content-between">
-                {{ range (where .Site.Pages "Type" "blog") | first .Site.Params.Blog.NumberOfPosts }}
-                    {{ range .RegularPages }}
-                    <div class="col-4 pr-5">
-                        {{ .Render "summary"}}
-                    </div>
+                {{ $firstColumn := slice }}
+                {{ $secondColumn := slice }}
+                {{ range $index, $element := (where .Site.RegularPages "Type" "blog").ByDate.Reverse | first .Site.Params.Blog.NumberOfPosts }}
+                    {{ if (lt $index (div .Site.Params.Blog.NumberOfPosts 2 ))}}
+                        {{ $firstColumn = $firstColumn | append $element }}
+                    {{ else }}
+                        {{ $secondColumn = $secondColumn | append $element }}
                     {{ end }}
                 {{ end }}
+
+                <div class="col-12 col-lg-6 pr-lg-4">
+                {{ range $firstColumn }}
+                    {{ .Render "summary"}}
+                {{ end }}
+                </div>
+                <div class="col-12 col-lg-6 pl-lg-4">
+                {{ range $secondColumn }}
+                    {{ .Render "summary"}}
+                {{ end }}
+                </div>
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <a href="/blog/posts/">Read Blog</a>
+                <a href="/blog/posts/" class="btn btn-secondary btn-lg mt-4" target="_blank">{{ .Site.Params.Blog.ReadMore}}</a>
             </div>
         </div>
     </div>
