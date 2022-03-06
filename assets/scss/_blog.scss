@@ -48,9 +48,13 @@ section#Blog
             margin-bottom: 1em;
         }
 
-        .columns
+        .sidebar
         {
-            columns: 2 100px;
+            top: inherit;
+            
+            li {
+                padding: 1em 0em 1em 1em;
+            }
         }
 
         .post{
@@ -206,6 +210,11 @@ section#Blog
             max-width: none;    
         }
 
+        li.list-group-item
+        {
+            background: none !important;
+        }
+
         .list
         {
 
@@ -218,23 +227,35 @@ section#Blog
                 font-size: 1em;    
             }
 
-            li{
+            li {
                 font-size: 0.9em;
                 color: #777;
                 border: none;
-                padding: 0.6em 0em;
-            };
+                padding: 1em 0em;
+                margin-bottom: 0px;
+                border-bottom: 1px solid #ddd;
 
-            li:after {
-                content:''; 
-                display:block; 
-                position:absolute;  /* position this at the bottom */
-                bottom:0;
-                left:0;            /* left and right determine length of line, the longer you want it, the closer to 0 these values should be */
-                right:90%;
-                height:1px;
-                background:#ddd;    /* match the font color */
+                a
+                {
+                    display: block;
+                }
             }
+
+            li:hover
+            {
+                background-color: #ffffff !important;
+            }
+
+            // li:after {
+            //     content:''; 
+            //     display:block; 
+            //     position:absolute;  /* position this at the bottom */
+            //     bottom:0;
+            //     left:0;            /* left and right determine length of line, the longer you want it, the closer to 0 these values should be */
+            //     right:90%;
+            //     height:1px;
+            //     background:#ddd;    /* match the font color */
+            // }
 
             .link{
                 color: $orange;
@@ -243,27 +264,27 @@ section#Blog
     }
 }
 
-.tagCloud {
-    .tagCloud-tags {
-        display: flex;
-        flex-wrap: wrap;
+// .tagCloud {
+//     .tagCloud-tags {
+//         display: flex;
+//         flex-wrap: wrap;
 
-        a {
-            background: #cccccc;
-            box-shadow: #000000;
-            border-radius: 3px;
-            padding: 8px 20px;
+//         a {
+//             background: #cccccc;
+//             box-shadow: #000000;
+//             border-radius: 3px;
+//             padding: 8px 20px;
 
-            color: var(--card-text-color-main);
-            margin-bottom: 10px;
-            margin-right: 5px;
-            font-size: 0.8rem;
-            text-transform: lowercase;
-            transition: box-shadow 0.3s ease;
+//             color: var(--card-text-color-main);
+//             margin-bottom: 10px;
+//             margin-right: 5px;
+//             font-size: 0.8rem;
+//             text-transform: lowercase;
+//             transition: box-shadow 0.3s ease;
 
-            &:hover {
-                box-shadow: var(--shadow-l2);
-            }
-        }
-    }
-}
+//             &:hover {
+//                 box-shadow: var(--shadow-l2);
+//             }
+//         }
+//     }
+// }

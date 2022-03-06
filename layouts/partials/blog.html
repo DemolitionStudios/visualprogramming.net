@@ -7,31 +7,19 @@
                 <hr class="primary">
             </div>
         </div>
-        <h2 class="recent mb-5">Recent posts:</h2>
         <div class="row justify-content-between">
-                {{ $firstColumn := slice }}
-                {{ $secondColumn := slice }}
-                {{ range $index, $element := (where .Site.RegularPages "Type" "blog").ByDate.Reverse | first .Site.Params.Blog.NumberOfPosts }}
-                    {{ if (lt $index (div .Site.Params.Blog.NumberOfPosts 2 ))}}
-                        {{ $firstColumn = $firstColumn | append $element }}
-                    {{ else }}
-                        {{ $secondColumn = $secondColumn | append $element }}
-                    {{ end }}
-                {{ end }}
-
-                <div class="col-12 col-lg-6 pr-lg-4">
-                {{ range $firstColumn }}
+            <div class="col-12 col-lg-8 pr-lg-5">
+            <h2 class="recent mb-5">Recent posts:</h2>
+            {{ range (where .Site.RegularPages "Type" "blog").ByDate.Reverse | first .Site.Params.Blog.NumberOfPosts }}    
                     {{ .Render "summary"}}
-                {{ end }}
+            {{ end }}
+            </div>
+            <div class="sidebar col-12 col-lg-3">
+                <h2 class="recent mb-5 mt-5 mt-lg-0">Archive:</h2>
+                <p>{{ .Site.Params.Blog.Warning | markdownify }}</p>
+                <div class="list mt-3">
+                    {{ partial "blog/sidebar-cat" . }}
                 </div>
-                <div class="col-12 col-lg-6 pl-lg-4">
-                {{ range $secondColumn }}
-                    {{ .Render "summary"}}
-                {{ end }}
-                </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
                 <a href="/blog/posts/" class="btn btn-secondary btn-lg mt-4" target="_blank">{{ .Site.Params.Blog.ReadMore}}</a>
             </div>
         </div>
