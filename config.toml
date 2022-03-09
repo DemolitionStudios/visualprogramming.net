@@ -3,7 +3,10 @@ languageCode = "en-us"
 paginate = 10
 paginatePath = "page"
 summaryLength = 20
+title = "vvvv - visual live-progamming for .NET"
 
+[Services.RSS]
+	limit = 10
 
 [permalinks]
   blog = '/blog/posts/:slug/'
@@ -20,6 +23,11 @@ theme = "hugo-creative-theme-master"
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "rss"
 
 [params]
 
@@ -122,7 +130,7 @@ home = [ "HTML", "RSS", "JSON"]
 		Title = "Blog"
 		NumberOfPosts = 4
 		ReadMore = "All posts"
-		Warning = "\\* At the moment only the most recent posts are available here. Full archive is at [vvvv.org](https://vvvv.org/blog/1575+1576+25+23+24+39+26+1461+127+126+124)"
+		Warning = "\\* At the moment only the most recent posts are available here. Full archive is at [vvvv.org](https://vvvv.org/blog/1575+1576+25+23+24+39+26+1461+127+126+124)."
 
 	#Community section
 	  [params.Community]
