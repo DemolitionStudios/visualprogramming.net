@@ -11,6 +11,35 @@ section#Blog
 
 #Blog
 {
+    .pagination{
+        font-family: $sans;
+        
+        a{
+            color: #000;
+
+            &:hover
+            {
+                color: $orange;
+                background-color: #fff;
+            }
+        }
+
+        .current
+        {
+            font-weight: 700;
+            pointer-events: none;
+            cursor: auto;
+
+            .page-link
+            {
+                background-color: #eee;
+            }
+        }
+
+        .page-item.disabled a{
+            color: #aaa;
+        }
+    }
     hr.thin{
         border: none;
         height: 1px;
