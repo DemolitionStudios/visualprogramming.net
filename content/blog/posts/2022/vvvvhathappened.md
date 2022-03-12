@@ -12,6 +12,8 @@ tags:
 - UI
 ---
 
+{{< previousInCategory >}}
+
 And the patch goes on:
 
 We've released not one, not two, but 3 bugfix releases for vvvv gamma in January. Read all about them in The [ChangeLog]().
