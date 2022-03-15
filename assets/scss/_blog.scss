@@ -144,12 +144,16 @@ section#Blog
         .header
         {
 
-            .author
+            .link
             {
                 text-decoration: none;
-                border-bottom: 1px solid #ccc;
                 padding-bottom: 0.1 em;
                 font-size: 0.9rem;
+
+                a
+                {
+                    border-bottom: 1px solid #ccc;
+                }
             }
 
             .date

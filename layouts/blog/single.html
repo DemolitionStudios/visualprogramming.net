@@ -6,8 +6,12 @@
                     <div class="post">
                         <div class="header">
                             <h2 class="display-1">{{ .Title}}</h2>
+                            {{ with .Params.date }}
+                            <span class="date mr-3">{{ time.Format "Monday, Jan 2, 2006" .}}</span>
+                            {{ end }}
+
                             {{ with .Params.author }}
-                                <span class="author mr-3"><a href="" class="author">{{ . }}</a></span>
+                                <span class="link mr-3">posted by: <a href="{{ printf "author/%s/" . | relURL }}" >{{ . }}</a></span>
                             {{ end }}
 
                             <!-- Find link to the current category -->
@@ -19,11 +23,8 @@
                                 {{ end }}
                             {{ end }}
 
-                            <span class="date mr-3">in: <a href="{{ $currentCatLink }}">{{ .Params.categories }}</a></span>
-                            
-                            {{ with .Params.date }}
-                            <span class="date">{{ time.Format "Monday, Jan 2, 2006" .}}</span>
-                            {{ end }}
+                            <span class="link">category: <a href="{{ $currentCatLink }}">{{ .Params.categories }}</a></span>
+
                         </div>
                         <div class="content">
                             {{ .Content }}

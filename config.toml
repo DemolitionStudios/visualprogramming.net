@@ -6,7 +6,7 @@ summaryLength = 20
 title = "vvvv - visual live-progamming for .NET"
 
 [Services.RSS]
-	limit = 10
+  limit = 10
 
 [permalinks]
   blog = '/blog/posts/:slug/'
@@ -23,6 +23,12 @@ theme = "hugo-creative-theme-master"
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+
+[taxonomies]
+category = 'categories'
+tag = 'tags'
+author = 'author'
+
 
 [outputFormats]
   [outputFormats.RSS]
