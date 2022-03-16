@@ -5,10 +5,11 @@ title: "vvvvhat happened in February 2022"
 description: "Last month in review"
 categories: vvvvhat happened
 author: joreg
+---
 
 ---
 
-{{< previousInCategory >}}
+Previously on vvvv: {{< previousInCategory >}}
 
 ---
 

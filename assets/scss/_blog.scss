@@ -198,6 +198,13 @@ section#Blog
                 font-weight: 500;
             }
 
+            hr
+            {
+                border-color: #ddd;
+                border-width: 1px;
+                max-width: none;
+            }
+
             img{
                 max-width: 100%;
                 height: auto;

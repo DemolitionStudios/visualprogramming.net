@@ -10,5 +10,5 @@
 {{ end }}
 
 {{ range first 1 (after (add $i 1) (where $.Site.RegularPages ".Params.categories" $cat).ByDate.Reverse)}}
-    Previously in "{{ $cat }}": <a href="{{ .Permalink }}">{{ .Title }}</a>
+<a href="{{ .Permalink }}">{{ .Title }}</a>
 {{ end }}
