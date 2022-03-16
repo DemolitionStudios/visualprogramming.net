@@ -1,10 +1,25 @@
 <article class="post">
   <a href='{{ .Permalink }}'>
     <div class="row justify-content-between">
+      <div class="col-1">    
+        {{ $thumb := ""}}
+        {{ with .Params.thumb}}
+          {{ with $.Resources.GetMatch .}}
+              {{ $thumb = .Fill "50x50"}}
+              {{ with $thumb}}
+                <div class="post-thumb"><img src="{{ $thumb.Permalink }}"/></div>
+              {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{ if eq $thumb ""}}
+        <div class="post-thumb"><img src="/img/blog/grey-thumb.png"/></div>
+        {{ end }}
+      </div>
       <div class="col-2">
         <div class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</div>
       </div>
-      <div class="col-10">
+      <div class="col-8">
         <h2> {{ .Title }} </h2>
         <p class="description">{{ .Params.description }}</p>
       </div>

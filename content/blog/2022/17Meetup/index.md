@@ -5,6 +5,7 @@ title: "17. vvvv woldwide meetup"
 description: "Join us for another vvvv community online meetup"
 categories: Date
 author: amir
+thumb: 17.png
 ---
 
 ![17. vvvv woldwide meetup](17.png "Credits: Quadrature.co")

@@ -5,6 +5,7 @@ title: "vvvv gamma 2021.4 release"
 description: Release notes
 categories: Release
 author: joreg
+thumb: filters.jpg
 ---
 
 ![17. vvvv woldwide meetup](filters.jpg "")
