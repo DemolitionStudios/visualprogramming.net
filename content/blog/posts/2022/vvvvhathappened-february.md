@@ -18,12 +18,13 @@ So let's see,
 
 We had the [17th vvvv online meetup](https://youtu.be/sKm-uFDP0EA) once again expertly moderated by amir. If you want to see what others are doing with your favorite toolkit, this is the place to watch! Save the date for the next edition on March 22nd!
 
-We're now about halfway through the [Mastering vvvv for teaching course](https://thenodeinstitute.org/mastering-vvvv-for-teaching/) and the positive side effect it has for all of us, is that it brings us to work on the graybook. Revising some content and adding some new. Here are some notable new chapters:
+We're now about halfway through the [Mastering vvvv for teaching](https://thenodeinstitute.org/mastering-vvvv-for-teaching/) course and the positive side effect it has for all of us, is that it brings us to work on the graybook. Revising some content and adding some new. Here are some notable new chapters:
 * [Execution Order](https://thegraybook.vvvv.org/reference/language/execution-order.html)
 * [Exception Handling](https://thegraybook.vvvv.org/reference/language/exception-handling.html)
 * [Enumerations](https://thegraybook.vvvv.org/reference/language/enumerations.html)
 * [The Cache Region](https://thegraybook.vvvv.org/reference/language/cache.html)
 * [Custom Regions](https://thegraybook.vvvv.org/reference/extending/custom-regions.html)
+  
 And much more to come...
 
 ## Contributions
@@ -31,7 +32,7 @@ We got some new ones:
 * [Kinect2 FUSE Utils](https://vvvv.org/contribution/kinect2-fuse-utils) by [lasal](https://vvvv.org/users/lasal)
 * [VL.Alembic](https://www.nuget.org/packages/VL.Alembic) by [torinos](https://vvvv.org/users/torinos)
 * [VL.Preview.HDE](https://www.nuget.org/packages/VL.Preview.HDE) by [gregsn](https://vvvv.org/users/gregsn)
-* [](https://www.nuget.org/packages/VL.SimpleHTTP|VL.SimpleHTTP) by [sebescudie](https://vvvv.org/users/sebescudie)
+* [VL.SimpleHTTP](https://www.nuget.org/packages/VL.SimpleHTTP) by [sebescudie](https://vvvv.org/users/sebescudie)
 
 and received updates to the following:
 * [Demolition Media Hap Player](https://vvvv.org/contribution/demolition-media-hap-player)
