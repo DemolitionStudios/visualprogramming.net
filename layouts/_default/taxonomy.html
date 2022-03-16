@@ -3,7 +3,7 @@
     <div class="container list">
         <div class="row justify-content-between">
             <div class="col-8">
-                <h1 class="mb-5">{{ .Title }}</h2>
+                <h1 class="mb-5">{{ .Title }}</h1>
                 <div class="content">
                       {{ range .Paginator.Pages }}
                         {{ .Render "summary"}}

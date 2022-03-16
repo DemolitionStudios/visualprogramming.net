@@ -1,5 +1,6 @@
 {{ $url := .Page.URL }}
 {{ $cat := .Page.Params.categories}}
+{{ $text := .Get "text"}}
 
 {{ $i := -1}}
 
@@ -9,6 +10,4 @@
     {{ end }}
 {{ end }}
 
-{{ range first 1 (after (add $i 1) (where $.Site.RegularPages ".Params.categories" $cat).ByDate.Reverse)}}
-<a href="{{ .Permalink }}">{{ .Title }}</a>
-{{ end }}
+{{range first 1 (after (add $i 1) (where $.Site.RegularPages ".Params.categories" $cat).ByDate.Reverse)}}<p>{{$text}} <a href="{{ .Permalink }}">{{.Title}}</a></p>{{end}}

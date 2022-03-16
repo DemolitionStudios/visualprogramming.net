@@ -8,8 +8,7 @@ title = "vvvv - visual live-progamming for .NET"
 [Services.RSS]
   limit = 10
 
-[permalinks]
-  blog = '/blog/posts/:slug/'
+
 
 [markup]
 	[markup.goldmark.renderer]
@@ -29,6 +28,11 @@ category = 'categories'
 tag = 'tags'
 author = 'author'
 
+[permalinks]
+blog = ':sections/:slug/'
+
+# [permalinks]
+#   blog = '/blog/posts/:slug/'
 
 [outputFormats]
   [outputFormats.RSS]

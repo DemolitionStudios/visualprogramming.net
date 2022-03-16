@@ -57,12 +57,18 @@ section#Blog
             font-size: 0.8em;
             font-family: $sans;
             margin-bottom: 0.5em;
+            margin-top: 0.5em;
+        }
+
+        h1
+        {
+            font-size: 3em !important;
         }
 
         h2
-            {
-                font-size: 1.2em !important;
-            }
+        {
+            font-size: 1.2em !important;
+        }
     }
 
     //Home
@@ -161,8 +167,7 @@ section#Blog
                 color: #888;
                 font-size: 0.9rem;
             }
-        }
-        
+        } 
 
         .content{
             margin-top: 3em;
@@ -177,25 +182,6 @@ section#Blog
             ul{
                 list-style-type: '—  ';
                 padding-left: 2em;
-            }
-
-            h1{
-                font-size: $base-font*3;
-            }
-
-            h2{
-                font-size: $base-font*1.5;
-            }
-
-            h3{
-                font-size: $base-font*1;
-            }
-
-            h1, h2, h3, h4, h5, h6 {
-                margin-top: 1.5em;
-                font-family: $serif;
-                margin-bottom: 1em;
-                font-weight: 500;
             }
 
             hr

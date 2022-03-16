@@ -33,18 +33,13 @@
         $('.navbar-toggle:visible').click();
     });
 
-    // Fit Text Plugin for Main Header
-    $("h1").fitText(
-        1.2, {
-            minFontSize: '35px',
-            maxFontSize: '65px'
-        }
-    );
-
-    $(document).ready(function () {
-      $(window).scroll(setAffix);
-        setAffix();
-    });
+    // // Fit Text Plugin for Main Header
+    // $("h1").fitText(
+    //     1.2, {
+    //         minFontSize: '35px',
+    //         maxFontSize: '65px'
+    //     }
+    // );
 
     //Animate scroll to FeaturesMenu when switching sticky menu
     $('a[data-toggle="pill"]').on('show.bs.tab', function (e) {
@@ -56,15 +51,6 @@
         scrollTop: (target) 
       }, 1000, "easeOutExpo");
     })
-
-    // function setAffix()
-    // {
-    //   if ($(document).scrollTop() > 100) {
-    //     $("nav").addClass("affix");
-    //   } else {
-    //     $("nav").removeClass("affix");
-    //   }
-    // }
 
     //Swiper slider
     const swiper = new Swiper('.swiper', {
