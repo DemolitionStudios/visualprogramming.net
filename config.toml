@@ -149,7 +149,7 @@ blog = ':sections/:slug/'
 		Title = "Blog"
 		NumberOfPosts = 4
 		ReadMore = "All posts"
-		Warning = "\\* At the moment only the most recent posts are available here. Full archive is at [vvvv.org](https://vvvv.org/blog/1575+1576+25+23+24+39+26+1461+127+126+124)."
+		Warning = "\\* Looking for older blog posts? Find them at: [vvvv.org/blog](https://vvvv.org/blog/1575+1576+25+23+24+39+26+1461+127+126+124)."
 
 	#Community section
 	  [params.Community]
