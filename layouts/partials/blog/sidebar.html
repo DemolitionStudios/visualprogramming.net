@@ -1,10 +1,8 @@
-{{ if ne .Page.Title "Posts"}}
-  <a href="/blog/" class="btn btn-secondary btn-lg mt-4">{{ .Site.Params.Blog.ReadMore}}</a>
-{{ end }}
-
 <div class="list mt-5">
+  <h4>Categories:</h4>
   {{ partial "blog/sidebar-cat" . }}
 </div>
 <div class="list mt-5">
+  <h4>Years:</h4>
   {{ partial "blog/sidebar-years" . }}
 </div>

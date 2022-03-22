@@ -23,6 +23,20 @@
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      <shortDate>{{ .Date.Format "02.01.06" | safeHTML }}</shortDate>
+      {{ $thumb := ""}}
+      {{ $res := .Resources}}
+      {{ with .Params.thumb}}
+        {{ with $res.GetMatch .}}
+            {{ $thumb = .Fill "50x50"}}
+            {{ with $thumb}}
+              <thumb>{{ $thumb.Permalink }}</thumb>
+            {{ end }}
+        {{ end }}
+      {{ end }}
+      {{ if eq $thumb ""}}
+        <thumb>{{ "/img/blog/grey-thumb.png" | absURL }}</thumb>
+      {{ end }}
       {{ with .Params.author }}<author>{{.}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Params.description | html }}</description>
