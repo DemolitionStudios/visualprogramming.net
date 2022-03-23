@@ -29,7 +29,11 @@
                         <div class="content">
                             {{ .Content | markdownify }}
                         </div>
-
+                        <div class="comments mt-5">
+                            <hr class="mt-5"/>
+                            <h2 class="display-1 mb-3">Comments:</h2>
+                            {{ partial "blog/comments.html" . }}
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 mt-2 mt-0-md">
