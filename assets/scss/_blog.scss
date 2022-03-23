@@ -141,6 +141,14 @@ section#Blog
     margin-bottom: 5em;
 
     .post{
+
+        hr
+        {
+            border-color: #ddd;
+            border-width: 1px;
+            max-width: none;
+        }
+
         .description
         {
             color: #777;
@@ -179,6 +187,43 @@ section#Blog
         } 
 
         .content{
+
+            h1{
+                font-family: $serif;
+                font-size: 1.8em;
+                margin-top: 1.1em;
+                margin-bottom: 1em;
+            }
+
+            h2{
+                font-family: $serif;
+                font-size: 1.6em;
+                margin-top: 1.1em;
+                margin-bottom: 1em;
+            }
+
+            h3{
+                font-family: $serif;
+                font-size: 1.4em;
+                margin-top: 1.1em;
+                margin-bottom: 1em;
+            }
+
+            h4{
+                font-family: $serif;
+                font-size: 1.2em;
+                margin-top: 1.1em;
+                margin-bottom: 1em;
+            }
+
+            h5{
+                font-family: $serif;
+                font-size: 1.1em;
+                font-weight: bold;
+                margin-top: 1.1em;
+                margin-bottom: 1em;
+            }
+
             margin-top: 3em;
             font-family: $sans;
 
@@ -191,13 +236,6 @@ section#Blog
             ul{
                 list-style-type: '—  ';
                 padding-left: 2em;
-            }
-
-            hr
-            {
-                border-color: #ddd;
-                border-width: 1px;
-                max-width: none;
             }
 
             img{
@@ -227,6 +265,34 @@ section#Blog
                     color: #000000;
                     text-decoration: underline;
                 }
+            }
+        }
+
+        .comments{
+            font-family: $sans;
+            --cactus-text-color--soft: #999;
+            --cactus-border-radius: 0px;
+            --cactus-border-color: #ddd;
+            --cactus-box-shadow-color: #aaa;
+            --cactus-button-color: #444;
+            --cactus-button-color--strong: #000;
+
+
+            button
+            {
+                color: #fff;
+            }
+
+            button:hover:enabled
+            {
+                background-color: $orange;
+                color: #fff;
+            }
+
+            button{
+                border-radius: 5px;
+                font-size: 0.9em;
+                text-transform: uppercase;
             }
         }
     }
