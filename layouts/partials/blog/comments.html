@@ -1,3 +1,5 @@
+{{ $id := printf "%s-%s-%s" .Params.categories .Title (.Date.Format "2006-01-03")}}
+
 <div id="comment-section"></div>
 <script>
 initComments({
@@ -5,6 +7,6 @@ initComments({
   defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
   serverName: "cactus.chat",
   siteName: "vvvv.org",
-  commentSectionId: "{{ replaceRE "(\\s)" "" .Title }}"
+  commentSectionId: "{{ replaceRE "(\\s)" "" $id }}"
 })
 </script>
