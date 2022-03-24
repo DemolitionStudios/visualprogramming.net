@@ -1,8 +1,8 @@
 ---
-title: Request a Demo
+title: Request a Tour
 id: 1
 email: devvvvs@vvvv.org
-subject: vvvv Demo
+subject: vvvv Tour
 ---
 Please tell us briefly:
 
