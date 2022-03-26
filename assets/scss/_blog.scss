@@ -262,6 +262,15 @@ section#Blog
                     text-decoration: underline;
                 }
             }
+
+            a{
+                color: #777;
+                text-decoration: underline;
+            }
+
+            a:hover{
+                color: $orange;
+            }
         }
 
         .comments{
@@ -297,7 +306,7 @@ section#Blog
     {
         top: 120px;
         z-index: 0;
-
+        overflow: auto;
         
         hr{
             border: none;
