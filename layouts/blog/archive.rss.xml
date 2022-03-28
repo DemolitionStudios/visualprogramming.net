@@ -1,0 +1,46 @@
+{{- $pages := slice -}}
+{{- $pages = (where .Site.RegularPages "Type" "blog").ByDate.Reverse -}}
+{{- $limit := .Site.Config.Services.RSS.Limit -}}
+{{- if ge $limit 1 -}}
+{{- $pages = $pages | first $limit -}}
+{{- end -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VVVV - Blog</title>
+    <link>{{ .Permalink }}</link>
+    {{- with .OutputFormats.Get "RSS" -}}
+    {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+    {{- end -}}
+    <description>A RSS news feed containing the latest vvvv news, dates and releases.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    {{ with .Site.LanguageCode }}
+    <language>{{.}}</language>
+    {{end}}
+    <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
+    {{ range $pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      <shortDate>{{ .Date.Format "02.01.06" | safeHTML }}</shortDate>
+      {{ $thumb := ""}}
+      {{ $res := .Resources}}
+      {{ with .Params.thumb}}
+        {{ with $res.GetMatch .}}
+            {{ $thumb = .Fill "50x50"}}
+            {{ with $thumb}}
+              <thumb>{{ $thumb.Permalink }}</thumb>
+            {{ end }}
+        {{ end }}
+      {{ end }}
+      {{ if eq $thumb ""}}
+        <thumb>{{ "/img/blog/grey-thumb.png" | absURL }}</thumb>
+      {{ end }}
+      {{ with .Params.author }}<author>{{.}}</author>{{end}}
+      <guid>{{ .Permalink }}</guid>
+      <description>{{ .Params.description | html }}</description>
+    </item>
+    {{ end }}
+  </channel>
+</rss>

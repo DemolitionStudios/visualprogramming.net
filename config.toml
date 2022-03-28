@@ -1,12 +1,28 @@
+baseURL = "https://visualprogramming.net/"
+languageCode = "en-us"
+paginate = 10
+paginatePath = "page"
+summaryLength = 20
+title = "vvvv - visual live-progamming for .NET"
+
+[Services.RSS]
+  limit = 10
+
+[server]
+[[server.headers]]
+  for = '/**'
+  [server.headers.values]
+    Referrer-Policy = 'strict-origin-when-cross-origin'
+    X-Content-Type-Options = 'nosniff'
+    X-Frame-Options = 'DENY'
+    X-XSS-Protection = '1; mode=block'
+	Access-Control-Allow-Origin = '*'
+
 [markup]
 	[markup.goldmark.renderer]
 	      hardWraps = false
 	      unsafe = true
 	      xhtml = false
-
-baseURL = "https://visualprogramming.net/"
-languageCode = "en-us"
-
 
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-creative-theme-master"
@@ -14,6 +30,22 @@ theme = "hugo-creative-theme-master"
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+
+[taxonomies]
+category = 'categories'
+tag = 'tags'
+author = 'author'
+
+[permalinks]
+blog = ':sections/:slug/'
+
+# [permalinks]
+#   blog = '/blog/posts/:slug/'
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "rss"
 
 [params]
 
@@ -33,6 +65,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 		[params.navigation.links]
 		features  = "Features"
+		blog = "Blog"
 		download  = "Download"
 		showcase = "Showcase"
 		Learn = "Learn"
@@ -110,6 +143,12 @@ home = [ "HTML", "RSS", "JSON"]
 		showreelHeadline = "Showreel 2002 - 2019"
 		showreelSubline = "Projects in this showreel were realized mostly with vvvv beta within the past few years."
 		vimeo = 371511910
+
+		[params.Blog]
+		Title = "Blog"
+		NumberOfPosts = 4
+		ReadMore = "All posts"
+		Warning = "\\* Looking for older blog posts? Find them at: [vvvv.org/blog](https://vvvv.org/blog/1575+1576+25+23+24+39+26+1461+127+126+124)."
 
 	#Community section
 	  [params.Community]
