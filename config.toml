@@ -44,8 +44,8 @@ blog = ':sections/:slug/'
 
 [outputFormats]
   [outputFormats.RSS]
-    mediatype = "application/rss"
-    baseName = "rss"
+    mediatype = "application/rss+xml"
+    baseName = "index"
 
 [params]
 
