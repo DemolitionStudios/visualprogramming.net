@@ -43,7 +43,7 @@ xmlns:atom="http://www.w3.org/2005/Atom"
       {{ with .Params.author }}<author>{{.}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       <description>{{- .Params.description | html -}}</description>
-      <content:encoded>{{ "<![CDATA[" | safeHTML }}{{ .Content | safeHTML }}{{ "]]>" | safeHTML }}</content:encoded>
+      <content:encoded>{{ "<![CDATA[" | safeHTML }}{{ .Content | safeHTML }}{{ "]]>" | safeHTML }}</content:encoded> 
     </item>
     {{ end }}
   </channel>
