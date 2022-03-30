@@ -8,7 +8,7 @@ author: joreg
 thumb: filters.jpg
 ---
 
-![17. vvvv woldwide meetup](filters.jpg "")
+![vvvv gamma 2021.4 release](filters.jpg "")
 
 This has been a long time coming!
 
