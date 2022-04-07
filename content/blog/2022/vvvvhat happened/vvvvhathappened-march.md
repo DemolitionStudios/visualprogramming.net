@@ -47,7 +47,7 @@ and received updates to the following:
 {{< vimeo 690419857 >}}
 Couleurs Sonores by Konstantin Semilakovs
 
-* [#madewithvvvv](https://www.picuki.com/tag/madewithvvvv|) by various patchers
+* [#madewithvvvv](https://www.picuki.com/tag/madewithvvvv) by various patchers
 * The [vvvv gamma staff picks gallery](https://visualprogramming.net/#Showcase)
 
 ## Jobs
