@@ -1,7 +1,8 @@
 # visualprogramming.net
 
-is a preliminary website for vvvv.
+The new website for vvvv.
 
+Local build:
 * download Hugo Extended, unzip and place that into your programs folder,
 * add it to your path (environment variables),
 * powershell: 
