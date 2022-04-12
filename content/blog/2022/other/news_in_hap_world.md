@@ -48,16 +48,16 @@ It turned out that during the last year and a half, only two times a license was
 I realized that I'd like to give another licensing policy a try, and maybe it would be easier compared to what was there before. 
 I've made a patreon page, and there are 6 tiers - 3 for individual developers and corresponding 3 for companies. 
 
- - First tier is just vvvv beta Hap plugin updates subscription (with technical support and unlimited commercial usage allowance while you're active patron). 
- - Second tier is vvvv beta + gamma plugin updates (also with technical support and unlimited commercial usage allowance while you’re active patron).
- - Third tier is meant for advanced users, it includes vvvv beta + gamma plugin updates (with technical support and unlimited commercial usage allowance while you’re active patron), and also a special frame-based playback ability. You can use it for network syncing of the playback and other stuff.
+ - First tier is just vvvv beta Hap plugin updates subscription (with technical support and unlimited commercial usage allowance while you're an active patron). 
+ - Second tier is vvvv beta + gamma plugin updates (also with technical support and unlimited commercial usage allowance while you’re an active patron).
+ - Third tier is meant for advanced users, it includes vvvv beta + gamma plugin updates (with technical support and unlimited commercial usage allowance while you’re an active patron), and also advanced frame-based playback. You can use it for network syncing of the playback and other interesting stuff.
  
 Features available only for patrons (compared to publicly available versions):
 -   Frame based playback suitable for advanced usage scenarios and network synced playback (3rd tier)
 -   Optimization for extremely large videos enabled (25-40% speedup)
 -   Configurable memory usage (will be exposed in the patch soon)
 
-I'm not removing the old plugins from anywhere, they are still downloadable (e.g. for non-commercial usage), but I recommend to go to Patreon as I will post new updates and fixes there (already posted first portion of them last week).
+I'm not removing the old plugins from anywhere, they are still downloadable (for non-commercial usage), but I really encourage interested people to go to Patreon as I will post new updates and fixes there (already posted first portion of them last week).
 
 [![Support on Patreon](https://github.com/leavittx/leavittx.github.io/raw/master/hap_blog_post_2022/images/patreon.png)](https://www.patreon.com/hap_player)
 
