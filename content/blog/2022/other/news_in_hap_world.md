@@ -65,5 +65,4 @@ I'm not removing the old plugins from anywhere, they are still downloadable (e.g
 
 If you feel uncomfortable with Patreon for some reason, please  <a href="mailto:lev.panov@gmail.com">get in contact</a> and we'll figure something out. Also feel free to share you thoughts in the comments, regarding tiers, or anything.
 
-Update: for users unable to use Patreon there is a Boosty page now:
-[![Support on boosty](https://github.com/leavittx/leavittx.github.io/raw/master/hap_blog_post_2022/images/boosty.png)](https://boosty.to/hap_player)
+Update: for users unable to use Patreon there is a <a href="https://boosty.to/hap_player">Boosty page</a> now.
