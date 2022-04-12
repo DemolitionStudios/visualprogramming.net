@@ -59,11 +59,11 @@ Features available only for patrons (compared to publicly available versions):
 
 I'm not removing the old plugins from anywhere, they are still downloadable (e.g. for non-commercial usage), but I recommend to go to Patreon as I will post new updates and fixes there (already posted first portion of them last week).
 
-[![Foo](https://github.com/leavittx/leavittx.github.io/raw/master/hap_blog_post_2022/images/patreon.png)](https://www.patreon.com/hap_player)
-
+[![Support on Patreon](https://github.com/leavittx/leavittx.github.io/raw/master/hap_blog_post_2022/images/patreon.png)](https://www.patreon.com/hap_player)
 
 <a href="https://www.patreon.com/hap_player" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 
 If you feel uncomfortable with Patreon for some reason, please  <a href="mailto:lev.panov@gmail.com">get in contact</a> and we'll figure something out. Also feel free to share you thoughts in the comments, regarding tiers, or anything.
 
-
+Update: for users unable to use Patreon there is a Boosty page now:
+[![Support on boosty](https://github.com/leavittx/leavittx.github.io/raw/master/hap_blog_post_2022/images/boosty.png)](https://boosty.to/hap_player)
