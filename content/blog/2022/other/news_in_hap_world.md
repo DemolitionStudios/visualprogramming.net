@@ -1,3 +1,4 @@
+
 ---
 draft: false
 date: "2022-04-12"
@@ -63,6 +64,6 @@ I'm not removing the old plugins from anywhere, they are still downloadable (for
 
 <a href="https://www.patreon.com/hap_player" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 
-If you feel uncomfortable with Patreon for some reason, please  <a href="mailto:lev.panov@gmail.com">get in contact</a> and we'll figure something out. Also feel free to share you thoughts in the comments, regarding tiers, or anything.
+If you feel uncomfortable with Patreon for some reason, please  <a href="mailto:lev.panov@gmail.com">get in contact</a> and we'll figure something out. Also feel free to share you thoughts in the comments, regarding tiers, or anything. It's possible to send invoices on a regular basis also.
 
 Update: for users unable to use Patreon there is a <a href="https://boosty.to/hap_player">Boosty page</a> now.
