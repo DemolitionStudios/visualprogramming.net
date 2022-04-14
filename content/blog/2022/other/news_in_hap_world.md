@@ -8,7 +8,7 @@ categories: other
 author: lev
 ---
 
-There were multiple important things happening in the Hap GPU-accelerated video playback codec world recently. Sadly, there is no a single website with all these updates (though there an <a href="http://hap.video">official website</a> now!). I will try to put the information all together in this blog post.
+There were multiple important things happening in the Hap GPU-accelerated video playback codec world recently. Sadly, there is no a single website with all these updates (though there an <a href="http://hap.video">official website</a> now). I will try to put the information all together in this blog post.
 
 ## Techinical updates
 ### Codec updates
@@ -46,14 +46,14 @@ Next, I'd like to list what new features were added to the vvvv's Demolition Med
 
 ## Licensing and distribution updates
 It turned out that during the last year and a half, only two times a license was purchased for commercial projects (once for beta and once for gamma) — and I'm really greatful to those people, as it was neccesary support to do more development and experimenting.
-I realized that I'd like to give another licensing policy a try, and maybe it would be easier compared to what was there before. 
-I've made a patreon page, and there are 6 tiers - 3 for individual developers and corresponding 3 for companies. 
+I realized that I'd like to give another licensing policy a try, and maybe it would be better compared to what was there before. 
+I've made a **Patreon page**, and there are 6 tiers - 3 for individual developers and corresponding 3 for companies. 
 
- - First tier is just vvvv beta Hap plugin updates subscription (with technical support and unlimited commercial usage allowance while you're an active patron). 
- - Second tier is vvvv beta + gamma plugin updates (also with technical support and unlimited commercial usage allowance while you’re an active patron).
- - Third tier is meant for advanced users, it includes vvvv beta + gamma plugin updates (with technical support and unlimited commercial usage allowance while you’re an active patron), and also advanced frame-based playback. You can use it for network syncing of the playback and other interesting stuff.
+ - **First tier** is just vvvv beta Hap plugin updates subscription (with technical support and unlimited commercial usage allowance while you're an active patron). 
+ - **Second tier** is vvvv beta + gamma plugin updates (also with technical support and unlimited commercial usage allowance while you’re an active patron).
+ - **Third tier** is meant for advanced users, it includes vvvv beta + gamma plugin updates (with technical support and unlimited commercial usage allowance while you’re an active patron), and also advanced frame-based playback. You can use it for network syncing of the playback and other interesting stuff.
  
-Features available only for patrons (compared to publicly available versions):
+**Features available only for patrons (compared to publicly available versions):**
 -   Frame based playback suitable for advanced usage scenarios and network synced playback (3rd tier)
 -   Optimization for extremely large videos enabled (25-40% speedup)
 -   Configurable memory usage (will be exposed in the patch soon)
@@ -64,6 +64,8 @@ I'm not removing the old plugins from anywhere, they are still downloadable (for
 
 <a href="https://www.patreon.com/hap_player" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 
-If you feel uncomfortable with Patreon for some reason, please  <a href="mailto:lev.panov@gmail.com">get in contact</a> and we'll figure something out. Also feel free to share you thoughts in the comments, regarding tiers, or anything. It's possible to send invoices on a regular basis also.
+If you feel uncomfortable with Patreon for some reason, please  <a href="mailto:lev.panov@gmail.com">get in contact</a> and we'll figure something out. 
+
+**It's possible to send invoices on a regular basis.** Also feel free to share you thoughts in the comments, regarding tiers, or anything. 
 
 Update: for users unable to use Patreon there is a <a href="https://boosty.to/hap_player">Boosty page</a> now.
