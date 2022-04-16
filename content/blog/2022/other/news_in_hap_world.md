@@ -4,32 +4,32 @@ draft: false
 date: "2022-04-12"
 title: "News in Hap world"
 description: "The Hap player news"
-categories: other
+categories: User Contribution
 author: lev
 ---
 
-There were multiple important things happening in the Hap GPU-accelerated video playback codec world recently. Sadly, there is no a single website with all these updates (though there an <a href="http://hap.video">official website</a> now). I will try to put the information all together in this blog post.
+There were multiple important things happening in the Hap GPU-accelerated video playback codec world recently. Sadly, there is no a single website with all these updates (though there is an [official website](http://hap.video). I will try to put the information all together in this blog post.
 
 ## Techinical updates
 ### Codec updates
-In the mid-2020 a long-awaited Hap R codec was added to the <a href="https://github.com/Vidvox/hap/blob/master/documentation/HapVideoDRAFT.md">hap specification</a>. It uses internally high quality BC7 compressed textures, and makes videos quite close to ProRes. And that's given that compression ratio is same as in DXT5 used in Hap Q (8:1). Hap R encoding right now is slower compared to Hap Q, but decoding is almost as fast as Hap Q and we're getting rid of the annoying artifacts like banding on color gradients or blockiness. It also supports alpha-channel transparency at same compression rate (reserving some color bits to store alpha information).
+In the mid-2020 a long-awaited Hap R codec was added to the [hap specification](https://github.com/Vidvox/hap/blob/master/documentation/HapVideoDRAFT.md). It uses internally high quality BC7 compressed textures, and makes videos quite close to ProRes. And that's given that compression ratio is same as in DXT5 used in Hap Q (8:1). Hap R encoding right now is slower compared to Hap Q, but decoding is almost as fast as Hap Q and we're getting rid of the annoying artifacts like banding on color gradients or blockiness. It also supports alpha-channel transparency at same compression rate (reserving some color bits to store alpha information).
 
 
 
 Here is a comparison of some rendered content encoded with Hap.
-<img src="https://github.com/leavittx/leavittx.github.io/raw/master/hap_blog_post_2022/images/Leviathan7.1_diff.png">
+![vvvv gamma 2021.4 release](https://github.com/leavittx/leavittx.github.io/raw/master/hap_blog_post_2022/images/Leviathan7.1_diff.png "")
 The white gradient is much much smoother on the right, so is the background area.
 
 Now a frame containing text. 
 Hap Q:
-<img src="https://github.com/leavittx/leavittx.github.io/raw/master/hap_blog_post_2022/images/out_hapQ.png">
+![Hap Q](https://github.com/leavittx/leavittx.github.io/raw/master/hap_blog_post_2022/images/out_hapQ.png "")
 Hap R:
-<img src="https://github.com/leavittx/leavittx.github.io/raw/master/hap_blog_post_2022/images/out_hapR.png">
+![Hap R](https://github.com/leavittx/leavittx.github.io/raw/master/hap_blog_post_2022/images/out_hapR.png "")
 The borders are much smoother and clearer on the second image.
 
-Feel free to play around with these side by side interactive image comparisons: <a href="https://leavittx.github.io/hap_blog_post_2022/comparisons/leviathan_392_hap_vs_hapq.html">Leviathan video</a>, <a href="https://leavittx.github.io/hap_blog_post_2022/comparisons/fireworks_hap_vs_hapq.html">Fireworks video</a>, <a href="https://leavittx.github.io/hap_blog_post_2022/comparisons/jokyo_hap_vs_hapq.html">Jokyo test with alpha</a>. I recommend going to the maximum zoom level using mouse wheel in some area and then moving the comparison slider and pan using the mouse. Hap Q is on the left and Hap R is on the right.
+Feel free to play around with these side by side interactive image comparisons: [Leviathan video](https://leavittx.github.io/hap_blog_post_2022/comparisons/leviathan_392_hap_vs_hapq.html), [Fireworks video](https://leavittx.github.io/hap_blog_post_2022/comparisons/fireworks_hap_vs_hapq.html), [Jokyo test with alpha](https://leavittx.github.io/hap_blog_post_2022/comparisons/jokyo_hap_vs_hapq.html). I recommend going to the maximum zoom level using mouse wheel in some area and then moving the comparison slider and pan using the mouse. Hap Q is on the left and Hap R is on the right.
 
-The support for encoding was shortly added to the amazing <a href="https://jokyohapencoder.com/">Jokyo Hap Encoder</a>. You can use it for either Adobe Media Encoder or for After Effects. It's nice not only because it's the first and the only one to support Hap R, also it improves Hap and Hap Q quality compared to the community encoders.  Hopefully, GPU accelerated Hap R encoding will be available somewhere soon and then it'll be possible to quickly prepare new footage versions for playback.
+The support for encoding was shortly added to the amazing [Jokyo Hap Encoder](https://jokyohapencoder.com/) — which is another recent addition to the Hap ecosystem. You can use it for either Adobe Media Encoder or for After Effects. It's nice not only because it's the first and the only one to support Hap R, also it improves Hap and Hap Q quality compared to the community encoders.  Hopefully, GPU accelerated Hap R encoding will be available somewhere soon and then it'll be possible to quickly prepare new footage versions for playback.
 
 Demolition Media Hap Player for vvvv beta/gamma supports it already for some time, and you can use Hap R in both RGB and RGBA modes.
 
@@ -62,10 +62,10 @@ I'm not removing the old plugins from anywhere, they are still downloadable (for
 
 [![Support on Patreon](https://github.com/leavittx/leavittx.github.io/raw/master/hap_blog_post_2022/images/patreon.png)](https://www.patreon.com/hap_player)
 
-<a href="https://www.patreon.com/hap_player" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+[Become a Patron!](https://www.patreon.com/hap_player)
 
-If you feel uncomfortable with Patreon for some reason, please  <a href="mailto:lev.panov@gmail.com">get in contact</a> and we'll figure something out. 
+If you feel uncomfortable with Patreon for some reason, please  [get in contact](mailto:lev.panov@gmail.com) and we'll figure something out. 
 
-**It's possible to send invoices on a regular basis.** Also feel free to share you thoughts in the comments, regarding tiers, or anything. 
+**It's possible to send invoices on a regular basis -- just drop me a message after joining on Patreon.** Also feel free to share you thoughts in the comments, regarding tiers, or anything. 
 
-Update: for users unable to use Patreon there is a <a href="https://boosty.to/hap_player">Boosty page</a> now.
+Update: for users unable to use Patreon there is a [Boosty page](https://boosty.to/hap_player) now.
