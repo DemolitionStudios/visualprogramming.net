@@ -60,9 +60,8 @@ I've made a **Patreon page**, and there are 6 tiers - 3 for individual developer
 
 I'm not removing the old plugins from anywhere, they are still downloadable (for non-commercial usage), but I really encourage interested people to go to Patreon as I will post new updates and fixes there (already posted first portion of them last week).
 
-[![Support on Patreon](https://github.com/leavittx/leavittx.github.io/raw/master/hap_blog_post_2022/images/patreon.png)](https://www.patreon.com/hap_player)
+[![Become a Patron](https://raw.githubusercontent.com/leavittx/leavittx.github.io/master/hap_blog_post_2022/images/becomeapatron.jpg)](https://www.patreon.com/hap_player)
 
-[Become a Patron!](https://www.patreon.com/hap_player)
 
 If you feel uncomfortable with Patreon for some reason, please  [get in contact](mailto:lev.panov@gmail.com) and we'll figure something out. 
 
