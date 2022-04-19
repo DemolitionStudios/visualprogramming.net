@@ -8,7 +8,7 @@ categories: User Contribution
 author: lev
 ---
 
-There were multiple important things happening in the Hap GPU-accelerated video playback codec world recently. Sadly, there is not a single website with all these updates (though there is an [official website](http://hap.video). I will try to put the information all together in this blog post.
+There were multiple important things happening in the Hap GPU-accelerated video playback codec world recently. Sadly, there is not a single website with all these updates (though there is an [official website](http://hap.video) now). I will try to put the information all together in this blog post.
 
 ## Technical updates
 ### Codec updates
@@ -18,7 +18,7 @@ In the mid-2020 a long-awaited Hap R codec was added to the [hap specification](
 
 Here is a comparison of some rendered content encoded with Hap.
 ![vvvv gamma 2021.4 release](https://github.com/leavittx/leavittx.github.io/raw/master/hap_blog_post_2022/images/Leviathan7.1_diff.png "")
-The white gradient is much much smoother on the right, so is the background area.
+The white gradient is much much smoother on the right, and so is the background area.
 
 Now a frame containing text. 
 Hap Q:
@@ -27,7 +27,7 @@ Hap R:
 ![Hap R](https://github.com/leavittx/leavittx.github.io/raw/master/hap_blog_post_2022/images/out_hapR.png "")
 The borders are much smoother and clearer on the second image.
 
-Feel free to play around with these side by side interactive image comparisons: [Leviathan video](https://leavittx.github.io/hap_blog_post_2022/comparisons/leviathan_392_hap_vs_hapq.html), [Fireworks video](https://leavittx.github.io/hap_blog_post_2022/comparisons/fireworks_hap_vs_hapq.html), [Jokyo test with alpha](https://leavittx.github.io/hap_blog_post_2022/comparisons/jokyo_hap_vs_hapq.html). I recommend going to the maximum zoom level using mouse wheel in some area and then moving the comparison slider and pan using the mouse. Hap Q is on the left and Hap R is on the right.
+Feel free to play around with these three side by side interactive image comparisons: [Leviathan video](https://leavittx.github.io/hap_blog_post_2022/comparisons/leviathan_392_hap_vs_hapq.html), [Fireworks video](https://leavittx.github.io/hap_blog_post_2022/comparisons/fireworks_hap_vs_hapq.html), [Jokyo test with alpha](https://leavittx.github.io/hap_blog_post_2022/comparisons/jokyo_hap_vs_hapq.html). I recommend **going to the maximum zoom level** using mouse wheel in some area and then moving the comparison slider / pan using the mouse. Hap Q is on the left and Hap R is on the right.
 
 The support for encoding was shortly added to the amazing [Jokyo Hap Encoder](https://jokyohapencoder.com/) — which is another recent addition to the Hap ecosystem. You can use it for either Adobe Media Encoder or for After Effects. It's nice not only because it's the first and the only one to support Hap R, also it improves Hap and Hap Q quality compared to the community encoders.  Hopefully, GPU accelerated Hap R encoding will be available somewhere soon and then it'll be possible to quickly prepare new footage versions for playback.
 
@@ -45,13 +45,13 @@ Next, I'd like to list what new features were added to the vvvv's Demolition Med
  - And lately, when a 8192x8192@60 fps Hap Q file was needed to be played, I've realized that it's 67 megabytes of data to be allocated and then freed for each frame. It actually takes quite a lot of time relatively to other operations needed to be done while decoding a frame. So, I've added an internal memory pool for the purpose of reusing the allocated memory.  It's now 25-40% faster for those extreme high-resolution cases.
 
 ## Licensing and distribution updates
-It turned out that during the last year and a half, only two times a license was purchased for commercial projects (once for beta and once for gamma) — and I'm really greatful to those people, as it was neccesary support to do more development and experimenting.
+It turned out that during the last 1.5 years, only two times a license was purchased for commercial projects (once for beta and once for gamma) — and I'm really greatful to those people, as it was neccesary support to do more development and experimenting.
 
 At this moment, I realized that I'd like to give another licensing policy a try.  I've created a **Patreon page** which will consist all the latest fixes and updates for the Hap player. There are 6 tiers - 3 for individual developers and corresponding 3 for companies. 
 
- - **First tier** is just vvvv beta Hap plugin updates subscription (with technical support and unlimited commercial usage allowance while you're an active patron). 
+ - **First tier** is just vvvv beta Hap plugin updates subscription (with technical support and **unlimited commercial usage allowance while you're an active patron**). 
  - **Second tier** is vvvv beta + gamma plugin updates (also with technical support and unlimited commercial usage allowance while you’re an active patron).
- - **Third tier** is meant for advanced users, it includes vvvv beta + gamma plugin updates (with technical support and unlimited commercial usage allowance while you’re an active patron), and also advanced frame-based playback. You can use it for network syncing of the playback and other interesting stuff.
+ - **Third tier** is meant for advanced users, it includes vvvv beta + gamma plugin updates (with technical support and unlimited commercial usage allowance while you’re an active patron), and also **advanced frame-based playback**. You can use it for network syncing of the playback and other interesting stuff.
  
 **Features available only for patrons (compared to publicly available versions, in addition to bugfixes):**
 -   Frame based playback suitable for advanced usage scenarios and network synced playback (3rd tier)
